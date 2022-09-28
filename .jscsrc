@@ -1,0 +1,17 @@
+{
+  "preset": "wordpress",
+  "requireSpacesInsideParentheses": false,
+  "requirePaddingNewLinesBeforeLineComments": false,
+  "disallowSpacesInFunctionExpression": false,
+  "disallowSpacesInAnonymousFunctionExpression": false,
+  "fileExtensions": [".js"],
+  "excludeFiles": [
+    "wp-content/themes/facyl/js/dist/*.js",
+    "wp-content/themes/facyl/js/src/legacy.js",
+    "wp-content/themes/facyl/js/src/modules/lazyload.js",
+    "wp-content/themes/facyl/js/src/modules/sticky-nav.js",
+    "wp-content/themes/facyl/js/src/modules/navigation.js",
+    "wp-content/themes/facyl/js/all.js",
+    "gulpfile.js"
+  ]
+}

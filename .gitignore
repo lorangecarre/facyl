@@ -1,4 +1,4 @@
-content/
+wp-wp-content/
 move_out.sh
 move_in.sh
 theme_tests.sh
@@ -12,6 +12,12 @@ package-lock.json
 html
 w3cErrors/
 .vscode
+<<<<<<< HEAD
 localhost-key.pem
 localhost.pem
 gulp/config.js
+=======
+.husky
+localhost+2-key.pem
+localhost+2.pem
+>>>>>>> 2bdbb4d1216748101d5492b5799d6d3210a5dfc7
