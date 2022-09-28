@@ -13,7 +13,7 @@ wp.blocks.registerBlockStyle('core/paragraph', {
   label: 'Laatikko',
 });
 
-var facyl_LazyLoad = new LazyLoad({
+var air_light_LazyLoad = new LazyLoad({
   callback_loaded: setLazyLoadedFigureWidth,
 });
 
@@ -34,11 +34,11 @@ window.addEventListener('load', function () {
    * @source https://www.advancedcustomfields.com/resources/acf_register_block_type/
    */
   var initializeBlock = function ($block) {
-    facyl_LazyLoad.update();
+    air_light_LazyLoad.update();
   };
 
   // Initialize each block on page load (front end).
-  facyl_LazyLoad.update();
+  air_light_LazyLoad.update();
 
   // Set non-lazyloaded figures width so captions in aligned images will be same width as image
   const figures = document.querySelectorAll('figure');

@@ -8,7 +8,7 @@
  * @package facyl
  */
 
-namespace facyl;
+namespace Air_Light;
 
 if ( ! function_exists( 'wp_body_open' ) ) {
 	/**

@@ -8,7 +8,7 @@
  * @package facyl
  **/
 
-namespace facyl;
+namespace Air_Light;
 
 /**
  * Registers the Your Post Type post type.

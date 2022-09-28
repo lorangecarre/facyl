@@ -10,7 +10,7 @@
  * @package facyl
  **/
 
-namespace facyl;
+namespace Air_Light;
 
 function theme_setup() {
 

@@ -10,7 +10,7 @@
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  */
 
-namespace facyl;
+namespace Air_Light;
 
 get_header(); ?>
 

@@ -14,7 +14,7 @@
  * @package facyl
  */
 
-namespace facyl;
+namespace Air_Light;
 
 /**
  * A custom WordPress nav walker class, using the WordPress built in menu manager.

@@ -10,7 +10,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  */
 
-namespace facyl;
+namespace Air_Light;
 
 the_post();
 get_header(); ?>

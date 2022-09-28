@@ -8,7 +8,7 @@
  * @package facyl
  */
 
-namespace facyl;
+namespace Air_Light;
 
 // Always set Output CSS setting to No. We want to use our own _gravity-forms.scss
 function dequeue_gf_stylesheets() {

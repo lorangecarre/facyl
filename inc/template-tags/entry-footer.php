@@ -13,7 +13,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  */
 
-namespace facyl;
+namespace Air_Light;
 
 function entry_footer() {
   echo '<div class="entry-footer">';

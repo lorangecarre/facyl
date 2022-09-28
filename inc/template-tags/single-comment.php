@@ -13,7 +13,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  */
 
-namespace facyl;
+namespace Air_Light;
 
 function single_comment( $comment, $args, $depth ) { ?>
   <li id="li-comment-<?php comment_ID(); ?>" <?php comment_class(); ?>>

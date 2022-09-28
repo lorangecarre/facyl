@@ -16,7 +16,7 @@
   \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_gutenberg_helpers__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/gutenberg-helpers */ \"./js/src/modules/gutenberg-helpers.js\");\n/**\n * @Author: Roni Laukkarinen\n * @Date:   2022-02-11 15:38:14\n * @Last Modified by:   Roni Laukkarinen\n * @Last Modified time: 2022-05-12 17:49:01\n */\n\n/* eslint-disable camelcase, prefer-arrow-callback, no-unused-vars, no-undef, vars-on-top, no-var, func-names, max-len, import/no-unresolved */\n // Declare the block you'd like to style.\n\nwp.blocks.registerBlockStyle('core/paragraph', {\n  name: 'boxed',\n  label: 'Laatikko'\n});\nvar facyl_LazyLoad = new LazyLoad({\n  callback_loaded: _modules_gutenberg_helpers__WEBPACK_IMPORTED_MODULE_0__.setLazyLoadedFigureWidth\n}); // When document is ready as in when blocks are fully loaded\n\nwindow.addEventListener('load', function () {\n  /**\n   * initializeBlock\n   *\n   * Adds custom JavaScript to the block HTML.\n   *\n   * @date    15/4/19\n   * @since   1.0.0\n   *\n   * @param   object $block The block jQuery element.\n   * @param   object attributes The block attributes (only available when editing).\n   * @return  void\n   *\n   * @source https://www.advancedcustomfields.com/resources/acf_register_block_type/\n   */\n  var initializeBlock = function initializeBlock($block) {\n    facyl_LazyLoad.update();\n  }; // Initialize each block on page load (front end).\n\n\n  facyl_LazyLoad.update(); // Set non-lazyloaded figures width so captions in aligned images will be same width as image\n\n  var figures = document.querySelectorAll('figure');\n  (0,_modules_gutenberg_helpers__WEBPACK_IMPORTED_MODULE_0__.setFigureWidths)(figures); // Initialize dynamic block preview (editor).\n\n  if (window.acf) {\n    window.acf.addAction('render_block_preview', initializeBlock);\n  }\n});\n\n//# sourceURL=webpack://facyl/./js/src/gutenberg-editor.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_gutenberg_helpers__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/gutenberg-helpers */ \"./js/src/modules/gutenberg-helpers.js\");\n/**\n * @Author: Roni Laukkarinen\n * @Date:   2022-02-11 15:38:14\n * @Last Modified by:   Roni Laukkarinen\n * @Last Modified time: 2022-05-12 17:49:01\n */\n\n/* eslint-disable camelcase, prefer-arrow-callback, no-unused-vars, no-undef, vars-on-top, no-var, func-names, max-len, import/no-unresolved */\n // Declare the block you'd like to style.\n\nwp.blocks.registerBlockStyle('core/paragraph', {\n  name: 'boxed',\n  label: 'Laatikko'\n});\nvar air_light_LazyLoad = new LazyLoad({\n  callback_loaded: _modules_gutenberg_helpers__WEBPACK_IMPORTED_MODULE_0__.setLazyLoadedFigureWidth\n}); // When document is ready as in when blocks are fully loaded\n\nwindow.addEventListener('load', function () {\n  /**\n   * initializeBlock\n   *\n   * Adds custom JavaScript to the block HTML.\n   *\n   * @date    15/4/19\n   * @since   1.0.0\n   *\n   * @param   object $block The block jQuery element.\n   * @param   object attributes The block attributes (only available when editing).\n   * @return  void\n   *\n   * @source https://www.advancedcustomfields.com/resources/acf_register_block_type/\n   */\n  var initializeBlock = function initializeBlock($block) {\n    air_light_LazyLoad.update();\n  }; // Initialize each block on page load (front end).\n\n\n  air_light_LazyLoad.update(); // Set non-lazyloaded figures width so captions in aligned images will be same width as image\n\n  var figures = document.querySelectorAll('figure');\n  (0,_modules_gutenberg_helpers__WEBPACK_IMPORTED_MODULE_0__.setFigureWidths)(figures); // Initialize dynamic block preview (editor).\n\n  if (window.acf) {\n    window.acf.addAction('render_block_preview', initializeBlock);\n  }\n});\n\n//# sourceURL=webpack://facyl/./js/src/gutenberg-editor.js?");
 
 /***/ }),
 
@@ -44,7 +44,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
-/******/ 	
+/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/ 		// Check if module is in cache
@@ -58,14 +58,14 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
-/******/ 	
+/******/
 /******/ 		// Execute the module function
 /******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
+/******/
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
@@ -78,12 +78,12 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -94,13 +94,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
-/******/ 	
+/******/
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = __webpack_require__("./js/src/gutenberg-editor.js");
-/******/ 	
+/******/
 /******/ })()
 ;

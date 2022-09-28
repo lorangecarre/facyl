@@ -10,7 +10,7 @@
  * @package facyl
  */
 
-namespace facyl;
+namespace Air_Light;
 
 // Theme setup
 require get_theme_file_path( '/inc/includes/theme-setup.php' );

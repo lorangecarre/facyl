@@ -8,7 +8,7 @@
  * @package facyl
  */
 
-namespace facyl;
+namespace Air_Light;
 
 add_filter( 'air_helper_pll_register_strings', function() {
   $strings = [

@@ -13,7 +13,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  */
 
-namespace facyl;
+namespace Air_Light;
 
  /*
  * If the current post is protected by a password and
