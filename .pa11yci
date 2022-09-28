@@ -2,5 +2,5 @@
   "defaults": {
     "standard": "WCAG2A"
   },
-  "urls": ["http:\/\/PROJECTNAME.test\"]
+  "urls": ["http:\/\/facyl.test\"]
 }

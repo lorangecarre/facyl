@@ -9,19 +9,30 @@ npx husky install
 npx husky add .husky/commit-msg 'npx commitlint --edit $1'
 ```
 
+Si besoin, installation de la CLI de Gulp:
+```bash
+npm install --global gulp-cli
+```
+
+Pour générer les certificats pour le https en local:
+```bash
+sudo apt install mkcert
+mkdir -p /var/www/certs && cd /var/www/certs && mkcert localhost 192.168.x.xxx ::1
+```
 
 
 ## Debuggers
+
 Air-light comes with PHP_CodeSniffer for PHP files, stylelint for SCSS/CSS files and eslint for JS files built inside gulpfile.js. Please note, you need to configure global versions of these separately!
 
 It's also recommended to use Query Monitor plugin, as some debugging messages goes straight to it's logger.
 
-For gulp
+### For gulp
 PHP_CodeSniffer needs to be installed under /usr/local/bin/phpcs with WordPress-Coding-Standards for php-debuggers to work properly in gulp. If you don't want to use phpcs with gulp, you can disable it by commenting out or deleting line gulp.watch(phpSrc, ['phpcs']);.
 
 The golden rule here is to make sure the commands stylelint, eslint and phpcs work from command line.
 
-### How to install for Gulp
+**How to install for Gulp**
 
 ```bash
 mkdir -p ~/Projects && cd ~/Projects && git clone -b master --depth 1 https://github.com/squizlabs/PHP_CodeSniffer.git phpcs
