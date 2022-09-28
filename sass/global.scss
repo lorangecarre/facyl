@@ -1,0 +1,64 @@
+@charset 'utf-8';
+
+// Reset
+@import 'helpers/sanitize';
+@import 'sanitize.css/reduce-motion';
+
+// Helpers
+@import 'helpers/animations';
+@import 'helpers/aspect-ratio';
+@import 'helpers/box-model';
+@import 'helpers/clamp';
+@import 'helpers/images';
+@import 'helpers/typography';
+
+// Variables
+@import 'variables/colors';
+@import 'variables/breakpoints';
+@import 'variables/font-face';
+@import 'variables/font-family';
+@import 'variables/font-size';
+@import 'variables/forms';
+@import 'variables/spacings';
+
+// Accessibility
+@import 'base/accessibility';
+
+// Style components
+@import 'components/components';
+
+// Navigation
+@import 'navigation/nav-desktop';
+@import 'navigation/nav-mobile';
+
+// Structure
+@import 'layout/general';
+@import 'layout/print';
+@import 'layout/typography';
+@import 'layout/site-header';
+@import 'layout/site-footer';
+@import 'layout/forms';
+@import 'layout/blog';
+@import 'layout/wordpress';
+
+// Global features
+@import 'features/top';
+@import 'features/gallery';
+@import 'features/pagination';
+@import 'features/gravity-forms';
+// @import 'features/sticky-nav';
+
+// Views
+@import 'views/front-page';
+@import 'views/search';
+@import 'views/404';
+@import 'views/comments';
+
+// Gutenberg layout outside blocks
+@import 'gutenberg/layout/content';
+
+// Gutenberg blocks
+@import 'gutenberg/blocks';
+
+// Gutenberg formatting
+@import 'gutenberg/formatting';

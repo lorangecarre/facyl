@@ -1,0 +1,23 @@
+// stylelint-disable no-descending-specificity
+// Default list block
+ul,
+ol {
+  color: var(--color-paragraph);
+  list-style-position: outside;
+  width: calc((100% - calc(var(--padding-container-horizontal) * 2)));
+}
+
+ul {
+  list-style-type: '\2022  ';
+  padding-inline-start: 1em;
+}
+
+ol {
+  padding-inline-start: 1.25em;
+}
+
+// Colorized markers
+li::marker {
+  color: var(--color-link-text);
+  font-size: inherit;
+}

@@ -1,0 +1,10 @@
+// Core/cover block
+.wp-block-cover__inner-container {
+  padding-left: var(--padding-container-horizontal);
+  padding-right: var(--padding-container-horizontal);
+
+  p {
+    color: var(--color-white);
+    line-height: var(--line-height-core-heading);
+  }
+}

@@ -1,0 +1,6 @@
+// Font family settings for Gutenberg
+@include fontface('Inter', '../../../../../content/themes/facyl/fonts/inter-400', 400);
+@include fontface('Inter', '../../../../../content/themes/facyl/fonts/inter-400-italic', 400, italic);
+@include fontface('Inter', '../../../../../content/themes/facyl/fonts/inter-500', 500);
+@include fontface('Inter', '../../../../../content/themes/facyl/fonts/inter-600', 600);
+@include fontface('Inter', '../../../../../content/themes/facyl/fonts/inter-700', 700);
