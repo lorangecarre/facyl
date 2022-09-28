@@ -12,3 +12,6 @@ package-lock.json
 html
 w3cErrors/
 .vscode
+localhost-key.pem
+localhost.pem
+gulp/config.js
