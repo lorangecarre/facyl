@@ -13,7 +13,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  */
 
-namespace Air_Light;
+namespace facyl;
 
 function air_edit_link() {
 

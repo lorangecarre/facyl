@@ -10,7 +10,7 @@
  * @package facyl
  */
 
-namespace Air_Light;
+namespace facyl;
 
 /**
  * Move jQuery to footer
@@ -21,7 +21,7 @@ function move_jquery_into_footer( $wp_scripts ) {
     $wp_scripts->add_data( 'jquery-core',    'group', 1 );
     $wp_scripts->add_data( 'jquery-migrate', 'group', 1 );
   }
-} // end air_light_move_jquery_into_footer
+} // end facyl_move_jquery_into_footer
 
 /**
  * Enqueue scripts and styles.
@@ -49,7 +49,7 @@ function enqueue_theme_scripts() {
     wp_enqueue_script( 'comment-reply' );
   }
 
-  wp_localize_script( 'scripts', 'air_light_screenReaderText', [
+  wp_localize_script( 'scripts', 'facyl_screenReaderText', [
     'expand'          => get_default_localization( 'Open child menu' ),
     'collapse'        => get_default_localization( 'Close child menu' ),
     'expand_for'      => get_default_localization( 'Open child menu for' ),
@@ -65,8 +65,8 @@ function enqueue_theme_scripts() {
   ] );
 
   // Add domains/hosts to disable external link indicators
-  wp_localize_script( 'scripts', 'air_light_externalLinkDomains', THEME_SETTINGS['external_link_domains_exclude'] );
-} // end air_light_scripts
+  wp_localize_script( 'scripts', 'facyl_externalLinkDomains', THEME_SETTINGS['external_link_domains_exclude'] );
+} // end facyl_scripts
 
 /**
  * Load polyfills for legacy browsers
@@ -90,9 +90,9 @@ function enqueue_polyfills() {
   }';
 
   if ( file_exists( get_theme_file_path( get_asset_file( 'legacy.js' ) ) ) ) {
-    wp_register_script( 'air_light_legacy', '', [], filemtime( get_theme_file_path( get_asset_file( 'legacy.js' ) ) ), false );
-    wp_enqueue_script( 'air_light_legacy' );
-    wp_add_inline_script( 'air_light_legacy', $script, true );
+    wp_register_script( 'facyl_legacy', '', [], filemtime( get_theme_file_path( get_asset_file( 'legacy.js' ) ) ), false );
+    wp_enqueue_script( 'facyl_legacy' );
+    wp_add_inline_script( 'facyl_legacy', $script, true );
   }
 } // end enqueue_polyfills
 

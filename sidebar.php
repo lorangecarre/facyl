@@ -11,7 +11,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  */
 
-namespace Air_Light;
+namespace facyl;
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {
   return;

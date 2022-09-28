@@ -12,12 +12,12 @@
  * @package facyl
  */
 
-namespace Air_Light;
+namespace facyl;
 
 /**
  * The current version of the theme.
  */
-define( 'AIR_LIGHT_VERSION', '9.1.7' );
+define( 'facyl_VERSION', '9.1.7' );
 
 // We need to have some defaults as comments or empties so let's allow this:
 // phpcs:disable Squiz.Commenting.InlineComment.SpacingBefore, WordPress.Arrays.ArrayDeclarationSpacing.SpaceInEmptyArray
@@ -191,7 +191,7 @@ add_action( 'after_setup_theme', function() {
     'my_custom_setting' => true,
   ];
 
-  $theme_settings = apply_filters( 'air_light_theme_settings', $theme_settings );
+  $theme_settings = apply_filters( 'facyl_theme_settings', $theme_settings );
 
   define( 'THEME_SETTINGS', $theme_settings );
 } ); // end action after_setup_theme

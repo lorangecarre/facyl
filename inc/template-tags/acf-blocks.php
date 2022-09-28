@@ -7,7 +7,7 @@
  * @package facyl
  */
 
-namespace Air_Light;
+namespace facyl;
 
 function render_acf_block( $block, $content = '', $is_preview = false, $post_id = 0 ) {
   $block_slug = str_replace( 'acf/', '', $block['name'] );

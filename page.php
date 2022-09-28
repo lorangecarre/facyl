@@ -15,7 +15,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  */
 
-namespace Air_Light;
+namespace facyl;
 
 the_post();
 

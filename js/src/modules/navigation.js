@@ -153,7 +153,7 @@ var isOutOfViewport = function (elem) {
           thisDropdown.find('.dropdown').removeClass('toggled-on');
           dropdownToggle.attr('aria-expanded', 'false');
           // jscs:enable
-          screenReaderSpan.text(air_light_screenReaderText.expand);
+          screenReaderSpan.text(facyl_screenReaderText.expand);
           // Move focus back to previous dropdown select
           // But only if we are not already in the toggle of the first dropdown menu
           if (areWeInDropdown === true) {
@@ -173,7 +173,7 @@ var isOutOfViewport = function (elem) {
       prevDropdown.find('.dropdown-toggle').removeClass('toggled-on');
       prevDropdown.find('.dropdown').removeClass('toggled-on');
       dropdownTogglePrev.attr('aria-expanded', 'false');
-      screenReaderSpanPrev.text(air_light_screenReaderText.expand);
+      screenReaderSpanPrev.text(facyl_screenReaderText.expand);
 
       // Close next dropdown if we are on main level
       var nextDropdown = $(this).parent().next();
@@ -184,7 +184,7 @@ var isOutOfViewport = function (elem) {
       nextDropdown.find('.dropdown-toggle').removeClass('toggled-on');
       nextDropdown.find('.dropdown').removeClass('toggled-on');
       dropdownToggleNext.attr('aria-expanded', 'false');
-      screenReaderSpanNext.text(air_light_screenReaderText.expand);
+      screenReaderSpanNext.text(facyl_screenReaderText.expand);
     }
   });
 
@@ -193,7 +193,7 @@ var isOutOfViewport = function (elem) {
 
   // Add default dropdown-toggle label
   $('.dropdown-toggle').each(function () {
-    $(this).attr('aria-label', `${air_light_screenReaderText.expand_for} ${$(this).prev().text()}`);
+    $(this).attr('aria-label', `${facyl_screenReaderText.expand_for} ${$(this).prev().text()}`);
   });
 
   // Toggles the sub-menu when dropdown toggle button accessed
@@ -213,9 +213,9 @@ var isOutOfViewport = function (elem) {
 
     $(this).attr(
       'aria-label',
-      $(this).attr('aria-label') === `${air_light_screenReaderText.collapse_for} ${$(this).prev().text()}`
-        ? `${air_light_screenReaderText.expand_for} ${$(this).prev().text()}`
-        : `${air_light_screenReaderText.collapse_for} ${$(this).prev().text()}`,
+      $(this).attr('aria-label') === `${facyl_screenReaderText.collapse_for} ${$(this).prev().text()}`
+        ? `${facyl_screenReaderText.expand_for} ${$(this).prev().text()}`
+        : `${facyl_screenReaderText.collapse_for} ${$(this).prev().text()}`,
     );
   });
 
@@ -373,16 +373,16 @@ var isOutOfViewport = function (elem) {
       // Change screen reader open/close labels
       $('#nav-toggle-label').text(
         // eslint-disable-next-line no-undef
-        $('#nav-toggle-label').text() === air_light_screenReaderText.expand_toggle
-          ? air_light_screenReaderText.collapse_toggle
-          : air_light_screenReaderText.expand_toggle,
+        $('#nav-toggle-label').text() === facyl_screenReaderText.expand_toggle
+          ? facyl_screenReaderText.collapse_toggle
+          : facyl_screenReaderText.expand_toggle,
       );
 
       $(this).attr(
         'aria-label',
-        $(this).attr('aria-label') === air_light_screenReaderText.expand_toggle
-          ? air_light_screenReaderText.collapse_toggle
-          : air_light_screenReaderText.expand_toggle,
+        $(this).attr('aria-label') === facyl_screenReaderText.expand_toggle
+          ? facyl_screenReaderText.collapse_toggle
+          : facyl_screenReaderText.expand_toggle,
       );
 
       // jscs:disable
@@ -484,7 +484,7 @@ var isOutOfViewport = function (elem) {
     button.className = button.className.replace(' is-active', '');
     button.setAttribute('aria-expanded', 'false');
     menu.setAttribute('aria-expanded', 'false');
-    $('#nav-toggle-label').text(air_light_screenReaderText.expand_toggle);
+    $('#nav-toggle-label').text(facyl_screenReaderText.expand_toggle);
 
     // Return focus to nav-toggle
     button.focus();

@@ -5,7 +5,7 @@
  * @package facyl
  */
 
-namespace Air_Light;
+namespace facyl;
 
 $description = get_bloginfo( 'description', 'display' );
 ?>

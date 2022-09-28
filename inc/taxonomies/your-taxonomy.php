@@ -8,7 +8,7 @@
  * @package facyl
  */
 
-namespace Air_Light;
+namespace facyl;
 
 /**
  * Registers the Your Taxonomy taxonomy.

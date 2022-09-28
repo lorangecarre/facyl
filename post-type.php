@@ -10,7 +10,7 @@
  * @package facyl
  */
 
-namespace Air_Light;
+namespace facyl;
 
 /**
  * A base for Post Type creation

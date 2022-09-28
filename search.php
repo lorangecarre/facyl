@@ -11,7 +11,7 @@
  * @package facyl
  */
 
-namespace Air_Light;
+namespace facyl;
 
 $results = [];
 

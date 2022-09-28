@@ -13,7 +13,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  */
 
-namespace Air_Light;
+namespace facyl;
 
 require get_theme_file_path( '/inc/template-tags/acf-blocks.php' );
 require get_theme_file_path( '/inc/template-tags/entry-footer.php' );

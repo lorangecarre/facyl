@@ -7,7 +7,7 @@
  * @package facyl
  */
 
-namespace Air_Light;
+namespace facyl;
 
 function acf_blocks_add_category_in_gutenberg( $categories, $post ) {
   return array_merge( $categories, [
@@ -43,7 +43,7 @@ function acf_blocks_init() {
     // Check if icon is set, otherwise try to load svg icon
     if ( ! isset( $block['icon'] ) || empty( $block['icon'] ) ) {
       $icon_path = get_theme_file_path( "svg/block-icons/{$block['name']}.svg" );
-      $icon_path = apply_filters( 'air_light_acf_block_icon', $icon_path, $block['name'], $block );
+      $icon_path = apply_filters( 'facyl_acf_block_icon', $icon_path, $block['name'], $block );
 
       if ( file_exists( $icon_path ) ) {
         $block['icon'] = get_acf_block_icon_str( $icon_path );
