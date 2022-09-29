@@ -1,6 +1,10 @@
 // Colors
 :root {
-  --color-sticky-navigation-background: var(--color-valhalla);
+  --color-sticky-navigation-background: var(--color-black);
+  --color-main-level-fixed: var(--color-white);
+  --color-sub-level-fixed: var(--color-black);
+  --color-dropdown-toggle-fixed: var(--color-white);
+  --color-dropdown-sub-toggle-fixed: var(--color-black);
 }
 
 .site-header {
@@ -20,6 +24,22 @@
     left: 0;
     position: fixed;
     top: 0;
+
+    .menu-item > a {
+      color: var(--color-main-level-fixed);
+    }
+
+    .menu-item .sub-menu a {
+      color: var(--color-sub-level-fixed);
+    }
+
+    .menu-item > button {
+      color: var(--color-dropdown-toggle-fixed);
+    }
+
+    .sub-menu .menu-item  > button {
+      color: var(--color-dropdown-sub-toggle-fixed);
+    }
   }
 }
 

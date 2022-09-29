@@ -17,14 +17,14 @@ namespace Air_Light;
 <div class="main-navigation-wrapper" id="main-navigation-wrapper">
 
   <!-- NB! Accessibility: Add/remove has-visible-label class for button if you want to enable/disable visible "Show menu/Hide menu" label for seeing users -->
-  <button aria-controls="nav" id="nav-toggle" class="nav-toggle hamburger has-visible-label" type="button" aria-label="<?php echo esc_html( get_default_localization( 'Open main menu' ) ); ?>">
+  <button aria-controls="nav" id="nav-toggle" class="nav-toggle hamburger" type="button" aria-label="<?php echo esc_html( get_default_localization( 'Open main menu' ) ); ?>">
     <span class="hamburger-box">
       <span class="hamburger-inner"></span>
     </span>
-    <span id="nav-toggle-label" class="nav-toggle-label"><?php echo esc_html( get_default_localization( 'Open main menu' ) ); ?></span>
+    <span id="nav-toggle-label" class="nav-toggle-label"><?php echo esc_html( 'Ouvrir le menu principal' ); ?></span>
   </button>
 
-  <nav id="nav" class="nav-primary nav-menu" aria-label="<?php echo esc_html( get_default_localization( 'Main navigation' ) ); ?>">
+  <nav id="nav" class="nav-primary nav-menu" aria-label="<?php echo esc_html( 'Menu principal' ); ?>">
 
     <?php wp_nav_menu( array(
       'theme_location' => 'primary',

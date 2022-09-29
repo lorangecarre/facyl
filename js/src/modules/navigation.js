@@ -1,8 +1,8 @@
 /**
  * @Author: Roni Laukkarinen
  * @Date:   2021-04-23 13:10:51
- * @Last Modified by:   Roni Laukkarinen
- * @Last Modified time: 2022-05-12 15:10:04
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2022-09-29 16:47:15
  */
 // TODO: Refactor file
 /* eslint-disable default-case, camelcase, eqeqeq, no-restricted-globals, no-undef, no-var, vars-on-top, max-len, prefer-destructuring, no-redeclare, no-plusplus, no-use-before-define, no-unused-vars, block-scoped-var, func-names */
@@ -33,8 +33,10 @@ var isOutOfViewport = function (elem) {
   var out = {};
   out.top = bounding.top < 0;
   out.left = bounding.left < 0;
-  out.bottom = bounding.bottom > (window.innerHeight || document.documentElement.clientHeight);
-  out.right = bounding.right > (window.innerWidth || document.documentElement.clientWidth);
+  out.bottom = bounding.bottom
+    > (window.innerHeight || document.documentElement.clientHeight);
+  out.right = bounding.right
+    > (window.innerWidth || document.documentElement.clientWidth);
   out.any = out.top || out.left || out.bottom || out.right;
 
   return out;
@@ -110,10 +112,14 @@ var isOutOfViewport = function (elem) {
           // At least one side of the element is out of viewport
           if (isOut.right) {
             subMenu.classList.add('is-out-of-viewport');
-            subMenu.parentElement.parentElement.classList.add('is-out-of-viewport');
+            subMenu.parentElement.parentElement.classList.add(
+              'is-out-of-viewport',
+            );
           } else {
             subMenu.classList.remove('is-out-of-viewport');
-            subMenu.parentElement.parentElement.classList.remove('is-out-of-viewport');
+            subMenu.parentElement.parentElement.classList.remove(
+              'is-out-of-viewport',
+            );
           }
         }
       });
@@ -132,16 +138,22 @@ var isOutOfViewport = function (elem) {
   // Close focused dropdowns when pressing esc
   $('.menu-item a, .dropdown button').on('keyup', function (e) {
     // Checking are menu items open or not
-    const isSubMenuDropdownOpen = $(this).parent().parent().parent()
+    const isSubMenuDropdownOpen = $(this)
+      .parent()
+      .parent()
+      .parent()
       .find('.sub-menu')
       .prev('.dropdown-toggle')
       .attr('aria-expanded');
-    const isMainMenuDropdownOpen = $(this).closest('.menu-item').find('.dropdown-toggle').attr('aria-expanded');
+    const isMainMenuDropdownOpen = $(this)
+      .closest('.menu-item')
+      .find('.dropdown-toggle')
+      .attr('aria-expanded');
     const areWeInDropdown = $(this).parent().parent().hasClass('sub-menu');
 
     if (isSubMenuDropdownOpen === 'true' || isMainMenuDropdownOpen === 'true') {
       if ($('.dropdown').find(':focus').length !== 0) {
-      // Close menu using Esc key but only if dropdown is open
+        // Close menu using Esc key but only if dropdown is open
         if (e.code === 'Escape') {
           // Close the dropdown menu
           var thisDropdown = $(this).parent().parent().parent();
@@ -193,7 +205,10 @@ var isOutOfViewport = function (elem) {
 
   // Add default dropdown-toggle label
   $('.dropdown-toggle').each(function () {
-    $(this).attr('aria-label', `${air_light_screenReaderText.expand_for} ${$(this).prev().text()}`);
+    $(this).attr(
+      'aria-label',
+      `${air_light_screenReaderText.expand_for} ${$(this).prev().text()}`,
+    );
   });
 
   // Toggles the sub-menu when dropdown toggle button accessed
@@ -213,7 +228,8 @@ var isOutOfViewport = function (elem) {
 
     $(this).attr(
       'aria-label',
-      $(this).attr('aria-label') === `${air_light_screenReaderText.collapse_for} ${$(this).prev().text()}`
+      $(this).attr('aria-label')
+        === `${air_light_screenReaderText.collapse_for} ${$(this).prev().text()}`
         ? `${air_light_screenReaderText.expand_for} ${$(this).prev().text()}`
         : `${air_light_screenReaderText.collapse_for} ${$(this).prev().text()}`,
     );
@@ -226,7 +242,9 @@ var isOutOfViewport = function (elem) {
 
   // Keyboard navigation
   $('.menu-item a, button.dropdown-toggle').on('keydown', function (e) {
-    if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].indexOf(e.code) == -1) {
+    if (
+      ['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].indexOf(e.code) == -1
+    ) {
       return;
     }
 
@@ -239,7 +257,10 @@ var isOutOfViewport = function (elem) {
       } else if (
         $(this).parent().prev().children('button.dropdown-toggle').length
       ) {
-        $(this).parent().prev().children('button.dropdown-toggle')
+        $(this)
+          .parent()
+          .prev()
+          .children('button.dropdown-toggle')
           .trigger('focus');
       } else {
         $(this).parent().prev().children('a')
@@ -269,7 +290,10 @@ var isOutOfViewport = function (elem) {
       }
 
       if ($(this).is('ul.sub-menu .dropdown-toggle.toggled-on')) {
-        $(this).parent().find('ul.sub-menu li:first-child a').trigger('focus');
+        $(this)
+          .parent()
+          .find('ul.sub-menu li:first-child a')
+          .trigger('focus');
       }
 
       break;
@@ -373,7 +397,8 @@ var isOutOfViewport = function (elem) {
       // Change screen reader open/close labels
       $('#nav-toggle-label').text(
         // eslint-disable-next-line no-undef
-        $('#nav-toggle-label').text() === air_light_screenReaderText.expand_toggle
+        $('#nav-toggle-label').text()
+          === air_light_screenReaderText.expand_toggle
           ? air_light_screenReaderText.collapse_toggle
           : air_light_screenReaderText.expand_toggle,
       );
@@ -398,7 +423,7 @@ var isOutOfViewport = function (elem) {
       // Scroll to top when triggering mobile navigation
       // to ensure no gaps are between header and navigation
       // Please note, if you use sticky-nav, comment out the next line
-      window.scrollTo(0, 0);
+      // window.scrollTo(0, 0);
       // jscs:enable
     });
 
@@ -523,9 +548,15 @@ var isOutOfViewport = function (elem) {
 
   function focusTrap(e) {
     // Set focusable elements inside main navigation.
-    focusableElements = [...container.querySelectorAll(
-      'a, button, input, textarea, select, details, [tabindex]:not([tabindex="-1"])',
-    )].filter((el) => !el.hasAttribute('disabled')).filter((el) => !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length));
+    focusableElements = [
+      ...container.querySelectorAll(
+        'a, button, input, textarea, select, details, [tabindex]:not([tabindex="-1"])',
+      ),
+    ]
+      .filter((el) => !el.hasAttribute('disabled'))
+      .filter(
+        (el) => !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length),
+      );
 
     firstFocusableElement = focusableElements[0];
     lastFocusableElement = focusableElements[focusableElements.length - 1];
@@ -547,9 +578,15 @@ var isOutOfViewport = function (elem) {
   }
 
   $(window).on('resize', () => {
-    if (window.innerWidth > responsivenav && body.className.indexOf('js-nav-active') !== -1) {
+    if (
+      window.innerWidth > responsivenav
+      && body.className.indexOf('js-nav-active') !== -1
+    ) {
       closeMenu(); // Close menu.
-    } else if (window.innerWidth < responsivenav && typeof window.mobileNavInstance == 'undefined') {
+    } else if (
+      window.innerWidth < responsivenav
+      && typeof window.mobileNavInstance == 'undefined'
+    ) {
       mobileNav();
     }
   });

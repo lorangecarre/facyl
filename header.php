@@ -21,6 +21,7 @@ namespace Air_Light;
 
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="profile" href="http://gmpg.org/xfn/11">
 
@@ -28,7 +29,7 @@ namespace Air_Light;
 </head>
 
 <body <?php body_class( 'no-js' ); ?>>
-  <a class="skip-link screen-reader-text js-trigger" href="#content"><?php echo esc_html( get_default_localization( 'Skip to content' ) ); ?></a>
+  <a class="skip-link screen-reader-text js-trigger" href="#content"><?php echo esc_html( 'Passer au contenu principal' ); ?></a>
 
   <?php wp_body_open(); ?>
   <div id="page" class="site">
