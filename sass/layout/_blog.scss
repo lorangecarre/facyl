@@ -14,7 +14,7 @@
     box-shadow: none;
     color: var(--color-category-text);
     display: inline-block;
-    font-size: var(--font-size-16);
+    font-size: var(--font-size-text);
     margin-bottom: .5rem;
     margin-right: .5em;
     padding: .2em .6em;
@@ -30,7 +30,7 @@
 // Blog post tag styles
 .tags {
   list-style: none;
-  margin-bottom: var(--margin-between-text-elements);
+  margin-bottom: var(--margin-medium);
   margin-top: 0;
   overflow: hidden;
 
@@ -52,7 +52,7 @@
     box-shadow: none;
     color: var(--color-tag-text);
     display: inline-block;
-    font-size: var(--font-size-14);
+    font-size: var(--font-size-text);
     margin-right: .4em;
     padding: .2em .6em;
     transition: all $transition-duration;

@@ -1,27 +1,19 @@
 // CSS Variables for responsive fonts
 :root {
   // Heading font sizes
-  --font-size-hero: 52px;
-  --font-size-h1: 40px;
-  --font-size-h2: 30px;
-  --font-size-h3: 24px;
-  --font-size-h4: 20px;
-  --font-size-h5: 16px;
-  --font-size-h6: 14px;
+  --font-size-h1: 2.875rem;
+  --font-size-h2: 2.25rem;
 
   // Paragraph font sizes
-  --font-size-14: 14px;
-  --font-size-15: 15px;
-  --font-size-16: 16px;
-  --font-size-17: 17px;
-  --font-size-18: 18px;
-  --font-size-20: 20px;
-  --font-size-22: 22px;
+  --font-size-text: 1.25rem;
+
+  // Link font size
+  --font-link: 1.25rem;
 
   // Element font sizes
-  --font-size-paragraph: var(--font-size-18);
-  --font-size-nav-toggle-label: 15px;
-  --font-size-captions: 15px;
+  --font-size-paragraph: var(--font-size-text);
+  --font-size-nav-toggle-label: var(--font-size-text);
+  --font-size-captions: var(--font-size-text);
 
   // Line-heights
   --line-height-headings: 1.5;
@@ -38,14 +30,11 @@
 
   // Heading font sizes in mobile
   @media (max-width: $container-mobile) {
-    --font-size-hero: 38px;
-    --font-size-h1: 32px;
-    --font-size-h2: 24px;
-    --font-size-h3: 21px;
-    --font-size-h4: 18px;
-    --font-size-h5: 14px;
-    --font-size-h6: 12px;
-    --font-size-paragraph: 16px;
+    --font-size-h1: 1.875rem;
+    --font-size-h2: 1.563rem;
+    --font-size-paragraph: 1.25rem;
+    --font-size-text: 1.25rem;
+    --font-link: 1.25rem;
   }
 
   // Element font sizes in tiny phones like iPhone 5S
