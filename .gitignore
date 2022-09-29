@@ -13,6 +13,7 @@ html
 w3cErrors/
 .vscode
 gulp/config.js
+css/
 
 // Linter git
 .husky
