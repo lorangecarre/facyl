@@ -7,8 +7,8 @@ hr,
   background-size: 2px 2px;
   border: 0;
   height: 0;
-  margin-bottom: calc(var(--margin-between-paragraphs) * 2);
-  margin-top: calc(var(--margin-between-paragraphs) * 2);
+  margin-bottom: calc(var(--margin-small) * 2);
+  margin-top: calc(var(--margin-small) * 2);
   padding-bottom: 1rem;
   padding-top: 1rem;
 }
@@ -18,8 +18,8 @@ hr,
 }
 
 .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
-  margin-bottom: calc(var(--margin-between-paragraphs) * 2);
-  margin-top: calc(var(--margin-between-paragraphs) * 2);
+  margin-bottom: calc(var(--margin-small) * 2);
+  margin-top: calc(var(--margin-small) * 2);
   opacity: .4;
   width: 100px;
 }

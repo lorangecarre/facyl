@@ -1,5 +1,5 @@
 @mixin button-size-small() {
-  font-size: var(--font-size-16);
+  font-size: var(--font-size-text);
   // stylelint-disable-next-line number-max-precision
   line-height: 20.9091px;
   padding-bottom: calc(10px - calc(var(--border-width-input-field) * 2));

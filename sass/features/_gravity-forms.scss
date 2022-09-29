@@ -6,7 +6,7 @@
 div.validation_error {
   background-color: var(--color-error);
   color: var(--color-white);
-  font-size: var(--font-size-17);
+  font-size: var(--font-size-text);
   font-weight: var(--font-weight-bold);
   margin-bottom: var(--form-row-gap);
   padding: 2rem;
@@ -22,7 +22,7 @@ body *[aria-invalid="true"] {
 
 .validation_message {
   color: var(--color-error);
-  font-size: var(--font-size-16);
+  font-size: var(--font-size-text);
   font-weight: var(--font-weight-regular);
 }
 

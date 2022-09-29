@@ -10,9 +10,9 @@
   }
 
   .alignleft > img {
-    margin-bottom: var(--margin-between-paragraphs);
+    margin-bottom: var(--margin-small);
     margin-right: var(--padding-container-horizontal);
-    margin-top: var(--margin-between-paragraphs);
+    margin-top: var(--margin-small);
 
     + figcaption {
       margin-top: 0;
@@ -20,9 +20,9 @@
   }
 
   .alignright > img {
-    margin-bottom: var(--margin-between-paragraphs);
+    margin-bottom: var(--margin-small);
     margin-left: var(--padding-container-horizontal);
-    margin-top: var(--margin-between-paragraphs);
+    margin-top: var(--margin-small);
 
     + figcaption {
       margin-top: 0;

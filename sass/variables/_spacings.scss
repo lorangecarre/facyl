@@ -4,16 +4,18 @@
   --grid-gap: 4.8rem;
 
   // Paddings
-  --padding-container-horizontal: 2rem;
-  --padding-container-horizontal-large: 6.4rem;
-  --padding-container-vertical: 6.4rem;
-  --padding-site-header-vertical: 2rem;
-  --padding-block: 8rem;
+  --padding-container-horizontal: 1.563rem;
+  --padding-container-horizontal-large: 6.25rem;
+  --padding-container-vertical: 6.25rem;
+  --padding-site-header-vertical: 1.563rem;
+  --padding-block: 9.375rem;
 
   // Margins
-  --margin-between-text-elements: 4rem;
-  --margin-wp-block-image: 4rem;
-  --margin-between-paragraphs: 2.7rem;
+  --margin-extra-large: 9.375rem;
+  --margin-large: 6.25rem;
+  --margin-medium: 3.125rem;
+  --margin-small: 1.563rem;
+
 
   // Mid-sized screens
   @media (max-width: $width-grid-base + 150px) {
