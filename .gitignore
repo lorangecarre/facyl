@@ -1,4 +1,4 @@
-content/
+wp-wp-content/
 move_out.sh
 move_in.sh
 theme_tests.sh
@@ -12,6 +12,13 @@ package-lock.json
 html
 w3cErrors/
 .vscode
+gulp/config.js
+
+// Linter git
+.husky
+
+// Key for mk certs
 localhost-key.pem
 localhost.pem
-gulp/config.js
+localhost+2-key.pem
+localhost+2.pem

@@ -104,7 +104,7 @@ eval("/*!\n * MoveTo - A lightweight scroll animation javascript library without
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ reframe)\n/* harmony export */ });\n/**\n  reframe.js - Reframe.js: responsive iframes for embedded content\n  @version v4.0.0\n  @link https://github.com/yowainwright/reframe.ts#readme\n  @author Jeff Wainwright <yowainwright@gmail.com> (http://jeffry.in)\n  @license MIT\n**/\n/**\n * REFRAME.TS 🖼\n * ---\n * @param target\n * @param cName\n * @summary defines the height/width ratio of the targeted <element>\n */\nfunction reframe(target, cName) {\n    var _a, _b;\n    var frames = typeof target === 'string' ? document.querySelectorAll(target) : target;\n    var c = cName || 'js-reframe';\n    if (!('length' in frames))\n        frames = [frames];\n    for (var i = 0; i < frames.length; i += 1) {\n        var frame = frames[i];\n        var hasClass = frame.className.split(' ').indexOf(c) !== -1;\n        if (hasClass || frame.style.width.indexOf('%') > -1) {\n            return;\n        }\n        // get height width attributes\n        var height = frame.getAttribute('height') || frame.offsetHeight;\n        var width = frame.getAttribute('width') || frame.offsetWidth;\n        var heightNumber = typeof height === 'string' ? parseInt(height) : height;\n        var widthNumber = typeof width === 'string' ? parseInt(width) : width;\n        // general targeted <element> sizes\n        var padding = (heightNumber / widthNumber) * 100;\n        // created element <wrapper> of general reframed item\n        // => set necessary styles of created element <wrapper>\n        var div = document.createElement('div');\n        div.className = c;\n        var divStyles = div.style;\n        divStyles.position = 'relative';\n        divStyles.width = '100%';\n        divStyles.paddingTop = \"\".concat(padding, \"%\");\n        // set necessary styles of targeted <element>\n        var frameStyle = frame.style;\n        frameStyle.position = 'absolute';\n        frameStyle.width = '100%';\n        frameStyle.height = '100%';\n        frameStyle.left = '0';\n        frameStyle.top = '0';\n        // reframe targeted <element>\n        (_a = frame.parentNode) === null || _a === void 0 ? void 0 : _a.insertBefore(div, frame);\n        (_b = frame.parentNode) === null || _b === void 0 ? void 0 : _b.removeChild(frame);\n        div.appendChild(frame);\n    }\n}\n\n\n\n\n//# sourceURL=webpack://facyl/./node_modules/reframe.js/dist/reframe.es.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ reframe)\n/* harmony export */ });\n/**\n  reframe.js - Reframe.js: responsive iframes for embedded content\n  @version v4.0.1\n  @link https://github.com/yowainwright/reframe.ts#readme\n  @author Jeff Wainwright <yowainwright@gmail.com> (http://jeffry.in)\n  @license MIT\n**/\n/**\n * REFRAME.TS 🖼\n * ---\n * @param target\n * @param cName\n * @summary defines the height/width ratio of the targeted <element>\n */\nfunction reframe(target, cName) {\n    var _a, _b;\n    var frames = typeof target === 'string' ? document.querySelectorAll(target) : target;\n    var c = cName || 'js-reframe';\n    if (!('length' in frames))\n        frames = [frames];\n    for (var i = 0; i < frames.length; i += 1) {\n        var frame = frames[i];\n        var hasClass = frame.className.split(' ').indexOf(c) !== -1;\n        if (hasClass || frame.style.width.indexOf('%') > -1) {\n            return;\n        }\n        // get height width attributes\n        var height = frame.getAttribute('height') || frame.offsetHeight;\n        var width = frame.getAttribute('width') || frame.offsetWidth;\n        var heightNumber = typeof height === 'string' ? parseInt(height) : height;\n        var widthNumber = typeof width === 'string' ? parseInt(width) : width;\n        // general targeted <element> sizes\n        var padding = (heightNumber / widthNumber) * 100;\n        // created element <wrapper> of general reframed item\n        // => set necessary styles of created element <wrapper>\n        var div = document.createElement('div');\n        div.className = c;\n        var divStyles = div.style;\n        divStyles.position = 'relative';\n        divStyles.width = '100%';\n        divStyles.paddingTop = \"\".concat(padding, \"%\");\n        // set necessary styles of targeted <element>\n        var frameStyle = frame.style;\n        frameStyle.position = 'absolute';\n        frameStyle.width = '100%';\n        frameStyle.height = '100%';\n        frameStyle.left = '0';\n        frameStyle.top = '0';\n        // reframe targeted <element>\n        (_a = frame.parentNode) === null || _a === void 0 ? void 0 : _a.insertBefore(div, frame);\n        (_b = frame.parentNode) === null || _b === void 0 ? void 0 : _b.removeChild(frame);\n        div.appendChild(frame);\n    }\n}\n\n\n\n\n//# sourceURL=webpack://facyl/./node_modules/reframe.js/dist/reframe.es.js?");
 
 /***/ }),
 
@@ -188,7 +188,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
-/******/
+/******/ 	
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/ 		// Check if module is in cache
@@ -202,14 +202,14 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
-/******/
+/******/ 	
 /******/ 		// Execute the module function
 /******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
+/******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -222,7 +222,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			return getter;
 /******/ 		};
 /******/ 	})();
-/******/
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -234,12 +234,12 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/
+/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -250,13 +250,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/
+/******/ 	
 /************************************************************************/
-/******/
+/******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = __webpack_require__("./js/src/front-end.js");
-/******/
+/******/ 	
 /******/ })()
 ;

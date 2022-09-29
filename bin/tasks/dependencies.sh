@@ -8,7 +8,7 @@ cd ${PROJECT_PATH}
 git clone https://github.com/digitoimistodude/devpackages
 
 echo "${YELLOW}Setting up package.json from devpackages github${TXTRESET}"
-sed -e "s/\PROJECTNAME/$PROJECT_NAME/" -e "s/\PROJECTNAME/$PROJECT_NAME/" -e "s/\PROJECTNAME/$PROJECT_NAME/" $PROJECT_PATH/devpackages/package.json > "$PROJECT_PATH/package.json"
+sed -e "s/\facyl/$PROJECT_NAME/" -e "s/\facyl/$PROJECT_NAME/" -e "s/\facyl/$PROJECT_NAME/" $PROJECT_PATH/devpackages/package.json > "$PROJECT_PATH/package.json"
 echo "${YELLOW}Installing project npm packages (mostly tools) in project root (may take a while)${TXTRESET}"
 cd ${PROJECT_PATH}
 rm package-lock.json
