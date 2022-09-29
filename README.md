@@ -48,7 +48,7 @@ sudo chmod +x /usr/local/bin/phpcs
 
 **Please note: Replace yourusername name with your actual user name!**
 ```bash
-phpcs --config-set installed_paths "/home/yourusername/Projects/wpcs","/Users/rolle/Projects/PHPCompatibility"
+phpcs --config-set installed_paths "/home/yourusername/Projects/wpcs","/home/yourusername/Projects/PHPCompatibility"
 ```
 
 Test your standards with phpcs -i, it should display something like this:
