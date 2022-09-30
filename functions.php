@@ -82,7 +82,7 @@ add_action( 'after_setup_theme', function() {
      * Menu locations
      */
     'menu_locations' => [
-      'primary' => __( 'Primary Menu', 'facyl' ),
+      'primary' => __( 'Menu principal', 'facyl' ),
     ],
 
     /**
