@@ -2,7 +2,7 @@
  * @Author: mikey.zhaopeng
  * @Date: 2022-09-29 17:06:13
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2022-09-29 17:28:00
+ * @Last Modified time: 2022-09-30 16:45:16
  */
 // Site navigation desktop layout
 // The main layout for the website navigation, for a desktop devices only.
@@ -78,6 +78,11 @@ $use-dropdown-toggle-animation: true;
   .nav-primary {
     padding-bottom: 0;
     padding-top: 0;
+  }
+  .main-navigation-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
 
   // Navigation unordered list wrapper element
