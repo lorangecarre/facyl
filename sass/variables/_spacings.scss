@@ -7,7 +7,7 @@
   --padding-container-horizontal: 1.563rem;
   --padding-container-horizontal-large: 6.25rem;
   --padding-container-vertical: 6.25rem;
-  --padding-site-header-vertical: 1.563rem;
+  --padding-site-header-vertical: 2.5rem;
   --padding-block: 9.375rem;
 
   // Margins
@@ -15,7 +15,6 @@
   --margin-large: 6.25rem;
   --margin-medium: 3.125rem;
   --margin-small: 1.563rem;
-
 
   // Mid-sized screens
   @media (max-width: $width-grid-base + 150px) {
