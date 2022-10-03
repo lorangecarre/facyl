@@ -7,14 +7,13 @@
 // and start over.
 .site-footer {
   clear: both;
-  color: var(--color-white);
+  color: var(--color-black);
   overflow: hidden;
-  padding: 6rem 2rem;
   text-align: center;
 
   p,
   span {
-    color: var(--color-white);
+    color: var(--color-black);
   }
 
   .wordpress-logo {
@@ -50,18 +49,10 @@
   }
 
   a {
-    color: var(--color-white);
-    transition: opacity $transition-duration;
-
-    &:hover,
-    &:focus {
-      color: var(--color-white);
-      opacity: .5;
-
-      &::after {
-        opacity: .2;
-      }
-    }
+    color: var(--color-black);
+    font-family: var(--font-dosis-bold);
+    font-size: var(--font-link);
+    height: fit-content;
   }
 
   .theme-info {
@@ -72,9 +63,76 @@
     line-height: 1.5;
     margin: 0 auto;
     text-align: center;
+    border-top: 1px solid black;
+    width: 50%;
+    padding-top: var(--margin-small);
+    padding-bottom: var(--margin-small);
 
     i {
       margin: 0 5px;
     }
+  }
+}
+
+.site-info{
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  margin-top: var(--margin-large);
+  margin-bottom: var(--margin-medium);
+  margin-left: var(--margin-small);
+
+  .company{
+    text-align: left;
+    grid-column: 1;
+    svg{
+      width: 60px;
+      height: 58.5px;
+    }
+  }
+
+  .tree-site{
+    grid-column: 3;
+    line-height: 2.5em;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .legal-info{
+    grid-column: 4;
+    line-height: 2.5em;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .contact{
+    grid-column: 5;
+    @include button(max-content,var(--color-black),var(--color-black),var(--color-white),var(--color-white),30px,1px solid var(--color-black),1px solid var(--color-black),var(--font-weight-semibold),true);
+
+  }
+
+}
+
+.social-media{
+  display: flex;
+  flex-direction: row;
+  margin-left: var(--margin-small);
+  margin-bottom: var(--margin-small);
+
+  svg{
+    width: 2em;
+    height: 2em;
   }
 }
