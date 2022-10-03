@@ -47,6 +47,10 @@ add_action( 'after_setup_theme', function() {
      */
     'default_featured_image'  => null,
     'logo'                    => '/svg/logo.svg',
+    'logo_linkedin'           => '/svg/linkedin.svg',
+    'logo_insta'              => '/svg/insta.svg',
+    'chevron_right'           => '/svg/chevron-right.svg',
+    'chevron_up'              => '/svg/chevron-up.svg',
 
     /**
      * Custom setting group settings when using Air setting groups plugin.
@@ -83,6 +87,8 @@ add_action( 'after_setup_theme', function() {
      */
     'menu_locations' => [
       'primary' => __( 'Primary Menu', 'facyl' ),
+      'footer' => __( 'Footer Menu', 'facyl' ),
+      'confidentiality' => __( 'Confidentialité Menu', 'facyl' ),
     ],
 
     /**

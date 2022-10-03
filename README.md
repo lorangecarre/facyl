@@ -87,3 +87,8 @@ Types list by convention :
 - style: changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc).
 - test: adding missing tests or correcting existing tests.
 - chore: other task.
+
+---
+
+## Astuces code css
+` @include button(max-content,var(--color-black),var(--color-black),var(--color-white),var(--color-white),30px,1px solid var(--color-black),1px solid var(--color-black),var(--font-weight-semibold),true);`
