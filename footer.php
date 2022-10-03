@@ -61,7 +61,7 @@ $menu_confidentiality_args = array(
 </footer><!-- #colophon -->
 
 </div><!-- #page -->
-
+<?php wp_footer(); ?>
 <a
   href="#page"
   id="top"
