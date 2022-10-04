@@ -40,38 +40,37 @@ $menu_confidentiality_args = array(
       <?php include get_theme_file_path( THEME_SETTINGS['logo'] ); ?>
       <p>Maintenance mensuelle (sauvegardes, corrections de bugs, mise à jours, Intégration de vos contenus au besoin, contrôle de sécurité ...)</p>
     </div>
+    <div class="social-media">
+      <a href="#">
+        <?php include get_theme_file_path( THEME_SETTINGS['logo_linkedin'] ); ?>
+      </a>
+      <a href="#">
+        <?php include get_theme_file_path( THEME_SETTINGS['logo_insta'] ); ?>
+      </a>
+    </div>
     <?php wp_nav_menu( $menu_footer_args ) ?>
     <?php wp_nav_menu( $menu_confidentiality_args ) ?>
-    <a href="#">
+    <a href="#" class="contact-link">
       <div class="contact">Nous contacter <?php include get_theme_file_path( THEME_SETTINGS['chevron_right'] ); ?></div>
     </a>
   </div>
-  <div class="social-media">
-    <a href="#">
-      <?php include get_theme_file_path( THEME_SETTINGS['logo_linkedin'] ); ?>
-    </a>
-    <a href="#">
-      <?php include get_theme_file_path( THEME_SETTINGS['logo_insta'] ); ?>
-    </a>
+  <a href="#page" id="top" class="top no-external-link-indicator" data-version="<?php echo esc_attr( AIR_LIGHT_VERSION ); ?>">
+    <span class="screen-reader-text"><?php echo esc_html( get_default_localization( 'Back to top' ) ); ?></span>
+    <span aria-hidden="true"><?php include get_theme_file_path( THEME_SETTINGS['chevron_up'] ); ?></span>
+  </a>
+  <div class="theme-info">
+    <span class="copyright">
+        <?php printf( esc_html__( 'copyright &copy; 2022,', 'facyl' ) ); ?>
+    </span>
+    <span class="name">
+        <?php printf( esc_html__( 'Thème Facyl de L\'Orange Carré.', 'facyl' ) ); ?>
+    </span>
   </div>
-  <span class="theme-info">
-      <?php printf( esc_html__( 'copyright &copy; 2022, Thème Facyl de L\'Orange Carré.', 'facyl' ) ); ?>
-  </span>
 
 </footer><!-- #colophon -->
 
 </div><!-- #page -->
 <?php wp_footer(); ?>
-<a
-  href="#page"
-  id="top"
-  class="top no-external-link-indicator"
-  data-version="<?php echo esc_attr( AIR_LIGHT_VERSION ); ?>"
->
-  <span class="screen-reader-text"><?php echo esc_html( get_default_localization( 'Back to top' ) ); ?></span>
-  <span aria-hidden="true"><?php include get_theme_file_path( THEME_SETTINGS['chevron_up'] ); ?>
-</span>
-</a>
 
 </body>
 </html>
