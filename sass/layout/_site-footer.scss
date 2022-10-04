@@ -5,57 +5,201 @@
 // Please note: These are mostly for demo purposes
 // so feel free to remove everything in this file
 // and start over.
-.site-footer {
-  clear: both;
-  color: var(--color-black);
-  overflow: hidden;
-  text-align: center;
-
-  p,
-  span {
+@media only screen and (min-width: $width-max-mobile) {
+  .site-footer {
+    clear: both;
     color: var(--color-black);
-  }
-
-  .wordpress-logo {
-    display: block;
-    margin-bottom: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  span {
-    display: block;
-    text-align: center;
-  }
-
-  svg {
-    margin-right: 5px;
-    position: relative;
-  }
-
-  .powered-by-wordpress {
-    display: inline-block;
-    font-weight: var(--font-weight-semibold);
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-
-  .github-link {
-    margin-left: 8px;
-    margin-top: 4px;
     overflow: hidden;
-    padding-bottom: 4px;
-    position: relative;
+    text-align: center;
+
+    p,
+    span {
+      color: var(--color-black);
+    }
+
+    span {
+      display: block;
+      text-align: center;
+    }
+
+    svg {
+      position: relative;
+    }
+
+    a {
+      color: var(--color-black);
+      font-family: var(--font-dosis-bold);
+      font-size: var(--font-link);
+      height: fit-content;
+    }
+
+    .theme-info {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      line-height: 1.5;
+      margin: 0 auto;
+      text-align: center;
+      border-top: 1px solid black;
+      width: 50%;
+      padding-top: var(--margin-small);
+      padding-bottom: var(--margin-small);
+    }
   }
 
-  a {
-    color: var(--color-black);
-    font-family: var(--font-dosis-bold);
-    font-size: var(--font-link);
+  .site-info{
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2,max-content);
+    margin-top: var(--margin-large);
+    margin-bottom: var(--margin-medium);
+    margin-left: var(--margin-small);
+
+    .company{
+      text-align: left;
+      grid-row: 1;
+      grid-column: 1;
+      svg{
+        width: 60px;
+        height: 58.5px;
+      }
+    }
+
+    .social-media{
+      grid-row: 2;
+      grid-column: 1;
+      display: flex;
+      flex-direction: row;
+      margin-top: var(--margin-small);
+      margin-left: var(--margin-small);
+      margin-bottom: var(--margin-small);
+      svg{
+        width: 2.5em;
+        height: 2.5em;
+      }
+      a:not(:last-child){
+        margin-right: var(--margin-small);
+      }
+    }
+
+    .tree-site{
+      grid-row: 1;
+      grid-column: 3;
+      line-height: 2.5em;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    .legal-info{
+      grid-row: 1;
+      grid-column: 4;
+      line-height: 2.5em;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    .contact-link{
+      grid-row: 1;
+      grid-column: 5;
+    }
+
+    .contact{
+      @include button(max-content,var(--color-black),var(--color-black),var(--color-white),var(--color-white),30px,1px solid var(--color-black),1px solid var(--color-black),var(--font-weight-semibold),true);
+
+    }
+  }
+}
+
+@media screen and (max-width: $width-max-mobile) {
+  footer{
+    margin-left: var(--margin-medium);
+    margin-right: var(--margin-medium);
+  }
+
+  .site-info{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, max-content);
+    margin-top: var(--margin-large);
     height: fit-content;
+    text-align: center;
+
+    a {
+      color: var(--color-black);
+      font-family: var(--font-dosis-bold);
+      font-size: var(--font-link);
+      height: fit-content;
+    }
+
+    ul{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .company{
+      grid-row: 1;
+      text-align: left;
+      margin-bottom: var(--margin-small);
+
+      p{
+        margin-top: 0;
+        font-weight: var(--font-weight-medium);
+      }
+
+      svg{
+        width: 60px;
+      }
+    }
+
+    .social-media{
+      grid-row: 2;
+      display: flex;
+      flex-direction: row;
+      text-align: center;
+      svg{
+        width: 3em;
+        height: 3em;
+      }
+      a:not(:last-child){
+        margin-right: var(--margin-small);
+      }
+    }
+
+    .tree-site{
+      display: flex;
+      flex-direction: column;
+      grid-row: 3;
+      height: fit-content;
+    }
+
+    .legal-info{
+      display: flex;
+      flex-direction: column;
+      grid-row: 4;
+      height: fit-content;
+    }
+
+    .contact{
+      grid-row: 5;
+      @include button(max-content,var(--color-black),var(--color-black),var(--color-white),var(--color-white),30px,1px solid var(--color-black),1px solid var(--color-black),var(--font-weight-semibold),true);
+    }
   }
 
-  .theme-info {
+  .theme-info{
     align-items: center;
     display: flex;
     flex-wrap: wrap;
@@ -65,74 +209,5 @@
     text-align: center;
     border-top: 1px solid black;
     width: 50%;
-    padding-top: var(--margin-small);
-    padding-bottom: var(--margin-small);
-
-    i {
-      margin: 0 5px;
-    }
-  }
-}
-
-.site-info{
-  display:grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr;
-  margin-top: var(--margin-large);
-  margin-bottom: var(--margin-medium);
-  margin-left: var(--margin-small);
-
-  .company{
-    text-align: left;
-    grid-column: 1;
-    svg{
-      width: 60px;
-      height: 58.5px;
-    }
-  }
-
-  .tree-site{
-    grid-column: 3;
-    line-height: 2.5em;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-    }
-  }
-
-  .legal-info{
-    grid-column: 4;
-    line-height: 2.5em;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-    }
-  }
-
-  .contact{
-    grid-column: 5;
-    @include button(max-content,var(--color-black),var(--color-black),var(--color-white),var(--color-white),30px,1px solid var(--color-black),1px solid var(--color-black),var(--font-weight-semibold),true);
-
-  }
-
-}
-
-.social-media{
-  display: flex;
-  flex-direction: row;
-  margin-left: var(--margin-small);
-  margin-bottom: var(--margin-small);
-
-  svg{
-    width: 2em;
-    height: 2em;
   }
 }
