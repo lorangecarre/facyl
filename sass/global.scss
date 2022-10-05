@@ -60,6 +60,9 @@
 // Gutenberg blocks
 @import "gutenberg/blocks";
 
+//template part
+@import 'gutenberg/blocks/accueil-header';
+
 // Gutenberg formatting
 @import "gutenberg/formatting";
 
