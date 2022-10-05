@@ -9,10 +9,11 @@
   --color-orange: #f29100;
   --color-green: #004743;
   --color-white: #fff;
+  --color-light-green: #296a67;
 
   // Main element colors
-  --color-heading: var(--color-main);
   --color-main: var(--color-black);
+  --color-heading: var(--color-main);
   --color-paragraph: var(--color-black);
 
   // Modern link that has background effect on hover
@@ -62,6 +63,10 @@
   --color-top-arrow-light: var(--color-white);
   --color-error-block-border: var(--color-white); // Color picked from ACF
   --color-error-block-background: var(--color-white); // Color picked from ACF
+  --color-scorpion: #5f5f5f;
+  --color-valhalla: #2a2d3e;
+  --color-blue-chalk: #0049d1;
+  --color-east-bay: #444774;
 
   // Element states
   --color-error: #cc2e2e;

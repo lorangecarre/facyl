@@ -2,8 +2,8 @@
 /**
  * @Author: Timi Wahalahti
  * @Date:   2019-12-03 11:03:31
- * @Last Modified by:   Roni Laukkarinen
- * @Last Modified time: 2022-06-09 12:04:05
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2022-09-30 16:51:05
  *
  * @package facyl
  */
@@ -26,7 +26,7 @@ add_filter( 'air_helper_pll_register_strings', function() {
   return $strings;
 } );
 
-function get_default_localization_strings( $language = 'en' ) {
+function get_default_localization_strings( $language = 'fi' ) {
   $strings = [
     'en'  => [
       'Add a menu'                                   => __( 'Add a menu', 'facyl' ),

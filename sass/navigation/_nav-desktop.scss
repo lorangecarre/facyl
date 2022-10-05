@@ -1,3 +1,9 @@
+/*
+ * @Author: mikey.zhaopeng
+ * @Date: 2022-09-29 17:06:13
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2022-09-30 16:45:16
+ */
 // Site navigation desktop layout
 // The main layout for the website navigation, for a desktop devices only.
 
@@ -33,6 +39,7 @@ $use-dropdown-toggle-animation: true;
   --color-hover-sub-menu: var(--color-valhalla);
   --color-main-level: var(--color-black);
   --color-current: var(--color-link-text);
+  --color-current-fixed: var(--color-white);
 
   // Font styles
   --font-size-main-level: var(--font-size-text);
@@ -71,6 +78,11 @@ $use-dropdown-toggle-animation: true;
   .nav-primary {
     padding-bottom: 0;
     padding-top: 0;
+  }
+  .main-navigation-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
 
   // Navigation unordered list wrapper element
