@@ -15,6 +15,7 @@ import initA11ySkipLink from './modules/a11y-skip-link';
 import 'what-input';
 import './modules/navigation';
 import './modules/sticky-nav';
+import './modules/jauge';
 
 // Define Javascript is active by changing the body class
 document.body.classList.remove('no-js');

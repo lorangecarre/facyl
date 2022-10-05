@@ -119,6 +119,13 @@ add_action( 'after_setup_theme', function() {
      */
     // Register custom ACF Blocks
     'acf_blocks' => [
+          [
+            'name'            => 'eco-conception',
+            'title'           => 'Bloc Eco Conception',
+            'render_template' => '/template-parts/blocks/eco-conception.php',
+            'category'        => 'formatting',
+            'enqueue_script'  => '/sass/template-parts/_eco-conception.scss',
+          ],
       // [
       //   'name'           => 'block-file-slug',
       //   'title'          => 'Block Visible Name',
