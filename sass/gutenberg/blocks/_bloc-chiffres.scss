@@ -1,0 +1,56 @@
+.chiffres {
+  &__title {
+    text-align: center;
+    font-size: 1,5625rem;
+    font-family: var(--font-heading), sans-serif;
+    margin-bottom: 1.5625rem;
+
+    @media screen and (min-width: $container-mobile) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+
+    @media screen and (min-width: $container-mobile) {
+      flex-direction: row;
+      justify-content: center;
+      gap: 4rem;
+    }
+
+    @media screen and (min-width: $container-ipad) {
+      gap: 8rem;
+    }
+  }
+
+  &__listItem {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5625rem;
+  }
+
+  &__listItemTitle {
+    font-size: 1.875rem;
+    color: var(--color-orange);
+    margin: 0;
+
+    @media screen and (min-width: $container-mobile) {
+      font-size: 4rem;
+    }
+  }
+
+  &__listItemText {
+    text-align: center;
+    font-size: 1.25rem;
+    font-family: var(--font-paragraph), sans-serif;
+    margin: 0;
+  }
+}
