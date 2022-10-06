@@ -2,6 +2,7 @@
 
 - [Dépôt de code](https://github.com/lorangecarre/facyl)
 - [Wiki](https://github.com/lorangecarre/facyl/wiki)
+- [Maquette graphique](https://www.figma.com/file/VkshSL9RZO6M1HZarlmsnk/Maquette-FACYL?node-id=0%3A1)
 
 ## Installation
 
