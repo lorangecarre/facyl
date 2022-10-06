@@ -10,23 +10,23 @@
   .eco-conception-text {
     grid-column-end: 5;
     grid-column-start: 3;
-    h2{
+    h2 {
       margin-bottom: var(--margin-small);
     }
-    p{
+    p {
       margin-top: 0;
       margin-bottom: var(--margin-medium);
     }
   }
 
   .eco-conception-container {
+    @include box-with-shadow(25px,50px,var(--color-green));
     align-items: center;
     height: 100%;
     width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
-    @include box-with-shadow(25px,50px,var(--color-green));
 
     .title-container {
       color: var(--color-white);
@@ -55,7 +55,6 @@
     .percentage {
       color: var(--color-white);
     }
-
   }
 
   .gauge-container {
@@ -77,7 +76,7 @@
         fill: transparent;
       }
 
-      .progress{
+      .progress {
         fill: transparent;
         stroke-linecap: round;
       }
@@ -101,43 +100,64 @@
     }
   }
 
+  .title-green-it {
+    @include box-with-shadow(20px,50px);
+    height: 50%;
+    h4 {
+      font-size: var(--font-size-h4);
+      text-align: center;
+      font-weight: var(--font-weight-medium);
+      padding-top: var(--margin-small);
+    }
+    .green-it-note {
+      display: flex;
+      justify-content: center;
+    }
+    svg {
+      width: 65px;
+    }
+  }
+
   .green-it-container {
-    .link{
+    .link {
       height: 50%;
-      .link-google-speed-test{
-        @include button(fit-content,var(--color-white),var(--color-white),var(--color-black),var(--color-black),30px,1px solid var(--color-black),1px solid var(--color-black),var(--font-weight-semibold),true);
+      .link-google-speed-test {
+        @include button(
+          fit-content,
+          var(--color-white),
+          var(--color-white),
+          var(--color-black),
+          var(--color-black),
+          30px,
+          1px solid var(--color-black),
+          1px solid var(--color-black),
+          var(--font-weight-semibold),
+          true);
         padding: 5px;
         display: flex;
-        svg{
+        svg {
           margin-left: 0;
         }
       }
-      .link-green-it{
-        @include button(fit-content,var(--color-white),var(--color-white),var(--color-black),var(--color-black),30px,1px solid var(--color-black),1px solid var(--color-black),var(--font-weight-semibold),true);
+      .link-green-it {
+        @include button(
+          fit-content,
+          var(--color-white),
+          var(--color-white),
+          var(--color-black),
+          var(--color-black),
+          30px,
+          1px solid var(--color-black),
+          1px solid var(--color-black),
+          var(--font-weight-semibold),
+          true);
         padding: 5px;
         display: flex;
         top: 70%;
         left: 90%;
-        svg{
+        svg {
           margin-left: 0;
         }
-      }
-    }
-    .title-green-it{
-      @include box-with-shadow(20px,50px);
-      height: 50%;
-      h4{
-        font-size: var(--font-size-h4);
-        text-align: center;
-        font-weight: var(--font-weight-medium);
-        padding-top: var(--margin-small);
-      }
-      .green-it-note{
-        display: flex;
-        justify-content: center;
-      }
-      svg{
-        width: 65px;
       }
     }
   }
@@ -155,24 +175,24 @@
   .eco-conception-text {
     grid-row: 1;
     margin-top: var(--margin-small);
-    h2{
+    h2 {
       margin-bottom: var(--margin-small);
       text-align: center;
     }
-    p{
+    p {
       margin-top: 0;
       margin-bottom: var(--margin-medium);
     }
   }
 
   .eco-conception-container {
+    @include box-with-shadow(25px,50px,var(--color-green));
     align-items: center;
     height: fit-content;
     width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
-    @include box-with-shadow(25px,50px,var(--color-green));
     margin-bottom: var(--margin-small);
 
     .title-container {
@@ -202,7 +222,6 @@
     .percentage {
       color: var(--color-white);
     }
-
   }
 
   .gauge-container {
@@ -224,7 +243,7 @@
         fill: transparent;
       }
 
-      .progress{
+      .progress {
         fill: transparent;
         stroke-linecap: round;
       }
@@ -251,24 +270,24 @@
   .green-it-container {
     height: fit-content;
     margin-bottom: var(--margin-medium);
-    .link{
+    .link {
       display: none;
     }
-    .title-green-it{
+    .title-green-it {
       @include box-with-shadow(20px,50px);
       padding-bottom: var(--margin-large);
-      h4{
+      h4 {
         font-size: var(--font-size-h2);
         text-align: center;
         font-weight: var(--font-weight-medium);
         padding-top: var(--margin-medium);
         padding-bottom: var(--margin-small);
       }
-      .green-it-note{
+      .green-it-note {
         display: flex;
         justify-content: center;
       }
-      svg{
+      svg {
         width: 80px;
       }
     }

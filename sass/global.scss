@@ -60,8 +60,9 @@
 // Gutenberg blocks
 @import "gutenberg/blocks";
 
-//template part
+// Template parts
 @import 'gutenberg/blocks/accueil-header';
+@import 'gutenberg/blocks/bloc-chiffres';
 
 // Gutenberg formatting
 @import "gutenberg/formatting";
@@ -71,3 +72,5 @@
 
 // Template Parts
 @import "gutenberg/blocks/etapes";
+
+@import "template-parts/texte-image";

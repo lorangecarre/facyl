@@ -36,15 +36,15 @@
 
 @media screen and (max-width: $width-max-mobile) {
   .top {
-    display: block;
     border: 1px solid;
-    margin: var(--margin-small) auto;
     border-radius: 15px;
     bottom: var(--padding-container-horizontal);
     color: var(--color-black);
     cursor: pointer;
+    display: block;
     font-size: var(--font-size-text);
     height: 3rem;
+    margin: var(--margin-small) auto;
     line-height: 30px;
     right: var(--padding-container-horizontal);
     text-align: center;

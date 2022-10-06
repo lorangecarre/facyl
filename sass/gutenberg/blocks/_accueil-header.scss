@@ -5,13 +5,14 @@
     text-align: center;
     flex-direction: column;
     justify-content: center;
+
     @media (min-width: $container-mobile) {
       height: 100vh;
       max-height: 70rem;
     }
   }
-  .background-header{
-    background: linear-gradient(0deg, var(--color-background-default) 0%, rgb(255 255 255 / 75%) 100%);
+  .background-header {
+    background-color: linear-gradient(0deg, var(--color-background-default) 0%, rgb(255 255 255 / .75) 100%);
   }
   .content {
     width: 100%;
@@ -26,13 +27,13 @@
     max-width: 900px;
     text-align: center;
   }
-  .scroll-icon{
+  .scroll-icon {
     transition: all 500ms ease-in-out;
   }
-  .scroll-icon:hover{
+  .scroll-icon:hover {
     transform: translateY(-5px);
   }
-  .boutons-container{
+  .boutons-container {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -57,27 +58,67 @@
   }
 }
 
-.button-w{
-  margin: 1.563rem ;
-  @include button(max-content,var(--color-black),var(--color-black),transparent ,var(--color-white),30px,1px solid var(--color-black),1px solid var(--color-black),var(--font-weight-semibold),true);
+.button-w {
+  @include button(
+    max-content,
+    var(--color-black),
+    var(--color-black),
+    transparent,
+    var(--color-white),
+    30px,
+    1px solid var(--color-black),
+    1px solid var(--color-black),
+    var(--font-weight-semibold),
+    true);
+  margin: 1.563rem;
   transition: all 500ms ease-in-out;
 }
 
-.button-w:hover{
-  @include button(max-content,var(--color-black),var(--color-black),transparent ,var(--color-white),30px,1px solid var(--color-white),1px solid var(--color-white),var(--font-weight-semibold),true);
+.button-w:hover {
+  @include button(
+    max-content,
+    var(--color-black),
+    var(--color-black),
+    transparent,
+    var(--color-white),
+    30px,
+    1px solid var(--color-white),
+    1px solid var(--color-white),
+    var(--font-weight-semibold),
+    true);
   transition: all 500ms ease-in-out;
   margin: 1.563rem;
 
 }
 
-.button-b{
+.button-b {
+  @include button(
+    max-content,
+    var(--color-white),
+    var(--color-white),
+    var(--color-black),
+    var(--color-black),
+    30px,
+    1px solid var(--color-black),
+    1px solid var(--color-black),
+    var(--font-weight-semibold),
+    true);
   margin: 0 1.563rem;
-  @include button(max-content,var(--color-white),var(--color-white),var(--color-black),var(--color-black),30px,1px solid var(--color-black),1px solid var(--color-black),var(--font-weight-semibold),true);
   transition: all 500ms ease-in-out;
 }
 
-.button-b:hover{
-  @include button(max-content,var(--color-black),var(--color-black),var(--color-white),var(--color-white),30px,1px solid var(--color-white),1px solid var(--color-white),var(--font-weight-semibold),true);
+.button-b:hover {
+  @include button(
+    max-content,
+    var(--color-black),
+    var(--color-black),
+    var(--color-white),
+    var(--color-white),
+    30px,
+    1px solid var(--color-white),
+    1px solid var(--color-white),
+    var(--font-weight-semibold),
+    true);
   transition: all 500ms ease-in-out;
   margin: 1.563rem;
 
@@ -88,9 +129,68 @@
     margin: 1.563rem ;
   }
 
+  .button-w {
+    @include button(
+      max-content,
+      var(--color-black),
+      var(--color-black),
+      transparent,
+      var(--color-white),
+      30px,
+      1px solid var(--color-black),
+      1px solid var(--color-black),
+      var(--font-weight-semibold),
+      true);
+    margin: 1.563rem;
+    transition: all 500ms ease-in-out;
+  }
 
-  .button-b{
+  .button-w:hover {
+    @include button(
+      max-content,
+      var(--color-black),
+      var(--color-black),
+      transparent,
+      var(--color-white),
+      30px,
+      1px solid var(--color-white),
+      1px solid var(--color-white),
+      var(--font-weight-semibold),
+      true);
+    margin: 1.563rem;
+    transition: all 500ms ease-in-out;
+  }
+
+  .button-b {
+    @include button(
+      max-content,
+      var(--color-white),
+      var(--color-white),
+      var(--color-black),
+      var(--color-black),
+      30px,
+      1px solid var(--color-black),
+      1px solid var(--color-black),
+      var(--font-weight-semibold),
+      true);
     margin: 1.563rem;
   }
 
+    transition: all 500ms ease-in-out;
+  }
+
+  .button-b:hover {
+    @include button(
+      max-content,
+      var(--color-black),
+      var(--color-black),
+      var(--color-white),
+      var(--color-white),
+      30px,
+      1px solid var(--color-white),
+      1px solid var(--color-white),
+      var(--font-weight-semibold),
+      true);
+    transition: all 500ms ease-in-out;
+  }
 }
