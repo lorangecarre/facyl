@@ -35,13 +35,26 @@
   .boutons-container{
     display: flex;
     justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1.563rem;
+
+    @media (min-width: $container-mobile) {
+      flex-direction: row;
+    }
+
     a{
       display: flex;
       align-items: center;
+      transition: all 500ms ease-in-out;
+    }
+
+    a:hover svg{
+      transform: translateX(5px);
+      transition: all 500ms ease-in-out;
     }
   }
-
-
 }
 
 .button-w{
@@ -53,6 +66,8 @@
 .button-w:hover{
   @include button(max-content,var(--color-black),var(--color-black),transparent ,var(--color-white),30px,1px solid var(--color-white),1px solid var(--color-white),var(--font-weight-semibold),true);
   transition: all 500ms ease-in-out;
+  margin: 1.563rem;
+
 }
 
 .button-b{
@@ -64,29 +79,18 @@
 .button-b:hover{
   @include button(max-content,var(--color-black),var(--color-black),var(--color-white),var(--color-white),30px,1px solid var(--color-white),1px solid var(--color-white),var(--font-weight-semibold),true);
   transition: all 500ms ease-in-out;
+  margin: 1.563rem;
+
 }
 
 @media (min-width: $container-mobile) {
   .button-w{
     margin: 1.563rem ;
-    @include button(max-content,var(--color-black),var(--color-black),transparent ,var(--color-white),30px,1px solid var(--color-black),1px solid var(--color-black),var(--font-weight-semibold),true);
-    transition: all 500ms ease-in-out;
   }
 
-  .button-w:hover{
-    margin: 1.563rem;
-    @include button(max-content,var(--color-black),var(--color-black),transparent ,var(--color-white),30px,1px solid var(--color-white),1px solid var(--color-white),var(--font-weight-semibold),true);
-    transition: all 500ms ease-in-out;
-  }
 
   .button-b{
     margin: 1.563rem;
-    @include button(max-content,var(--color-white),var(--color-white),var(--color-black),var(--color-black),30px,1px solid var(--color-black),1px solid var(--color-black),var(--font-weight-semibold),true);
-    transition: all 500ms ease-in-out;
   }
 
-  .button-b:hover{
-    @include button(max-content,var(--color-black),var(--color-black),var(--color-white),var(--color-white),30px,1px solid var(--color-white),1px solid var(--color-white),var(--font-weight-semibold),true);
-    transition: all 500ms ease-in-out;
-  }
 }

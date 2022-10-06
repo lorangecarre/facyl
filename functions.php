@@ -140,6 +140,13 @@ add_action( 'after_setup_theme', function() {
          'category'        => 'formatting',
          'enqueue_script'  => '/sass/template-parts/_eco-conception.scss',
          ],
+         [
+          //bloc les etape
+          'name'            => 'etapes',
+          'title'           => 'Les étapes de conception',
+          'render_template' => '/template-parts/blocks/etape.php',
+          'enqueue_script'  => '/sass/blocks/_etape.scss',
+          ],
       // [
       //   'name'           => 'block-file-slug',
       //   'title'          => 'Block Visible Name',
