@@ -1,5 +1,7 @@
 # Thème Facyl
 
+- [Dépôt de code](https://github.com/lorangecarre/facyl)
+- [Wiki](https://github.com/lorangecarre/facyl/wiki)
 
 ## Installation
 
