@@ -126,6 +126,13 @@ add_action( 'after_setup_theme', function() {
             'category'        => 'formatting',
             'enqueue_script'  => '/sass/template-parts/_eco-conception.scss',
           ],
+          [
+            'name'            => 'image-texte',
+            'title'           => 'Bloc texte et image ',
+            'render_template' => '/template-parts/blocks/image-texte.php',
+            'category'        => 'formatting',
+            'enqueue_script'  => '/sass/template-parts/_texte-image.scss',
+          ],
       // [
       //   'name'           => 'block-file-slug',
       //   'title'          => 'Block Visible Name',
