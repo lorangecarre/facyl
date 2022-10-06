@@ -6,8 +6,8 @@
  * own files under /inc and just require here.
  *
  * @Date: 2019-10-15 12:30:02
- * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2022-10-06 12:03:28
+ * @Last Modified by: Alexandre Sauvaget
+ * @Last Modified time: 2022-10-06 13:53:37
  *
  * @package facyl
  */
@@ -164,6 +164,19 @@ add_action( 'after_setup_theme', function() {
          'icon'            => 'image',
           'enqueue_script'  => '/sass/template-parts/_texte-image.scss',
        ],
+       [
+        // Bloc tarifs
+        'name'            => 'bloc-tarifs',
+        'title'           => 'Bloc Tarifs',
+        'description'     => 'Présentation des tarifs des offres',
+        'render_template' => '/template-parts/blocks/bloc-tarifs.php',
+        'category'        => 'formatting',
+        'example'         => 'true',
+        'keywords'        => array( 'tarifs', 'accueil' ),
+        'post_types'      => array( 'post', 'page' ),
+        'icon'            => 'money',
+        'enqueue_script'  => '/sass/gutenberg/blocks/_bloc-tarifs.scss',
+      ],
     ],
 
     // Custom ACF block default settings
