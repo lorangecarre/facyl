@@ -36,9 +36,24 @@
   .boutons-container {
     display: flex;
     justify-content: center;
-    a {
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1.563rem;
+
+    @media (min-width: $container-mobile) {
+      flex-direction: row;
+    }
+
+    a{
       display: flex;
       align-items: center;
+      transition: all 500ms ease-in-out;
+    }
+
+    a:hover svg{
+      transform: translateX(5px);
+      transition: all 500ms ease-in-out;
     }
   }
 }
@@ -72,6 +87,8 @@
     var(--font-weight-semibold),
     true);
   transition: all 500ms ease-in-out;
+  margin: 1.563rem;
+
 }
 
 .button-b {
@@ -103,9 +120,15 @@
     var(--font-weight-semibold),
     true);
   transition: all 500ms ease-in-out;
+  margin: 1.563rem;
+
 }
 
 @media (min-width: $container-mobile) {
+  .button-w{
+    margin: 1.563rem ;
+  }
+
   .button-w {
     @include button(
       max-content,
@@ -151,6 +174,8 @@
       var(--font-weight-semibold),
       true);
     margin: 1.563rem;
+  }
+
     transition: all 500ms ease-in-out;
   }
 

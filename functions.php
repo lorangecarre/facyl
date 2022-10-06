@@ -159,6 +159,27 @@ add_action( 'after_setup_theme', function() {
          'title'           => 'Bloc texte et image ',
          'render_template' => '/template-parts/blocks/image-texte.php',
          'category'        => 'formatting',
+         'enqueue_script'  => '/sass/template-parts/_eco-conception.scss',
+         ],
+         [
+          //bloc les etape
+          'name'            => 'etapes',
+          'title'           => 'Les étapes de conception',
+          'render_template' => '/template-parts/blocks/etape.php',
+          'enqueue_script'  => '/sass/blocks/_etape.scss',
+          ],
+      // [
+      //   'name'           => 'block-file-slug',
+      //   'title'          => 'Block Visible Name',
+      //   // You can safely remove lines below if you find no use for them
+      //   'prevent_cache'  => false, // Defaults to false,
+      //   // Icon defaults to svg file inside svg/block-icons named after the block name,
+      //   // eg. svg/block-icons/block-file-slug.svg
+      //   //
+      //   // Icon setting defines the dashicon equivalent: https://developer.wordpress.org/resource/dashicons/#block-default
+      //   // 'icon'  => 'block-default',
+      // ],
+      [
          'keywords'        => array( 'images', 'accueil' ),
          'post_types'      => array( 'post', 'page' ),
          'icon'            => 'image',
