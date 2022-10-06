@@ -37,9 +37,7 @@
     "scss/double-slash-comment-empty-line-before": null,
     "scss/at-rule-conditional-no-parentheses": null,
     "scss/dollar-variable-pattern": null,
-    "order/properties-alphabetical-order": true,
     "a11y/no-outline-none": true,
-    "a11y/selector-pseudo-class-focus": true,
     "alpha-value-notation": "number",
     "declaration-block-no-redundant-longhand-properties": null,
     "custom-property-empty-line-before": "never",
@@ -210,6 +208,8 @@
           "s"
         ],
         "line-height": [
+          "rem",
+          "em",
           "px",
           "%",
           ""
@@ -224,12 +224,6 @@
     ],
     "a11y/line-height-is-vertical-rhythmed": [
       null,
-      {
-        "severity": "warning"
-      }
-    ],
-    "a11y/no-display-none": [
-      true,
       {
         "severity": "warning"
       }
