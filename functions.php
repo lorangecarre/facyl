@@ -116,6 +116,7 @@ add_action( 'after_setup_theme', function() {
 
     /**
      * Gutenberg -related settings
+     * @link https://developer.wordpress.org/resource/dashicons/#block-default
      */
     // Register custom ACF Blocks
     'acf_blocks' => [
@@ -127,7 +128,6 @@ add_action( 'after_setup_theme', function() {
         'post_types'        => array( 'post', 'page' ),
         'prevent_cache'  => false,
         'icon'  => 'heading',
-
       ],
       [
         // Bloc eco-conception
@@ -154,6 +154,16 @@ add_action( 'after_setup_theme', function() {
         'icon'            => 'editor-ol',
         'enqueue_script'  => '/sass/gutenberg/blocks/_bloc-chiffres.scss',
       ],
+      [
+         'name'            => 'image-texte',
+         'title'           => 'Bloc texte et image ',
+         'render_template' => '/template-parts/blocks/image-texte.php',
+         'category'        => 'formatting',
+         'keywords'        => array( 'images', 'accueil' ),
+         'post_types'      => array( 'post', 'page' ),
+         'icon'            => 'image',
+          'enqueue_script'  => '/sass/template-parts/_texte-image.scss',
+       ],
     ],
 
     // Custom ACF block default settings
