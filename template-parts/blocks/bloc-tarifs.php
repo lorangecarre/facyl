@@ -36,6 +36,7 @@ $title = get_field( 'plans_blockTitle' );
         </ul>
         <?php endif; ?>
         <footer class="plan__footer">
+          // TODO: ajout if pour pas afficher le footer si aucune infos rentré
           <a class="plan__button" href="<?php echo esc_html( $parent_btn_texte = get_sub_field( 'plan_buttonText' ) ); ?>">
             <?php echo esc_html( $parent_btn_texte = get_sub_field( 'plan_buttonText' ) ); ?>
           </a>
