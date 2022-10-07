@@ -168,6 +168,13 @@ add_action( 'after_setup_theme', function() {
           'render_template' => '/template-parts/blocks/etape.php',
           'enqueue_script'  => '/sass/blocks/_etape.scss',
           ],
+        [
+          //bloc les etape
+          'name'            => 'carrousel',
+          'title'           => 'Carrousel',
+          'render_template' => '/template-parts/blocks/carrousel.php',
+          'enqueue_script'  => '/sass/blocks/_carrousel.scss',
+          ],
       // [
       //   'name'           => 'block-file-slug',
       //   'title'          => 'Block Visible Name',

@@ -17,7 +17,7 @@
   .content {
     width: 100%;
     flex-grow: 1;
-    padding-top: 6.25rem;
+    padding-top: var(--margin-large);
   }
 
   h1,
@@ -39,7 +39,7 @@
     align-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 1.563rem;
+    margin-bottom: var(--margin-small);
 
     @media (min-width: $container-mobile) {
       flex-direction: row;
@@ -70,7 +70,7 @@
     1px solid var(--color-black),
     var(--font-weight-semibold),
     true);
-  margin: 1.563rem;
+  margin: var(--margin-small);
   transition: all 500ms ease-in-out;
 }
 
@@ -87,8 +87,7 @@
     var(--font-weight-semibold),
     true);
   transition: all 500ms ease-in-out;
-  margin: 1.563rem;
-
+  margin: var(--margin-small);
 }
 
 .button-b {
@@ -103,7 +102,7 @@
     1px solid var(--color-black),
     var(--font-weight-semibold),
     true);
-  margin: 0 1.563rem;
+  margin: 0 var(--margin-smal);
   transition: all 500ms ease-in-out;
 }
 
@@ -120,13 +119,13 @@
     var(--font-weight-semibold),
     true);
   transition: all 500ms ease-in-out;
-  margin: 1.563rem;
+  margin: var(--margin-small);
 
 }
 
 @media (min-width: $container-mobile) {
   .button-w{
-    margin: 1.563rem ;
+    margin: var(--margin-small);
   }
 
   .button-w {
@@ -141,7 +140,7 @@
       1px solid var(--color-black),
       var(--font-weight-semibold),
       true);
-    margin: 1.563rem;
+    margin: var(--margin-small);
     transition: all 500ms ease-in-out;
   }
 
@@ -157,7 +156,7 @@
       1px solid var(--color-white),
       var(--font-weight-semibold),
       true);
-    margin: 1.563rem;
+    margin: var(--margin-small);
     transition: all 500ms ease-in-out;
   }
 
@@ -173,12 +172,10 @@
       1px solid var(--color-black),
       var(--font-weight-semibold),
       true);
-    margin: 1.563rem;
-  }
+      margin: var(--margin-small);
+      transition: all 500ms ease-in-out;
 
-    transition: all 500ms ease-in-out;
   }
-
   .button-b:hover {
     @include button(
       max-content,
