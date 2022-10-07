@@ -1,13 +1,9 @@
 .chiffres {
   &__title {
     text-align: center;
-    font-size: 1.563rem;
+    font-size: var(--font-size-h3);
     font-family: var(--font-heading), sans-serif;
-    margin-bottom: 1.563rem;
-
-    @media screen and (min-width: $container-mobile) {
-      font-size: 2.5rem;
-    }
+    margin-bottom: var(--margin-small);
   }
 
   &__list {
@@ -34,22 +30,18 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 1.563rem;
+    margin-bottom: var(--margin-small);
   }
 
   &__listItemTitle {
-    font-size: 1.875rem;
+    font-size: var(--font-size-h2);
     color: var(--color-orange);
     margin: 0;
-
-    @media screen and (min-width: $container-mobile) {
-      font-size: 4rem;
-    }
   }
 
   &__listItemText {
     text-align: center;
-    font-size: 1.25rem;
+    font-size: var(--font-size-text);
     font-family: var(--font-paragraph), sans-serif;
     margin: 0;
   }

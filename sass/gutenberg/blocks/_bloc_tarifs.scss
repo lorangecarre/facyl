@@ -1,13 +1,9 @@
 .tarifs {
   &__mainTitle {
     text-align: center;
-    font-size: 1.563rem;
+    font-size: var(--font-size-h2);
     font-family: var(--font-heading), sans-serif;
-    margin-bottom: 1.563rem;
-
-    @media screen and (min-width: $container-mobile) {
-      font-size: 2.5rem;
-    }
+    margin-bottom: var(--margin-small);
   }
 
   &__plans {
@@ -24,9 +20,79 @@
   border-radius: 20px;
   background-color: var(--color-white);
   padding: 3.125rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  max-width: 542px;
+
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__price {
+    color: var(--color-green);
+    margin-top: 0;
+    font-weight: var(--font-weight-extra-bold);
+  }
 
   &__prestations {
-    list-style-image: url("svg/check-mark-button.svg");
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  &__prestation::before {
+    content: '';
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-size: 16px;
+    background-image: url('svg/check-mark.svg');
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    background-position: center center;
+    vertical-align: middle;
+  }
+
+  &__prestation {
+    font-size: var(--font-size-text);
+  }
+
+  &__button {
+    @include button(
+      max-content,
+      var(--color-white),
+      var(--color-black),
+      var(--color-black),
+      var(--color-white),
+      30px,
+      1px solid var(--color-white),
+      1px solid var(--color-black),
+      700,
+      false);
+
+    &.button-small {
+      @include button-size-small();
+    }
+
+    &__button::after {
+    content: '';
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    background-size: 16px;
+    background-image: url('svg/chevron-right.svg');
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    background-position: center center;
+    vertical-align: middle;
+    }
   }
 }
-

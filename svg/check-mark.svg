@@ -6,12 +6,11 @@
    id="Capa_1"
    x="0px"
    y="0px"
-   width="342.508px"
-   height="342.508px"
-   viewBox="0 0 342.508 342.508"
-   style="enable-background:new 0 0 342.508 342.508;"
+   width="16"
+   height="16"
+   viewBox="0 0 16 16"
    xml:space="preserve"
-   sodipodi:docname="check-mark-button.svg"
+   sodipodi:docname="check-mark.svg"
    inkscape:version="1.2.1 (0f2f062aeb, 2022-09-21, custom)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -27,9 +26,9 @@
    inkscape:pagecheckerboard="0"
    inkscape:deskcolor="#d1d1d1"
    showgrid="false"
-   inkscape:zoom="2.3006762"
-   inkscape:cx="281.65632"
-   inkscape:cy="171.47133"
+   inkscape:zoom="23.44"
+   inkscape:cx="2.3464164"
+   inkscape:cy="17.12884"
    inkscape:window-width="1920"
    inkscape:window-height="1016"
    inkscape:window-x="0"
@@ -38,9 +37,10 @@
    inkscape:current-layer="Capa_1" />
 <g
    id="g20"
-   style="fill:#f29100;fill-opacity:1">
+   style="fill:#f29100;fill-opacity:1"
+   transform="matrix(0.04671506,0,0,0.04671423,-1.4014518e-4,0)">
 	<path
-   d="M171.254,0C76.837,0,0.003,76.819,0.003,171.248c0,94.428,76.829,171.26,171.251,171.26   c94.438,0,171.251-76.826,171.251-171.26C342.505,76.819,265.697,0,171.254,0z M245.371,136.161l-89.69,89.69   c-2.693,2.69-6.242,4.048-9.758,4.048c-3.543,0-7.059-1.357-9.761-4.048l-39.007-39.007c-5.393-5.398-5.393-14.129,0-19.521   c5.392-5.392,14.123-5.392,19.516,0l29.252,29.262l79.944-79.948c5.381-5.386,14.111-5.386,19.504,0   C250.764,122.038,250.764,130.769,245.371,136.161z"
+   d="M 171.254,0 C 76.837,0 0.003,76.819 0.003,171.248 c 0,94.428 76.829,171.26 171.251,171.26 94.438,0 171.251,-76.826 171.251,-171.26 C 342.505,76.819 265.697,0 171.254,0 Z m 74.117,136.161 -89.69,89.69 c -2.693,2.69 -6.242,4.048 -9.758,4.048 -3.543,0 -7.059,-1.357 -9.761,-4.048 L 97.155,186.844 c -5.393,-5.398 -5.393,-14.129 0,-19.521 5.392,-5.392 14.123,-5.392 19.516,0 l 29.252,29.262 79.944,-79.948 c 5.381,-5.386 14.111,-5.386 19.504,0 5.393,5.401 5.393,14.132 0,19.524 z"
    id="path18"
    style="fill:#f29100;fill-opacity:1" />
 </g>
