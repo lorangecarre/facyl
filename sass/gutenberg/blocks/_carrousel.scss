@@ -8,8 +8,7 @@
   overflow: auto;
   scroll-behavior: smooth;
   scrollbar-width: none;
-background-color: var(--color-white);}
-
+}
 #carousel::-webkit-scrollbar {
   height: 0;
 }
@@ -41,9 +40,7 @@ background-color: var(--color-white);}
   display: none;
 }
 
-#next {
 
-}
 #next svg{
   transform: rotate(90deg);
 }
@@ -62,7 +59,6 @@ background-color: var(--color-white);}
   width: 180px;
   height: 180px;
   max-width: none;
-  background-color: var(--color-white);
   object-fit: contain;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);

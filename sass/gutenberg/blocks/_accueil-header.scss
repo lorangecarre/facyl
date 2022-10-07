@@ -12,7 +12,8 @@
     }
   }
   .background-header {
-    background-color: linear-gradient(0deg, var(--color-background-default) 0%, rgb(255 255 255 / .75) 100%);
+    //background-color: linear-gradient(0deg, var(--color-background-default) 0%, rgb(255 255 255 / .75) 100%);
+    background: linear-gradient(360deg, var(--color-background-default) 0, rgb(255 254 252 / 86%) 100%);
   }
   .content {
     width: 100%;
@@ -147,13 +148,13 @@
   .button-w:hover {
     @include button(
       max-content,
-      var(--color-black),
-      var(--color-black),
-      transparent,
       var(--color-white),
+      var(--color-white),
+      transparent,
+      var(--color-black),
       30px,
-      1px solid var(--color-white),
-      1px solid var(--color-white),
+      1px solid var(--color-black),
+      1px solid var(--color-black),
       var(--font-weight-semibold),
       true);
     margin: var(--margin-small);
@@ -184,10 +185,11 @@
       var(--color-white),
       var(--color-white),
       30px,
-      1px solid var(--color-white),
-      1px solid var(--color-white),
+      1px solid var(--color-black),
+      1px solid var(--color-black),
       var(--font-weight-semibold),
       true);
+      margin: var(--margin-small);
     transition: all 500ms ease-in-out;
   }
 }

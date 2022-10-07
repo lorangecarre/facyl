@@ -1,6 +1,10 @@
 // This file is meant for general styles and containers
 // that apply everywhere throughout the website. Add more
 // always repeating elements right below.
+// Background body
+body{
+  background: radial-gradient(122.03% 189.39% at 48.7% 14.88%, var(--color-white) 0%, var(--color-white) 17.4%, var(--color-background) 90.6%, #000000 100%)
+}
 
 // Default structural element
 .block {
