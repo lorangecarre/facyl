@@ -1,0 +1,221 @@
+[
+    {
+        "key": "group_633ed20dcb802",
+        "title": "Bloc Gutenberg: Tarifs",
+        "fields": [
+            {
+                "key": "field_633ed23a80038",
+                "label": "Titre",
+                "name": "plans_blockTitle",
+                "type": "text",
+                "instructions": "Titre principal du bloc.",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Titre",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_633ed29580039",
+                "label": "Plans\/Offres",
+                "name": "plans",
+                "type": "repeater",
+                "instructions": "Les différents plans ou offres proposés.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 1,
+                "max": 0,
+                "layout": "block",
+                "button_label": "Ajouter un plan\/une offre",
+                "sub_fields": [
+                    {
+                        "key": "field_633ed3148003b",
+                        "label": "Titre",
+                        "name": "plan_title",
+                        "type": "text",
+                        "instructions": "Titre du plan\/de l'offre.",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "Plan",
+                        "placeholder": "Plan d'exemple",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 50
+                    },
+                    {
+                        "key": "field_633ed3438003c",
+                        "label": "Prix",
+                        "name": "plan_price",
+                        "type": "text",
+                        "instructions": "Prix du plan\/de l'offre",
+                        "required": 1,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "500€, Sur devis...",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": 25
+                    },
+                    {
+                        "key": "field_633ed2b98003a",
+                        "label": "Prestations",
+                        "name": "plan_prestations",
+                        "type": "repeater",
+                        "instructions": "Les prestations du plan.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "collapsed": "",
+                        "min": 0,
+                        "max": 0,
+                        "layout": "table",
+                        "button_label": "Ajouter une prestation",
+                        "sub_fields": [
+                            {
+                                "key": "field_633ed3ca8003d",
+                                "label": "Description",
+                                "name": "plan_prestation_description",
+                                "type": "text",
+                                "instructions": "Description de la prestation.",
+                                "required": 1,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "Nous proposons ceci",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": 125
+                            }
+                        ]
+                    },
+                    {
+                        "key": "field_633edaa2aa07e",
+                        "label": "Texte du bouton",
+                        "name": "plan_buttonText",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_633edac0aa07f",
+                        "label": "Lien du bouton",
+                        "name": "plan_buttonLink",
+                        "type": "page_link",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "post_type": "",
+                        "taxonomy": "",
+                        "allow_null": 0,
+                        "allow_archives": 1,
+                        "multiple": 0
+                    },
+                    {
+                        "key": "field_633edadbaa080",
+                        "label": "Adresse mail",
+                        "name": "plan_mail",
+                        "type": "email",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_633edaecaa081",
+                        "label": "Téléphone",
+                        "name": "plan_phone",
+                        "type": "number",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "min": "",
+                        "max": "",
+                        "step": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/bloc-tarifs"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    }
+]
