@@ -1,0 +1,66 @@
+<br />
+<b>Warning</b>:  Undefined array key "name" in <b>/home/oc-001/Local_Sites/wpfacyl/app/public/wp-content/themes/facyl/inc/hooks/acf-blocks.php</b> on line <b>34</b><br />
+[
+    {
+        "key": "group_633c0aaf8fd43",
+        "title": "Block : Eco-Conception",
+        "fields": [
+            {
+                "key": "field_633c0ab96ce34",
+                "label": "Titre du bloc",
+                "name": "title_block",
+                "type": "text",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_633c0b086ce35",
+                "label": "Paragraphe du bloc",
+                "name": "text_block",
+                "type": "textarea",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/eco-conception"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    }
+]

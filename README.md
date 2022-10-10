@@ -95,3 +95,5 @@ Types list by convention :
 
 ## Astuces code css
 ` @include button(max-content,var(--color-black),var(--color-black),var(--color-white),var(--color-white),30px,1px solid var(--color-black),1px solid var(--color-black),var(--font-weight-semibold),true);`
+
+` @include box-with-shadow(border-radius,blur,background color de la box); `
