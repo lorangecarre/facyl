@@ -6,8 +6,8 @@
  * own files under /inc and just require here.
  *
  * @Date: 2019-10-15 12:30:02
- * @Last Modified by:   Roni Laukkarinen
- * @Last Modified time: 2022-09-28 14:36:25
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2022-10-06 12:03:28
  *
  * @package facyl
  */
@@ -116,36 +116,65 @@ add_action( 'after_setup_theme', function() {
 
     /**
      * Gutenberg -related settings
+     * @link https://developer.wordpress.org/resource/dashicons/#block-default
      */
     // Register custom ACF Blocks
     'acf_blocks' => [
-          [
-            'name'            => 'eco-conception',
-            'title'           => 'Bloc Eco Conception',
-            'render_template' => '/template-parts/blocks/eco-conception.php',
-            'category'        => 'formatting',
-            'enqueue_script'  => '/sass/template-parts/_eco-conception.scss',
-          ],
-          [
-            'name'            => 'image-texte',
-            'title'           => 'Bloc texte et image ',
-            'render_template' => '/template-parts/blocks/image-texte.php',
-            'category'        => 'formatting',
-            'enqueue_script'  => '/sass/template-parts/_texte-image.scss',
-          ],
-         [
-           //bloc-header
-           'name'           => 'accueil-header',
-           'title'          => 'accueil-header',
-           // You can safely remove lines below if you find no use for them
-           'prevent_cache'  => false, // Defaults to false,
-           // Icon defaults to svg file inside svg/block-icons named after the block name,
-           // eg. svg/block-icons/block-file-slug.svg
-           //
-           // Icon setting defines the dashicon equivalent: https://developer.wordpress.org/resource/dashicons/#block-default
-            'icon'  => 'block-default',
-
+      [
+        // Bloc header
+        'name'           => 'accueil-header',
+        'title'          => 'Bloc Accueil Header',
+        'description'     => 'Présentation principal',
+        'post_types'        => array( 'post', 'page' ),
+        'prevent_cache'  => false,
+        'icon'  => 'heading',
+      ],
+      [
+        // Bloc eco-conception
+        'name'            => 'eco-conception',
+        'title'           => 'Bloc Eco Conception',
+        'description'     => "Présentation de la démarche d'éco-conception",
+        'render_template' => '/template-parts/blocks/eco-conception.php',
+        'category'        => 'formatting',
+        'icon'            => 'palmtree',
+        'keywords'        => array( 'éco-conception', 'accueil' ),
+        'post_types'      => array( 'post', 'page' ),
+        'enqueue_script'  => '/sass/template-parts/_eco-conception.scss',
+      ],
+      [
+        // Bloc chiffres
+        'name'            => 'bloc-chiffres',
+        'title'           => 'Bloc Chiffres',
+        'description'     => 'Présentation de chiffres clés',
+        'render_template' => '/template-parts/blocks/bloc-chiffres.php',
+        'category'        => 'formatting',
+        'example'         => 'true',
+        'keywords'        => array( 'chiffres', 'accueil' ),
+        'post_types'      => array( 'post', 'page' ),
+        'icon'            => 'editor-ol',
+        'enqueue_script'  => '/sass/gutenberg/blocks/_bloc-chiffres.scss',
+      ],
+      [
+         'name'            => 'image-texte',
+         'title'           => 'Bloc texte et image ',
+         'render_template' => '/template-parts/blocks/image-texte.php',
+         'category'        => 'formatting',
+         'enqueue_script'  => '/sass/template-parts/_eco-conception.scss',
          ],
+         [
+          //bloc les etape
+          'name'            => 'etapes',
+          'title'           => 'Les étapes de conception',
+          'render_template' => '/template-parts/blocks/etape.php',
+          'enqueue_script'  => '/sass/blocks/_etape.scss',
+          ],
+        [
+          //bloc les etape
+          'name'            => 'carrousel',
+          'title'           => 'Carrousel',
+          'render_template' => '/template-parts/blocks/carrousel.php',
+          'enqueue_script'  => '/sass/blocks/_carrousel.scss',
+          ],
           [
           'name'            => 'dernieres-realisations',
           'title'           => 'Bloc dernières réalisations',
@@ -164,6 +193,12 @@ add_action( 'after_setup_theme', function() {
       //   // Icon setting defines the dashicon equivalent: https://developer.wordpress.org/resource/dashicons/#block-default
       //   // 'icon'  => 'block-default',
       // ],
+      [
+         'keywords'        => array( 'images', 'accueil' ),
+         'post_types'      => array( 'post', 'page' ),
+         'icon'            => 'image',
+          'enqueue_script'  => '/sass/template-parts/_texte-image.scss',
+       ],
     ],
 
     // Custom ACF block default settings

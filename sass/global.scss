@@ -62,11 +62,17 @@
 
 // Template parts
 @import 'gutenberg/blocks/accueil-header';
+@import 'gutenberg/blocks/bloc-chiffres';
 
 // Gutenberg formatting
 @import "gutenberg/formatting";
 
 // Template Parts
 @import "template-parts/eco-conception";
+
+// Template Parts
+@import "gutenberg/blocks/etapes";
+@import "gutenberg/blocks/carrousel";
+
 @import "template-parts/texte-image";
 @import "template-parts/dernieres-realisations";

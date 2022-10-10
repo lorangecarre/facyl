@@ -12,12 +12,13 @@
     }
   }
   .background-header {
-    background-color: linear-gradient(0deg, var(--color-background-default) 0%, rgb(255 255 255 / .75) 100%);
+    //background-color: linear-gradient(0deg, var(--color-background-default) 0%, rgb(255 255 255 / .75) 100%);
+    background: linear-gradient(360deg, var(--color-background-default) 0, rgb(255 254 252 / 86%) 100%);
   }
   .content {
     width: 100%;
     flex-grow: 1;
-    padding-top: 6.25rem;
+    padding-top: var(--margin-large);
   }
 
   h1,
@@ -36,9 +37,24 @@
   .boutons-container {
     display: flex;
     justify-content: center;
-    a {
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: var(--margin-small);
+
+    @media (min-width: $container-mobile) {
+      flex-direction: row;
+    }
+
+    a{
       display: flex;
       align-items: center;
+      transition: all 500ms ease-in-out;
+    }
+
+    a:hover svg{
+      transform: translateX(5px);
+      transition: all 500ms ease-in-out;
     }
   }
 }
@@ -55,7 +71,7 @@
     1px solid var(--color-black),
     var(--font-weight-semibold),
     true);
-  margin: 1.563rem;
+  margin: var(--margin-small);
   transition: all 500ms ease-in-out;
 }
 
@@ -72,6 +88,7 @@
     var(--font-weight-semibold),
     true);
   transition: all 500ms ease-in-out;
+  margin: var(--margin-small);
 }
 
 .button-b {
@@ -86,7 +103,7 @@
     1px solid var(--color-black),
     var(--font-weight-semibold),
     true);
-  margin: 0 1.563rem;
+  margin: 0 var(--margin-smal);
   transition: all 500ms ease-in-out;
 }
 
@@ -103,9 +120,15 @@
     var(--font-weight-semibold),
     true);
   transition: all 500ms ease-in-out;
+  margin: var(--margin-small);
+
 }
 
 @media (min-width: $container-mobile) {
+  .button-w{
+    margin: var(--margin-small);
+  }
+
   .button-w {
     @include button(
       max-content,
@@ -118,23 +141,23 @@
       1px solid var(--color-black),
       var(--font-weight-semibold),
       true);
-    margin: 1.563rem;
+    margin: var(--margin-small);
     transition: all 500ms ease-in-out;
   }
 
   .button-w:hover {
     @include button(
       max-content,
-      var(--color-black),
-      var(--color-black),
-      transparent,
       var(--color-white),
+      var(--color-white),
+      transparent,
+      var(--color-black),
       30px,
-      1px solid var(--color-white),
-      1px solid var(--color-white),
+      1px solid var(--color-black),
+      1px solid var(--color-black),
       var(--font-weight-semibold),
       true);
-    margin: 1.563rem;
+    margin: var(--margin-small);
     transition: all 500ms ease-in-out;
   }
 
@@ -150,10 +173,10 @@
       1px solid var(--color-black),
       var(--font-weight-semibold),
       true);
-    margin: 1.563rem;
-    transition: all 500ms ease-in-out;
-  }
+      margin: var(--margin-small);
+      transition: all 500ms ease-in-out;
 
+  }
   .button-b:hover {
     @include button(
       max-content,
@@ -162,10 +185,11 @@
       var(--color-white),
       var(--color-white),
       30px,
-      1px solid var(--color-white),
-      1px solid var(--color-white),
+      1px solid var(--color-black),
+      1px solid var(--color-black),
       var(--font-weight-semibold),
       true);
+      margin: var(--margin-small);
     transition: all 500ms ease-in-out;
   }
 }
