@@ -10,9 +10,6 @@ $class_name = 'image-texte';
 if ( ! empty( $block['className'] ) ) {
     $class_name .= ' ' . $block['className'];
 }
-if ( ! empty( $block['align'] ) ) {
-    $class_name .= ' align' . $block['align'];
-}
 
 // Load values and handle defaults.
 $title = get_field( 'title_block' ) ?: 'Titre';
@@ -32,7 +29,7 @@ if ( $position[0] === 'droite' ) {
 
 ?>
 
-<div id="<?php echo esc_attr( $id ); ?>" class="<?php echo esc_attr( $class_name ); ?> <?php echo esc_attr( $style_grid ); ?>" >
+<section id="<?php echo esc_attr( $id ); ?>" class="<?php echo esc_attr( $class_name ); ?> <?php echo esc_attr( $style_grid ); ?>" >
   <div class="block-texte <?php echo esc_attr( $style_text ) ?>">
     <h2> <?= $title ?> </h2>
     <p> <?= $text ?> </p>
@@ -40,4 +37,4 @@ if ( $position[0] === 'droite' ) {
   <div class="block-image <?php echo esc_attr( $style_image ) ?>">
     <img src="<?= $image['url'] ?>" alt="<?= $image['alt'] ?>">
   </div>
-</div>
+</section>

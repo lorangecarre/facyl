@@ -10,9 +10,6 @@ $class_name = 'eco-conception';
 if ( ! empty( $block['className'] ) ) {
     $class_name .= ' ' . $block['className'];
 }
-if ( ! empty( $block['align'] ) ) {
-    $class_name .= ' align' . $block['align'];
-}
 
 // Load values and handle defaults.
 $title = get_field( 'title_block' ) ?: 'Your testimonial here...';
@@ -20,7 +17,7 @@ $text = get_field( 'text_block' ) ?: 'Author name';
 
 ?>
 
-<div id="<?php echo esc_attr( $id ); ?>" class="<?php echo esc_attr( $class_name ); ?>">
+<section id="<?php echo esc_attr( $id ); ?>" class="<?php echo esc_attr( $class_name ); ?>">
 
   <div class="eco-conception-container">
     <span class="title-container"><?php printf( esc_html__( 'Google speed test', 'facyl' ) ); ?></span>
@@ -59,4 +56,4 @@ $text = get_field( 'text_block' ) ?: 'Author name';
     <p> <?= $text ?> </p>
   </div>
 
-</div>
+</section>

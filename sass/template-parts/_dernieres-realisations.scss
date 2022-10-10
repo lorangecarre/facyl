@@ -1,0 +1,97 @@
+@media only screen and (min-width: $width-max-mobile) {
+  .dernieres-realisations {
+    margin: 0 var(--margin-large) var(--margin-large) var(--margin-large);
+
+    h2 {
+      text-align: center;
+      margin-bottom: var(--margin-medium);
+    }
+
+    .articles {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: var(--margin-medium);
+
+      img {
+        max-width: 100%;
+        height: fit-content;
+        border-radius: 24px;
+      }
+
+      .article {
+        @include box-with-shadow(25px, 50px, var(--color-green));
+
+        .article-info {
+          padding: var(--margin-small);
+
+          > * {
+            color: var(--color-white);
+          }
+
+          p {
+            margin-top: 0;
+            margin-bottom: var(--margin-small);
+            line-height: var(--line-height-core-heading);
+          }
+
+          a {
+            font-size: 0.8em;
+            padding: 0 5px;
+            text-decoration-color: var(--color-white);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $width-max-mobile) {
+  .dernieres-realisations {
+    margin: 0 var(--margin-medium) var(--margin-large) var(--margin-medium);
+
+    h2 {
+      text-align: center;
+      margin-bottom: var(--margin-medium);
+    }
+
+    .articles {
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      grid-row-gap: var(--margin-medium);
+
+      img {
+        max-width: 100%;
+        height: fit-content;
+        border-radius: 24px;
+      }
+
+      .article {
+        @include box-with-shadow(25px, 50px, var(--color-green));
+
+        .article-info {
+          padding: var(--margin-small);
+
+          > * {
+            color: var(--color-white);
+          }
+
+          h3{
+            font-size: var(--font-size-h3);
+          }
+
+          p {
+            margin-top: 0;
+            margin-bottom: var(--margin-small);
+            line-height: var(--line-height-core-heading);
+            font-size: var(--font-size-paragraph);
+          }
+
+          a {
+            font-size: 1em;
+            text-decoration-color: var(--color-white);
+          }
+        }
+      }
+    }
+  }
+}
