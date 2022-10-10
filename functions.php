@@ -175,6 +175,13 @@ add_action( 'after_setup_theme', function() {
           'render_template' => '/template-parts/blocks/carrousel.php',
           'enqueue_script'  => '/sass/blocks/_carrousel.scss',
           ],
+          [
+          'name'            => 'dernieres-realisations',
+          'title'           => 'Bloc dernières réalisations',
+          'render_template' => '/template-parts/blocks/dernieres-realisations.php',
+          'category'        => 'formatting',
+          'enqueue_script'  => '/sass/template-parts/_dernieres-realisations.scss',
+        ],
       // [
       //   'name'           => 'block-file-slug',
       //   'title'          => 'Block Visible Name',
