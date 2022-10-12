@@ -1,12 +1,12 @@
 <?php
 // Create id attribute allowing for custom "anchor" value.
-$id = 'dernieres-realisations-' . $block['id'];
+$id = 'realisations-' . $block['id'];
 if ( ! empty( $block['anchor'] ) ) {
     $id = $block['anchor'];
 }
 
 // Create class attribute allowing for custom "className" and "align" values.
-$class_name = 'dernieres-realisations';
+$class_name = 'realisations';
 if ( ! empty( $block['className'] ) ) {
     $class_name .= ' ' . $block['className'];
 }
@@ -27,15 +27,8 @@ $articles = new WP_Query( $args );
   <h2><?php echo esc_html( $title ) ?></h2>
   <div class="articles">
       <?php while ( $articles->have_posts() ) {
-          $articles->the_post(); ?>
-          <div class="article">
-            <?php echo get_the_post_thumbnail( get_the_ID(), 'large' ); ?>
-            <div class="article-info">
-              <h3><?php echo esc_html( get_the_title() ) ?></h3>
-              <p><?php echo esc_html( get_the_excerpt() ) ?></p>
-              <a href="<?php echo esc_html( get_the_guid() ) ?>" target="_blank">Lire la suite</a>
-            </div>
-          </div>
-      <?php } ?>
+          $articles->the_post();
+            get_template_part( 'template-parts/component/realisations' );
+          } ?>
   </div>
 </section>
