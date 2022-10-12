@@ -271,6 +271,8 @@ add_action( 'after_setup_theme', function() {
   define( 'THEME_SETTINGS', $theme_settings );
 } ); // end action after_setup_theme
 
+
+
 /**
  * Required files
  */
