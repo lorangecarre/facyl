@@ -37,4 +37,5 @@ add_action( 'wp_ajax_filter_projects', 'filter_projects' );
 add_action( 'wp_ajax_nopriv_filter_projects', 'filter_projects' );
 add_action( 'wp_ajax_filter_projects_keyword', 'filter_projects_keyword' );
 add_action( 'wp_ajax_nopriv_filter_projects_keyword', 'filter_projects_keyword' );
+add_filter( 'wpcf7_autop_or_not', '__return_false' );
 
