@@ -175,6 +175,7 @@ add_action( 'after_setup_theme', function() {
           'render_template' => '/template-parts/blocks/carrousel.php',
           'enqueue_script'  => '/sass/blocks/_carrousel.scss',
           ],
+
         [
           //bloc les etape
           'name'            => 'temoignage',
@@ -182,6 +183,15 @@ add_action( 'after_setup_theme', function() {
           'render_template' => '/template-parts/blocks/temoignage.php',
           'enqueue_script'  => '/sass/blocks/_temoignage.scss',
           ],
+
+          [
+          'name'            => 'dernieres-realisations',
+          'title'           => 'Bloc dernières réalisations',
+          'render_template' => '/template-parts/blocks/dernieres-realisations.php',
+          'category'        => 'formatting',
+          'enqueue_script'  => '/sass/template-parts/_dernieres-realisations.scss',
+        ],
+
       // [
       //   'name'           => 'block-file-slug',
       //   'title'          => 'Block Visible Name',
@@ -270,6 +280,8 @@ add_action( 'after_setup_theme', function() {
 
   define( 'THEME_SETTINGS', $theme_settings );
 } ); // end action after_setup_theme
+
+
 
 /**
  * Required files
