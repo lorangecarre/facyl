@@ -7,7 +7,7 @@
  *
  * @Date: 2019-10-15 12:30:02
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2022-10-06 12:03:28
+ * @Last Modified time: 2022-10-07 15:20:57
  *
  * @package facyl
  */
@@ -175,6 +175,15 @@ add_action( 'after_setup_theme', function() {
           'render_template' => '/template-parts/blocks/carrousel.php',
           'enqueue_script'  => '/sass/blocks/_carrousel.scss',
           ],
+
+        [
+          //bloc les etape
+          'name'            => 'temoignage',
+          'title'           => 'Témoignage',
+          'render_template' => '/template-parts/blocks/temoignage.php',
+          'enqueue_script'  => '/sass/blocks/_temoignage.scss',
+          ],
+
           [
           'name'            => 'dernieres-realisations',
           'title'           => 'Bloc dernières réalisations',
@@ -182,6 +191,7 @@ add_action( 'after_setup_theme', function() {
           'category'        => 'formatting',
           'enqueue_script'  => '/sass/template-parts/_dernieres-realisations.scss',
         ],
+
       // [
       //   'name'           => 'block-file-slug',
       //   'title'          => 'Block Visible Name',
