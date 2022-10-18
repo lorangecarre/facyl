@@ -168,6 +168,13 @@ add_action( 'after_setup_theme', function() {
           'render_template' => '/template-parts/blocks/etape.php',
           'enqueue_script'  => '/sass/blocks/_etape.scss',
           ],
+          [
+            //bloc les etapes et texte
+            'name'            => 'etapes-texte',
+            'title'           => 'Les étapes de conception et texte',
+            'render_template' => '/template-parts/blocks/etape-texte.php',
+            'enqueue_script'  => '/sass/blocks/_etape.scss',
+            ],
         [
           //bloc les etape
           'name'            => 'carrousel',
