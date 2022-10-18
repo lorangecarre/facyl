@@ -10,9 +10,6 @@
 @media only screen and (min-width: $width-max-mobile) {
   .contact{
     margin: 0 calc(2*var(--margin-large));
-    h1{
-      text-align: center;
-    }
     .wpcf7-form{
       display: grid;
       grid-template-columns: repeat(2,1fr);
@@ -56,9 +53,6 @@
 
 .contact{
   margin: 0 var(--margin-large);
-  h1{
-    text-align: center;
-  }
   .wpcf7-form{
     display: grid;
 
