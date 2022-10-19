@@ -16,7 +16,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reframe_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! reframe.js */ \"./node_modules/reframe.js/dist/reframe.es.js\");\n/* harmony import */ var _modules_external_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/external-link */ \"./js/src/modules/external-link.js\");\n/* harmony import */ var _modules_anchors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/anchors */ \"./js/src/modules/anchors.js\");\n/* harmony import */ var _modules_top__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/top */ \"./js/src/modules/top.js\");\n/* harmony import */ var _modules_a11y_skip_link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/a11y-skip-link */ \"./js/src/modules/a11y-skip-link.js\");\n/* harmony import */ var what_input__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! what-input */ \"./node_modules/what-input/dist/what-input.js\");\n/* harmony import */ var what_input__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(what_input__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _modules_navigation__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/navigation */ \"./js/src/modules/navigation.js\");\n/* harmony import */ var _modules_sticky_nav__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/sticky-nav */ \"./js/src/modules/sticky-nav.js\");\n/* harmony import */ var _modules_sticky_nav__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_sticky_nav__WEBPACK_IMPORTED_MODULE_7__);\n/* harmony import */ var _modules_jauge__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/jauge */ \"./js/src/modules/jauge.js\");\n/* harmony import */ var _modules_jauge__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_modules_jauge__WEBPACK_IMPORTED_MODULE_8__);\n/* eslint-disable max-len, no-param-reassign, no-unused-vars */\n\n/**\n * Air theme JavaScript.\n */\n// Import modules\n\n\n\n\n\n\n\n\n // Define Javascript is active by changing the body class\n\ndocument.body.classList.remove('no-js');\ndocument.body.classList.add('js');\ndocument.addEventListener('DOMContentLoaded', function () {\n  (0,_modules_anchors__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n  (0,_modules_top__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n  (0,_modules_external_link__WEBPACK_IMPORTED_MODULE_1__.styleExternalLinks)();\n  (0,_modules_external_link__WEBPACK_IMPORTED_MODULE_1__.initExternalLinkLabels)();\n  (0,_modules_a11y_skip_link__WEBPACK_IMPORTED_MODULE_4__[\"default\"])(); // Fit video embeds to container\n\n  (0,reframe_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])('.wp-has-aspect-ratio iframe');\n});\n\n//# sourceURL=webpack://facyl/./js/src/front-end.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reframe_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! reframe.js */ \"./node_modules/reframe.js/dist/reframe.es.js\");\n/* harmony import */ var _modules_external_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/external-link */ \"./js/src/modules/external-link.js\");\n/* harmony import */ var _modules_anchors__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/anchors */ \"./js/src/modules/anchors.js\");\n/* harmony import */ var _modules_top__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/top */ \"./js/src/modules/top.js\");\n/* harmony import */ var _modules_a11y_skip_link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/a11y-skip-link */ \"./js/src/modules/a11y-skip-link.js\");\n/* harmony import */ var what_input__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! what-input */ \"./node_modules/what-input/dist/what-input.js\");\n/* harmony import */ var what_input__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(what_input__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _modules_navigation__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modules/navigation */ \"./js/src/modules/navigation.js\");\n/* harmony import */ var _modules_sticky_nav__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./modules/sticky-nav */ \"./js/src/modules/sticky-nav.js\");\n/* harmony import */ var _modules_sticky_nav__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_modules_sticky_nav__WEBPACK_IMPORTED_MODULE_7__);\n/* harmony import */ var _modules_jauge__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./modules/jauge */ \"./js/src/modules/jauge.js\");\n/* harmony import */ var _modules_jauge__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_modules_jauge__WEBPACK_IMPORTED_MODULE_8__);\n/* harmony import */ var _modules_filtres__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./modules/filtres */ \"./js/src/modules/filtres.js\");\n/* harmony import */ var _modules_filtres__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_modules_filtres__WEBPACK_IMPORTED_MODULE_9__);\n/* eslint-disable max-len, no-param-reassign, no-unused-vars */\n\n/**\n * Air theme JavaScript.\n */\n// Import modules\n\n\n\n\n\n\n\n\n\n // Define Javascript is active by changing the body class\n\ndocument.body.classList.remove('no-js');\ndocument.body.classList.add('js');\ndocument.addEventListener('DOMContentLoaded', function () {\n  (0,_modules_anchors__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n  (0,_modules_top__WEBPACK_IMPORTED_MODULE_3__[\"default\"])();\n  (0,_modules_external_link__WEBPACK_IMPORTED_MODULE_1__.styleExternalLinks)();\n  (0,_modules_external_link__WEBPACK_IMPORTED_MODULE_1__.initExternalLinkLabels)();\n  (0,_modules_a11y_skip_link__WEBPACK_IMPORTED_MODULE_4__[\"default\"])(); // Fit video embeds to container\n\n  (0,reframe_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])('.wp-has-aspect-ratio iframe');\n});\n\n//# sourceURL=webpack://facyl/./js/src/front-end.js?");
 
 /***/ }),
 
@@ -53,13 +53,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./js/src/modules/filtres.js":
+/*!***********************************!*\
+  !*** ./js/src/modules/filtres.js ***!
+  \***********************************/
+/***/ (() => {
+
+eval("jQuery(document).ready(function ($) {\n  $('.cat-list_item').on('click', function () {\n    $('.cat-list_item').removeClass('active');\n    $(this).addClass('active');\n    $.ajax({\n      type: 'POST',\n      url: '/wp-admin/admin-ajax.php',\n      dataType: 'html',\n      data: {\n        action: 'filter_projects',\n        category: $(this).data('slug')\n      },\n      success: function success(res) {\n        $('.newsPreview').html(res);\n      }\n    });\n  });\n});\njQuery(document).ready(function ($) {\n  $('.search-button').on('click', function () {\n    $.ajax({\n      type: 'POST',\n      url: '/wp-admin/admin-ajax.php',\n      dataType: 'html',\n      data: {\n        action: 'filter_projects_keyword',\n        keyword: $('#searchbar').val()\n      },\n      success: function success(res) {\n        $('.newsPreview').html(res);\n      }\n    });\n  });\n});\n\n//# sourceURL=webpack://facyl/./js/src/modules/filtres.js?");
+
+/***/ }),
+
 /***/ "./js/src/modules/jauge.js":
 /*!*********************************!*\
   !*** ./js/src/modules/jauge.js ***!
   \*********************************/
 /***/ (() => {
 
-eval("/* eslint-disable no-undef */\nvar secondGauge = document.querySelector('.eco-conception-container .progress');\n/* eslint radix: \"error\" */\n\nvar secondTarget = parseInt(secondGauge.getAttribute('data-target'), 10);\nvar secondGaugeReadout = document.querySelector('.eco-conception-container .percentage > .value'); // constiables\n\nvar gaugeR = parseInt(document.querySelectorAll('circle')[0].getAttribute('r'), 10);\nvar gaugeC = gaugeR * Math.PI * 2;\nvar animationDuration = 1.5; // init svg circles\n\nvar circles = document.querySelectorAll('circle');\nvar gauges = document.querySelectorAll('.progress');\nTweenMax.set(circles, {\n  strokeDashoffset: gaugeC\n});\nTweenMax.set(gauges, {\n  attr: {\n    'stroke-dasharray': \"\".concat(gaugeC, \" \").concat(gaugeC)\n  }\n}); // calculate the offset\n\nfunction calculateOffset(t, c) {\n  var target = c - c * t / 100;\n  return target;\n} // timeline\n\n\nvar tl = new TimelineMax();\ntl.to(secondGauge, animationDuration, {\n  strokeDashoffset: calculateOffset(secondTarget, gaugeC),\n  ease: Power3.easeInOut,\n  onUpdate: function onUpdate() {\n    var currentStrokeOffset = parseInt(secondGauge.style.strokeDashoffset, 10);\n    secondGaugeReadout.textContent = Math.round(100 - currentStrokeOffset * 100 / gaugeC);\n  }\n});\n\n//# sourceURL=webpack://facyl/./js/src/modules/jauge.js?");
+eval("// calculate the offset\nfunction calculateOffset(t, c) {\n  var target = c - c * t / 100;\n  return target;\n}\n\nif (document.querySelector('.eco-conception-container .progress')) {\n  /* eslint-disable no-undef */\n  var secondGauge = document.querySelector('.eco-conception-container .progress');\n  /* eslint radix: \"error\" */\n\n  var secondTarget = parseInt(secondGauge.getAttribute('data-target'), 10);\n  var secondGaugeReadout = document.querySelector('.eco-conception-container .percentage > .value'); // constiables\n\n  var gaugeR = parseInt(document.querySelectorAll('circle')[0].getAttribute('r'), 10);\n  var gaugeC = gaugeR * Math.PI * 2;\n  var animationDuration = 1.5; // init svg circles\n\n  var circles = document.querySelectorAll('circle');\n  var gauges = document.querySelectorAll('.progress');\n  TweenMax.set(circles, {\n    strokeDashoffset: gaugeC\n  });\n  TweenMax.set(gauges, {\n    attr: {\n      'stroke-dasharray': \"\".concat(gaugeC, \" \").concat(gaugeC)\n    }\n  }); // timeline\n\n  var tl = new TimelineMax();\n  tl.to(secondGauge, animationDuration, {\n    strokeDashoffset: calculateOffset(secondTarget, gaugeC),\n    ease: Power3.easeInOut,\n    onUpdate: function onUpdate() {\n      var currentStrokeOffset = parseInt(secondGauge.style.strokeDashoffset, 10);\n      secondGaugeReadout.textContent = Math.round(100 - currentStrokeOffset * 100 / gaugeC);\n    }\n  });\n}\n\n//# sourceURL=webpack://facyl/./js/src/modules/jauge.js?");
 
 /***/ }),
 
@@ -208,7 +218,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
-/******/ 	
+/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/ 		// Check if module is in cache
@@ -222,14 +232,14 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
-/******/ 	
+/******/
 /******/ 		// Execute the module function
 /******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/ 	
+/******/
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -242,7 +252,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			return getter;
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -254,12 +264,12 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -270,13 +280,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
-/******/ 	
+/******/
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = __webpack_require__("./js/src/front-end.js");
-/******/ 	
+/******/
 /******/ })()
 ;

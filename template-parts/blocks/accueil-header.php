@@ -2,7 +2,7 @@
 /**
  * Accueil-header
  *
- * @package airclean
+ * @package facyl
  */
 
 namespace Facyl;
@@ -38,9 +38,7 @@ if ( empty( $title ) ) {
           <div class="boutons-container">
           <?php while( have_rows('boutons') ): the_row(); ?>
 
-              <a class="<?php the_sub_field('couleur'); ?>" href="<?php the_sub_field('url_bouton'); ?>"><?php the_sub_field('texte_bouton'); ?>
-
-            </a>
+              <a class="<?php the_sub_field('couleur'); ?>" href="<?php the_sub_field('url_bouton'); ?>"><?php the_sub_field('texte_bouton'); ?><?php include get_theme_file_path( THEME_SETTINGS['chevron_right'] ); ?></a>
           <?php endwhile; ?>
           </div>
         <?php endif; ?>

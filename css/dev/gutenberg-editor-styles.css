@@ -33,6 +33,7 @@ img {
   --color-green: #004743;
   --color-white: #fff;
   --color-light-green: #296a67;
+  --color-background: #fff1d9;
   --color-main: var(--color-black);
   --color-heading: var(--color-main);
   --color-paragraph: var(--color-black);
@@ -93,8 +94,9 @@ img {
   --font-dosis-extra-bold: "Dosis Extra Bold";
   --font-dosis-bold: "Dosis Bold";
   --font-dosis: "Dosis";
+  --font-poppins: "Poppins";
   --font-paragraph: var(--font-dosis);
-  --font-heading: var(--font-dosis-extra-bold);
+  --font-heading: var(--font-poppins);
   --font-size-h1: 3.45rem;
   --font-size-h2: 2.7rem;
   --font-size-h3: 2rem;
@@ -1009,6 +1011,10 @@ img {
 }
 .editor-styles-wrapper .block-error h2,.site-main .block-error h2 {
   font-size: var(--font-size-h4);
+}
+
+body {
+  background: radial-gradient(122.03% 189.39% at 48.7% 14.88%, var(--color-white) 0%, var(--color-white) 17.4%, var(--color-background) 90.6%, #000 100%);
 }
 
 .block {

@@ -16,6 +16,7 @@ import 'what-input';
 import './modules/navigation';
 import './modules/sticky-nav';
 import './modules/jauge';
+import './modules/filtres';
 
 // Define Javascript is active by changing the body class
 document.body.classList.remove('no-js');

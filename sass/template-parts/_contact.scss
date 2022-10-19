@@ -1,0 +1,79 @@
+.wpcf7-spinner{
+  display: none;
+}
+
+.wpcf7-response-output{
+  font-size: var(--font-size-h3);
+  border-style: hidden;
+}
+
+@media only screen and (min-width: $width-max-mobile) {
+  .contact{
+    margin: 0 calc(2*var(--margin-large));
+    .wpcf7-form{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-column-gap: var(--margin-large);
+
+      label{
+        margin:10px 0;
+      }
+
+      input{
+        width: 100%;
+        text-align: left;
+      }
+
+      label[for=sujet]{
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+
+      label[for=message]{
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+
+      textarea{
+        width: 100%;
+        resize: none;
+      }
+
+      .wpcf7-submit{
+        text-align: center;
+        margin:var(--margin-small) auto;
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $width-max-mobile) {
+
+.contact{
+  margin: 0 var(--margin-large);
+  .wpcf7-form{
+    display: grid;
+
+    label{
+      margin:10px 0;
+    }
+
+    input{
+      width: 100%;
+      text-align: left;
+    }
+
+    textarea{
+      width: 100%;
+      resize: none;
+    }
+
+    .wpcf7-submit{
+      text-align: center;
+      margin:var(--margin-small) auto;
+    }
+  }
+}
+}
