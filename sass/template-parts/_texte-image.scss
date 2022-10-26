@@ -18,7 +18,7 @@
   }
 
   .image-texte {
-    margin: 0 var(--margin-large) var(--margin-large) var(--margin-large);
+    margin-bottom: var(--margin-large);
     display: grid;
     grid-template-rows: 1fr;
     grid-column-gap: var(--margin-medium);
@@ -41,7 +41,6 @@
 
 @media screen and (max-width: $width-max-mobile) {
   .image-texte {
-    margin: 0 var(--margin-medium);
     .block-texte {
       h2 {
         margin-top: 0;

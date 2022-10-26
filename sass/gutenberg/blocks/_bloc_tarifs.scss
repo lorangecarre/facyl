@@ -1,4 +1,5 @@
 .tarifs {
+  margin-bottom: var(--margin-large);
   &__mainTitle {
     text-align: center;
     font-size: var(--font-size-h2);
@@ -9,12 +10,20 @@
   &__plans {
     list-style-type: none;
     padding-left: 0;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    @media screen and (max-width: $width-max-mobile) {
+     grid-template-rows: repeat(3,max-content);
+     grid-row-gap: var(--margin-medium)
+    }
+    @media screen and (min-width: $width-max-mobile) {
+      grid-template-columns: repeat(3,1fr);
+      grid-column-gap: var(--margin-medium);
+    }
+    align-items: start;
   }
 }
+
+
 
 .plan {
   border-radius: 20px;
@@ -25,7 +34,32 @@
   flex-direction: column;
   align-items: center;
   max-width: 542px;
+  @include box-with-shadow(20px,50px,var(--color-white));
 
+  span{
+    display: none;
+  }
+  @media screen and (max-width: $width-max-mobile) {
+    span{
+      transform: translateY(140%);
+      background-color: var(--color-black);
+      width: 35px;
+      height: 35px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg{
+        color: var(--color-white);
+      }
+    }
+
+    &__buttonOpen{
+      svg{
+        rotate: 180deg;
+      }
+    }
+  }
   &__header {
     display: flex;
     flex-wrap: wrap;
@@ -54,7 +88,7 @@
     height: 16px;
     width: 16px;
     background-size: 16px;
-    background-image: url('svg/check-mark.svg');
+    background-image: url('../../svg/check-mark.svg');
     background-repeat: no-repeat;
     margin-right: 10px;
     background-position: center center;
@@ -73,26 +107,54 @@
       var(--color-black),
       var(--color-white),
       30px,
-      1px solid var(--color-white),
+      1px solid var(--color-black),
       1px solid var(--color-black),
       700,
-      false);
+      true);
 
     &.button-small {
       @include button-size-small();
     }
+  }
 
-    &__button::after {
-    content: '';
-    display: inline-block;
-    height: 16px;
-    width: 16px;
-    background-size: 16px;
-    background-image: url('svg/chevron-right.svg');
-    background-repeat: no-repeat;
-    margin-right: 10px;
-    background-position: center center;
-    vertical-align: middle;
+  &__footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: var(--margin-small);
+    line-height: var(--line-height-footer);
+    .plan__mail{
+      &::before{
+        content: '';
+        background-image: url('../../svg/mail.svg');
+        display: inline-block;
+        height: 16px;
+        width: 16px;
+        background-size: 16px;
+        margin-right: 10px;
+        background-position: center center;
+        vertical-align: middle;
+      }
     }
+    .plan__phone{
+      text-decoration: none;
+      &::before{
+        content: '';
+        background-image: url('../../svg/telephone.svg');
+        display: inline-block;
+        height: 16px;
+        width: 16px;
+        background-size: 16px;
+        margin-right: 10px;
+        background-position: center center;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+@media screen and (max-width: $width-max-mobile) {
+  .close{
+    display: none;
+    transition: display 1s;
   }
 }

@@ -139,7 +139,7 @@ add_action( 'after_setup_theme', function() {
         'icon'            => 'palmtree',
         'keywords'        => array( 'éco-conception', 'accueil' ),
         'post_types'      => array( 'post', 'page' ),
-        'enqueue_script'  => '/sass/template-parts/_eco-conception.scss',
+        'enqueue_script'  => '/css/prod/global.css',
       ],
       [
         // Bloc chiffres
@@ -152,51 +152,51 @@ add_action( 'after_setup_theme', function() {
         'keywords'        => array( 'chiffres', 'accueil' ),
         'post_types'      => array( 'post', 'page' ),
         'icon'            => 'editor-ol',
-        'enqueue_script'  => '/sass/gutenberg/blocks/_bloc-chiffres.scss',
+        'enqueue_script'  => '/css/prod/global.css',
       ],
       [
          'name'            => 'image-texte',
          'title'           => 'Bloc texte et image ',
          'render_template' => '/template-parts/blocks/image-texte.php',
          'category'        => 'formatting',
-         'enqueue_script'  => '/sass/template-parts/_eco-conception.scss',
-         ],
+         'enqueue_script'  => '/css/prod/global.css',
+        ],
          [
           //bloc les etape
           'name'            => 'etapes',
           'title'           => 'Les étapes de conception',
           'render_template' => '/template-parts/blocks/etape.php',
-          'enqueue_script'  => '/sass/blocks/_etape.scss',
-          ],
+          'enqueue_script'  => '/css/prod/global.css',
+        ],
           [
             //bloc les etapes et texte
             'name'            => 'etapes-texte',
             'title'           => 'Les étapes de conception et texte',
             'render_template' => '/template-parts/blocks/etape-texte.php',
-            'enqueue_script'  => '/sass/blocks/_etape.scss',
-            ],
+            'enqueue_script'  => '/css/prod/global.css',
+          ],
         [
           //bloc les etape
           'name'            => 'carrousel',
           'title'           => 'Carrousel',
           'render_template' => '/template-parts/blocks/carrousel.php',
-          'enqueue_script'  => '/sass/blocks/_carrousel.scss',
-          ],
+          'enqueue_script'  => '/css/prod/global.css',
+        ],
 
         [
           //bloc les etape
           'name'            => 'temoignage',
           'title'           => 'Témoignage',
           'render_template' => '/template-parts/blocks/temoignage.php',
-          'enqueue_script'  => '/sass/blocks/_temoignage.scss',
-          ],
+          'enqueue_script'  => '/css/prod/global.css',
+        ],
 
           [
           'name'            => 'dernieres-realisations',
           'title'           => 'Bloc dernières réalisations',
           'render_template' => '/template-parts/blocks/dernieres-realisations.php',
           'category'        => 'formatting',
-          'enqueue_script'  => '/sass/template-parts/_dernieres-realisations.scss',
+          'enqueue_script'  => '/css/prod/global.css',
         ],
 
       // [
@@ -214,8 +214,8 @@ add_action( 'after_setup_theme', function() {
          'keywords'        => array( 'images', 'accueil' ),
          'post_types'      => array( 'post', 'page' ),
          'icon'            => 'image',
-          'enqueue_script'  => '/sass/template-parts/_texte-image.scss',
-       ],
+         'enqueue_script'  => '/css/prod/global.css',
+        ],
        [
         // Bloc tarifs
         'name'            => 'bloc-tarifs',
@@ -227,7 +227,7 @@ add_action( 'after_setup_theme', function() {
         'keywords'        => array( 'tarifs', 'accueil' ),
         'post_types'      => array( 'post', 'page' ),
         'icon'            => 'money',
-        'enqueue_script'  => '/sass/gutenberg/blocks/_bloc-tarifs.scss',
+        'enqueue_script'  => '/css/prod/global.css',
       ],
     ],
 

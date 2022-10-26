@@ -17,6 +17,9 @@ import './modules/navigation';
 import './modules/sticky-nav';
 import './modules/jauge';
 import './modules/filtres';
+import './modules/tarif-mobile';
+import './modules/carrousel';
+import './modules/temoignage';
 
 // Define Javascript is active by changing the body class
 document.body.classList.remove('no-js');

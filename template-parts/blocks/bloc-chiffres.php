@@ -33,4 +33,4 @@ $values  = get_field( 'chiffres_container' );
     <?php else : ?>
       <p><strong>Veuillez renseigner au moins un chiffre clé !</strong></p>
   <?php endif; ?>
-</div>
+</section>

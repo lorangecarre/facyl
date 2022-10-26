@@ -76,6 +76,15 @@
 }
 
 // Add margin top because of absolute position
-.site-main {
-  margin-top: calc((var(--padding-site-header-vertical) * 2) + var(--logo-size) + var(--margin-large));
+
+@media only screen and (min-width: $width-max-mobile) {
+  .site-main {
+    margin-top: calc((var(--padding-site-header-vertical) * 2) + var(--logo-size) + var(--margin-large));
+  }
+}
+
+@media screen and (max-width: $width-max-mobile) {
+  .site-main {
+    margin-top: var(--margin-large);
+  }
 }

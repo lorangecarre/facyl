@@ -4,7 +4,7 @@
     grid-column-gap: var(--margin-medium);
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
-    margin: var(--margin-extra-large) var(--margin-large);
+    margin: var(--margin-extra-large) 0;
   }
 
   .eco-conception-text {
@@ -168,8 +168,6 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, max-content);
-    margin-left: var(--margin-medium);
-    margin-right: var(--margin-medium);
   }
 
   .eco-conception-text {

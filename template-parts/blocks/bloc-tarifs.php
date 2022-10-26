@@ -29,26 +29,34 @@ $title = get_field( 'plans_blockTitle' );
           <p class="plan__price"><?php echo esc_html( $parent_price = get_sub_field( 'plan_price' ) ); ?></p>
         </header>
         <?php if ( have_rows( 'plan_prestations' ) ) : ?>
-        <ul class="plan__prestations">
+        <ul class="plan__prestations close">
         <?php while ( have_rows( 'plan_prestations' ) ) : the_row(); ?>
           <li class="plan__prestation"><?php echo esc_html( $prestation = get_sub_field( 'plan_prestation_description' ) ); ?></li>
         <?php endwhile; ?>
         </ul>
         <?php endif; ?>
-        <footer class="plan__footer">
-          // TODO: ajout if pour pas afficher le footer si aucune infos rentré
-          <a class="plan__button" href="<?php echo esc_html( $parent_btn_texte = get_sub_field( 'plan_buttonText' ) ); ?>">
-            <?php echo esc_html( $parent_btn_texte = get_sub_field( 'plan_buttonText' ) ); ?>
+        <?php if ( get_sub_field( 'plan_buttonLink' ) !== '' || get_sub_field( 'plan_mail' ) !== '' || get_sub_field( 'plan_phone' ) !== '' ) : ?>
+        <footer class="plan__footer close">
+          <?php if ( have_rows( 'plan_buttonLink' ) !== '' ) : ?>
+          <a class="plan__button" href="<?php echo esc_html( $parent_btn_texte = get_sub_field( 'plan_buttonLink' ) ); ?>">
+            <?php echo esc_html( $parent_btn_texte = get_sub_field( 'plan_buttonText' ) ); ?> <?php include get_theme_file_path( THEME_SETTINGS['chevron_right'] ); ?>
           </a>
+          <?php endif; ?>
+          <?php if ( get_sub_field( 'plan_mail' ) !== '' ) : ?>
           <a class="plan__mail" href="mailto:<?php echo esc_html( $parent_mail = get_sub_field( 'plan_mail' ) ); ?>">
             <?php echo esc_html( $parent_mail = get_sub_field( 'plan_mail' ) ); ?>
           </a>
+          <?php endif; ?>
+          <?php if ( get_sub_field( 'plan_phone' ) !== '' ) : ?>
           <a class="plan__phone" href="tel:<?php echo esc_html( $parent_phone = get_sub_field( 'plan_phone' ) ); ?>">
-            <?php echo esc_html( $parent_phone = get_sub_field( 'plan_phone' ) ); ?>
+            <?php echo esc_html( $parent_phone = chunk_split( trim( get_sub_field( 'plan_phone' ) ), 2, ' ' ) ); ?>
           </a>
+          <?php endif; ?>
         </footer>
+        <span id="plan__button" class="plan__buttonOpen" aria-hidden="true"><?php include get_theme_file_path( THEME_SETTINGS['chevron_up'] ); ?></span>
+        <?php endif; ?>
       </li>
       <?php endwhile; ?>
-      </ul>
+    </ul>
     <?php endif; ?>
-</div>
+</section>

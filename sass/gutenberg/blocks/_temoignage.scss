@@ -1,33 +1,27 @@
 .title-testimonials{
   text-align: center;
-  margin-top: var(--margin-small);
+  margin-top: var(--margin-medium);
+  margin-bottom: var(--margin-small);
 }
 .slider {
-	height: 60rem;
 	margin: 0 auto;
-	position: relative;
+  display: flex;
 	overflow: hidden;
   padding: 0;
   list-style: none;
-  @media (min-width: $container-ipad) {
-    height: 62rem;
-  }
 	.slide {
-		position: absolute;
-		top: 0;
-    height: 58rem;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		transition: transform 0.5s;
+    min-width: 100%;
+    margin-bottom: var(--margin-medium);
+    margin-top: var(--margin-medium);
     @media (min-width: 600px) and (max-width: 767px) {
       width: 100%;
     }
     @media (min-width: 768px) {
-      width: 50%;
-    }
-    @media (min-width: $container-ipad) {
-      height: 61rem;
+      min-width: 50%;
     }
 		& > img {
 			width: 100%;
@@ -44,7 +38,12 @@
 			display: flex;
       flex-direction: column;
 			justify-content: center;
-      @include box-with-shadow();
+      @media only screen and (min-width: $width-max-mobile) {
+        @include box-with-shadow();
+      }
+      @media screen and (max-width: $width-max-mobile) {
+        @include box-with-shadow(10px, 10px);
+      }
 
       &:hover img{
         filter: none;
@@ -73,26 +72,19 @@
   justify-content: space-around;
   gap: 25px;
 	bottom: 0;
+  margin-bottom: var(--margin-medium);
 	.slider__btn {
-    display: flex;
-    justify-content: center;
-    background: var(--color-black);
-    border: none;
-    padding: 8px;
-    border-radius: 50%;
+     @include button(50px,var(--color-white),var(--color-white),var(--color-black),var(--color-orange), 50%, 1px solid var(--color-black), 1px solid var(--color-orange));
     outline: 0;
+    width: 50px;
+    height: 50px;
     cursor: pointer;
-    width: 50px;height: 50px;
-    align-items: center;
     transition: all 500ms ease-in-out;
+    padding: 0;
 
-      &:hover{
-        background: var(--color-orange);
-        box-shadow: 8px 8px 50px 0 rgb(0 0 0 / 17%);
-      }
-      &:focus{
-        background: var(--color-black);
-      }
+    svg{
+      margin-left: 0;
+    }
 	}
 
 }

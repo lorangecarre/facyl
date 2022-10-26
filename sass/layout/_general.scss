@@ -5,6 +5,16 @@
 body{
   background: radial-gradient(122.03% 189.39% at 48.7% 14.88%, var(--color-white) 0%, var(--color-white) 17.4%, var(--color-background) 90.6%, #000000 100%)
 }
+@media only screen and (min-width: $width-max-mobile) {
+  main>*:not(.block-header-home){
+    padding: 0 var(--margin-large);
+  }
+}
+@media screen and (max-width: $width-max-mobile) {
+  main>*:not(.block-header-home){
+    padding: 0 var(--margin-medium);
+  }
+}
 
 // Default structural element
 .block {

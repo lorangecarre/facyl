@@ -1,7 +1,5 @@
-.carousel__content{
-  width: 100%;
-  max-width: 1200px;
-  position: relative;
+.carousel{
+  max-width: 100%;
 }
 
 .carousel__content{
@@ -19,52 +17,37 @@
 }
 #prev,
 #next {
-  display: flex;
-  justify-content: center;
-  background: var(--color-black);
-  border: none;
+  @include button(50px,var(--color-white),var(--color-white),var(--color-black),var(--color-orange), 50%, 1px solid var(--color-black), 1px solid var(--color-orange));
   padding: 8px;
-  border-radius: 50%;
   outline: 0;
-  cursor: pointer;
-  width: 50px;height: 50px;
-  align-items: center;
-  transition: all 500ms ease-in-out;
+  width: 50px;
+  height: 50px;
 }
-#prev:hover, #next:hover {
-  background: var(--color-orange);
-  box-shadow: 8px 8px 50px 0 rgb(0 0 0 / 17%);
-}
-
-#prev {
-  display: none;
-}
-
-
 #next svg{
   transform: rotate(90deg);
+  margin-left: 0;
 }
 #prev svg{
   transform: rotate(270deg);
+  margin-left: 0;
 }
 .carousel__content--child {
-  display: grid;
-  grid-gap: 16px;
-  grid-auto-flow: column;
-  margin: auto;
+  padding-left: 0;
+  display: inline-flex;
   box-sizing: border-box;
   list-style: none;
+  li:not(:last-child){
+    margin-right: 16px;
+  }
 }
 
 .carousel__content--img{
-  width: 180px;
-  height: 180px;
-  max-width: none;
+  height: 100px;
   object-fit: contain;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   transition: all 500ms ease-in-out;
-  }
+}
 
 .carousel__content--img:hover {
   -webkit-filter: grayscale(0%);
