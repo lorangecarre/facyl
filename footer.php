@@ -41,10 +41,10 @@ $menu_confidentiality_args = array(
       <p>Maintenance mensuelle (sauvegardes, corrections de bugs, mise à jours, Intégration de vos contenus au besoin, contrôle de sécurité ...)</p>
     </div>
     <div class="social-media">
-      <a href="#">
+      <a href="https://www.linkedin.com/company/orange-carre/" class="no-external-link-indicator" target="_blank">
         <?php include get_theme_file_path( THEME_SETTINGS['logo_linkedin'] ); ?>
       </a>
-      <a href="#">
+      <a href="https://www.instagram.com/lorangecarre" class="no-external-link-indicator" target="_blank">
         <?php include get_theme_file_path( THEME_SETTINGS['logo_insta'] ); ?>
       </a>
     </div>

@@ -39,4 +39,4 @@ namespace Air_Light;
     ) ); ?>
   </nav>
 </div>
-<a class="button button-small button-isContact" href="#">Nous contacter</a>
+<a class="button button-small button-isContact" href="/contact">Nous contacter</a>
