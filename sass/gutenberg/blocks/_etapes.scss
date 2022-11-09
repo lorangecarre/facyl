@@ -14,7 +14,7 @@
       align-items: center;
       justify-content: center;
     }
-    &:nth-child(even) {
+    &:nth-child(odd) {
       align-self: flex-end;
       @media (min-width: $container-ipad) {
         flex-direction: row;

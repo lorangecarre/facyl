@@ -42,7 +42,7 @@ $text = get_field( 'text_block' ) ?: 'Author name';
       </a>
     </div>
     <div class="title-green-it">
-      <h4 class="title">GreenIT</h4>
+      <h3 class="title">GreenIT</h3>
       <div class="green-it-note">
         <svg width="74" height="70" viewBox="0 0 74 70" fill="none" xmlns="http://www.w3.org/2000/svg">
           <title id="gaugeTitle">GreenIT</title>

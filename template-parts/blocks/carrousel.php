@@ -1,4 +1,4 @@
-<section class="content__flex" aria-labelledby="<?php the_field('titre546'); ?> - carrousel" role="slider">
+<section class="content__flex" aria-label="<?php the_field('titre546'); ?>" aria-roledescription="carousel">
   <h2 class="footer__confiance-titre"><?php the_field('titre546'); ?></h2>
   <div class="carousel">
       <div id="carousel" class="carousel__content" >
@@ -7,9 +7,9 @@
               <?php if( have_rows('logos') ):  ?>
                   <?php while( have_rows('logos') ): the_row();
                       $logo = get_sub_field('logo'); $i++; ?>
-                        <li role="group" aria-label="slide <?php echo $i; ?> sur <?php echo $count; ?>">
+                        <li>
                           <?php echo wp_get_attachment_image( $logo, 'full' ); ?>
-                            <img id="content" src="<?php the_sub_field('logo'); ?>" class="carousel__content--img" alt="<?php the_sub_field('nom_de_lentreprise'); ?>"/>
+                            <img role="group" aria-label="<?php echo $i; ?> sur <?php echo $count; ?>" aria-roledescription="slide" id="content" src="<?php the_sub_field('logo'); ?>" class="carousel__content--img" alt="<?php the_sub_field('nom_de_lentreprise'); ?>"/>
                         </li>
                   <?php endwhile; ?>
               <?php endif; ?>
