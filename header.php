@@ -24,6 +24,7 @@ namespace Air_Light;
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="profile" href="http://gmpg.org/xfn/11">
+  <link rel="preconnect" href="https://fonts.cdnfonts.com">
   <?php wp_enqueue_script( 'tweenmax', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js' ) ?>
 
   <?php wp_head(); ?>

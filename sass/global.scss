@@ -20,6 +20,10 @@
 @import "variables/font-size";
 @import "variables/forms";
 @import "variables/spacings";
+@import "variables/themes/default";
+@import "variables/themes/dyslexie";
+@import "variables/themes/reverseColor";
+@import "variables/themes/augmentedLineHeight";
 
 // Accessibility
 @import "base/accessibility";
@@ -78,3 +82,4 @@
 @import "template-parts/texte-image";
 @import "template-parts/dernieres-realisations";
 @import "template-parts/contact";
+@import "template-parts/modal";

@@ -35,22 +35,79 @@ $menu_confidentiality_args = array(
 </div><!-- #content -->
 
 <footer id="colophon" class="site-footer">
+  <div role="presentation" aria-hidden="true" class="wave wave__footer">
+    <?php get_template_part( 'template-parts/header/modal' ); ?>
+  </div>
   <div class="site-info">
     <div class="company">
       <?php include get_theme_file_path( THEME_SETTINGS['logo'] ); ?>
       <p>Maintenance mensuelle (sauvegardes, corrections de bugs, mise à jours, Intégration de vos contenus au besoin, contrôle de sécurité ...)</p>
     </div>
     <div class="social-media">
-      <a href="https://www.linkedin.com/company/orange-carre/" class="no-external-link-indicator" target="_blank">
-        <?php include get_theme_file_path( THEME_SETTINGS['logo_linkedin'] ); ?>
-      </a>
-      <a href="https://www.instagram.com/lorangecarre" class="no-external-link-indicator" target="_blank">
-        <?php include get_theme_file_path( THEME_SETTINGS['logo_insta'] ); ?>
-      </a>
+    <?php
+      $linkedin = get_theme_mod( 'show_linkedin' );
+      if ( $linkedin ) {
+          ?>
+          <a href="<?php echo( get_theme_mod( 'show_linkedin' ) ); ?>" class="no-external-link-indicator" target="_blank">
+            <?php include get_theme_file_path( THEME_SETTINGS['logo_linkedin'] ); ?>
+          </a>
+        <?php
+      }
+    ?>
+    <?php
+      $instagram = get_theme_mod( 'show_instagram' );
+      if ( $instagram ) {
+          ?>
+          <a href="<?php echo( get_theme_mod( 'show_instagram' ) ); ?>" class="no-external-link-indicator" target="_blank">
+            <?php include get_theme_file_path( THEME_SETTINGS['logo_insta'] ); ?>
+          </a>
+        <?php
+      }
+    ?>
+    <?php
+      $facebook = get_theme_mod( 'show_facebook' );
+      if ( $facebook ) {
+          ?>
+          <a href="<?php echo( get_theme_mod( 'show_facebook' ) ); ?>" class="no-external-link-indicator" target="_blank">
+            <?php include get_theme_file_path( THEME_SETTINGS['logo_facebook'] ); ?>
+          </a>
+        <?php
+      }
+    ?>
+    <?php
+      $youtube = get_theme_mod( 'show_youtube' );
+      if ( $youtube ) {
+          ?>
+          <a href="<?php echo( get_theme_mod( 'show_youtube' ) ); ?>" class="no-external-link-indicator" target="_blank">
+            <?php include get_theme_file_path( THEME_SETTINGS['logo_youtube'] ); ?>
+          </a>
+        <?php
+      }
+    ?>
+    <?php
+      $twitter = get_theme_mod( 'show_twitter' );
+      if ( $twitter ) {
+          ?>
+          <a href="<?php echo( get_theme_mod( 'show_twitter' ) ); ?>" class="no-external-link-indicator" target="_blank">
+            <?php include get_theme_file_path( THEME_SETTINGS['logo_twitter'] ); ?>
+          </a>
+        <?php
+      }
+    ?>
+    <?php
+      $tiktok = get_theme_mod( 'show_tiktok' );
+      if ( $tiktok ) {
+          ?>
+          <a href="<?php echo( get_theme_mod( 'show_tiktok' ) ); ?>" class="no-external-link-indicator" target="_blank">
+            <?php include get_theme_file_path( THEME_SETTINGS['logo_tiktok'] ); ?>
+          </a>
+        <?php
+      }
+    ?>
     </div>
     <?php wp_nav_menu( $menu_footer_args ) ?>
     <?php wp_nav_menu( $menu_confidentiality_args ) ?>
-    <a href="#" class="contact-link">
+    <a href="/contact" class="contact-link">
       <div class="contact">Nous contacter <?php include get_theme_file_path( THEME_SETTINGS['chevron_right'] ); ?></div>
     </a>
   </div>

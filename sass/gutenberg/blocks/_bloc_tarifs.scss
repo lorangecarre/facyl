@@ -82,21 +82,18 @@
     padding-left: 0;
   }
 
-  &__prestation::before {
-    content: '';
-    display: inline-block;
-    height: 16px;
-    width: 16px;
-    background-size: 16px;
-    background-image: url('../../svg/check-mark.svg');
-    background-repeat: no-repeat;
-    margin-right: 10px;
-    background-position: center center;
-    vertical-align: middle;
-  }
-
   &__prestation {
     font-size: var(--font-size-text);
+    &:not(:last-child){
+      margin-bottom: var(--margin-small);
+    }
+    .checkmark{
+      display: inline-block;
+      height: 16px;
+      width: 16px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
   }
 
   &__button {
@@ -124,29 +121,21 @@
     margin-top: var(--margin-small);
     line-height: var(--line-height-footer);
     .plan__mail{
-      &::before{
-        content: '';
-        background-image: url('../../svg/mail.svg');
+      .mail{
         display: inline-block;
         height: 16px;
         width: 16px;
-        background-size: 16px;
         margin-right: 10px;
-        background-position: center center;
         vertical-align: middle;
       }
     }
     .plan__phone{
       text-decoration: none;
-      &::before{
-        content: '';
-        background-image: url('../../svg/telephone.svg');
+      .phone{
         display: inline-block;
         height: 16px;
         width: 16px;
-        background-size: 16px;
         margin-right: 10px;
-        background-position: center center;
         vertical-align: middle;
       }
     }

@@ -59,3 +59,116 @@ function filter_projects_keyword() {
 	echo $response;
 	exit;
 }
+
+
+function customizer_footer($wp_customize)
+{
+      // on ajoute une nouvelle section
+      $wp_customize->add_section('theme_footer', array(
+        'title' => 'Reseaux Sociaux',
+        'description' => "",
+        'priority' => 20
+      ));
+
+	  $wp_customize->add_setting('show_facebook', array(
+        'capability' => 'edit_theme_options',
+      ));
+
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            $wp_customize,
+            'show_facebook',
+            array(
+                'label'     => __("Lien Facebook", 'dd_theme'),
+                'section'   => 'theme_footer',
+                'settings'  => 'show_facebook',
+                'type'      => 'text',
+            )
+        )
+    );
+
+	  $wp_customize->add_setting('show_instagram', array(
+        'capability' => 'edit_theme_options',
+      ));
+
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            $wp_customize,
+            'show_instagram',
+            array(
+                'label'     => __("Lien Instagram", 'dd_theme'),
+                'section'   => 'theme_footer',
+                'settings'  => 'show_instagram',
+                'type'      => 'text',
+            )
+        )
+    );
+
+    $wp_customize->add_setting('show_linkedin', array(
+      'capability' => 'edit_theme_options',
+    ));
+
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            $wp_customize,
+            'show_linkedin',
+            array(
+                'label'     => __("Lien Linkedin", 'dd_theme'),
+                'section'   => 'theme_footer',
+                'settings'  => 'show_linkedin',
+                'type'      => 'text',
+            )
+        )
+    );
+
+    $wp_customize->add_setting('show_twitter', array(
+      'capability' => 'edit_theme_options',
+    ));
+
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            $wp_customize,
+            'show_twitter',
+            array(
+                'label'     => __("Lien Twitter", 'dd_theme'),
+                'section'   => 'theme_footer',
+                'settings'  => 'show_twitter',
+                'type'      => 'text',
+            )
+        )
+    );
+
+    $wp_customize->add_setting('show_youtube', array(
+      'capability' => 'edit_theme_options',
+    ));
+
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            $wp_customize,
+            'show_youtube',
+            array(
+                'label'     => __("Lien Youtube", 'dd_theme'),
+                'section'   => 'theme_footer',
+                'settings'  => 'show_youtube',
+                'type'      => 'text',
+            )
+        )
+    );
+
+    $wp_customize->add_setting('show_tiktok', array(
+      'capability' => 'edit_theme_options',
+    ));
+
+    $wp_customize->add_control(
+        new WP_Customize_Control(
+            $wp_customize,
+            'show_tiktok',
+            array(
+                'label'     => __("Lien Tiktok", 'dd_theme'),
+                'section'   => 'theme_footer',
+                'settings'  => 'show_tiktok',
+                'type'      => 'text',
+            )
+        )
+    );
+}
