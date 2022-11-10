@@ -32,7 +32,28 @@
   position: relative;
   z-index: 15;
 
-  .button {
+  .buttonSticky{
+    @include button(
+      max-content,
+      var(--color-black),
+      var(--color-white),
+      var(--color-white),
+      var(--color-black),
+      30px,
+      1px solid var(--color-white),
+      1px solid var(--color-white),
+      700,
+      false);
+
+    &.button-small {
+      @include button-size-small();
+    }
+
+    @media (max-width: $width-max-mobile) {
+      display: none;
+    }
+  }
+  .buttonNonSticky {
     @include button(
       max-content,
       var(--color-white),
@@ -40,7 +61,7 @@
       var(--color-black),
       var(--color-white),
       30px,
-      1px solid var(--color-white),
+      1px solid var(--color-black),
       1px solid var(--color-black),
       700,
       false);
@@ -52,6 +73,13 @@
     @media (max-width: $width-max-mobile) {
       display: none;
     }
+  }
+
+  .second-navigation-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5em;
   }
 }
 

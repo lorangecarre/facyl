@@ -25,10 +25,11 @@ $articles = new WP_Query( $args );
 
 <section id="<?php echo esc_attr( $id ); ?>" class="<?php echo esc_attr( $class_name ); ?>" >
   <h2><?php echo esc_html( $title ) ?></h2>
-  <div class="articles">
-      <?php while ( $articles->have_posts() ) {
-          $articles->the_post();
-            get_template_part( 'template-parts/component/realisations' );
-          } ?>
+  <div class="articles" style="grid-template-rows: repeat(<?php echo($articles->post_count) ?>,1fr);">
+  <?php
+  while ( $articles->have_posts() ) {
+      $articles->the_post();
+        get_template_part( 'template-parts/component/realisations' );
+      } ?>
   </div>
 </section>

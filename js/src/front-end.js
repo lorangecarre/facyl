@@ -20,6 +20,7 @@ import './modules/filtres';
 import './modules/tarif-mobile';
 import './modules/carrousel';
 import './modules/temoignage';
+import './modules/accessibilite';
 
 // Define Javascript is active by changing the body class
 document.body.classList.remove('no-js');

@@ -1,4 +1,4 @@
-const buttons = document.querySelectorAll('#plan__button');
+const buttons = document.querySelectorAll('#plan__buttonOpen');
 
 if (buttons) {
   buttons.forEach((button) => {

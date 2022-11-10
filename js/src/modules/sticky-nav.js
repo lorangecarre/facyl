@@ -12,14 +12,29 @@ function stickyNav() {
   const headerHeight = getComputedStyle(header).height.split('px')[0];
   const scrollValue = window.scrollY;
 
+  const buttonContact = document.querySelector('.button-isContact');
+  const accessibiliteHeader = document.querySelector('.accessibiliteHeader');
+
   if (scrollValue > headerHeight) {
     navbar.classList.add('is-fixed');
+    accessibiliteHeader.classList.add('stickyAccessibilityHeader');
+    buttonContact.classList.add('buttonSticky');
+    accessibiliteHeader.classList.remove('nonStickyAccessibilityHeader');
+    buttonContact.classList.remove('buttonNonSticky');
   } else if (scrollValue < headerHeight) {
     navbar.classList.remove('is-fixed');
+    accessibiliteHeader.classList.remove('stickyAccessibilityHeader');
+    buttonContact.classList.remove('buttonSticky');
+    accessibiliteHeader.classList.add('nonStickyAccessibilityHeader');
+    buttonContact.classList.add('buttonNonSticky');
   }
 
   if (window.pageYOffset > headerHeight) {
     navbar.classList.add('is-fixed');
+    accessibiliteHeader.classList.add('stickyAccessibilityHeader');
+    buttonContact.classList.add('buttonSticky');
+    accessibiliteHeader.classList.remove('nonStickyAccessibilityHeader');
+    buttonContact.classList.remove('buttonNonSticky');
   }
 }
 

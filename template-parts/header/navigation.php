@@ -39,4 +39,8 @@ namespace Air_Light;
     ) ); ?>
   </nav>
 </div>
-<a class="button button-small button-isContact" href="/contact">Nous contacter</a>
+<div class="second-navigation-wrapper">
+  <a class="button button-small button-isContact buttonNonSticky" href="/contact">Nous contacter</a>
+  <button tabindex="0" id="dialog_open_button" type="button" aria-haspopup="dialog" aria-controls="dialog" title="Accessibilité, gérer les paramètres"><?php include get_theme_file_path( THEME_SETTINGS['accessibilite'] ); ?></button>
+</div>
+

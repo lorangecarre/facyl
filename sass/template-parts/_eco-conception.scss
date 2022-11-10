@@ -41,11 +41,7 @@
     }
 
     .progress {
-      stroke: var(--color-orange);
-    }
-
-    .icon {
-      color: var(--color-orange);
+      stroke: var(--color-jauge);
     }
 
     .value {
@@ -103,7 +99,7 @@
   .title-green-it {
     @include box-with-shadow(20px,50px);
     height: 50%;
-    h4 {
+    h3 {
       font-size: var(--font-size-h4);
       text-align: center;
       font-weight: var(--font-weight-medium);
@@ -206,11 +202,7 @@
     }
 
     .progress {
-      stroke: var(--color-orange);
-    }
-
-    .icon {
-      color: var(--color-orange);
+      stroke: var(--color-jauge);
     }
 
     .value {
@@ -274,7 +266,7 @@
     .title-green-it {
       @include box-with-shadow(20px,50px);
       padding-bottom: var(--margin-large);
-      h4 {
+      h3 {
         font-size: var(--font-size-h2);
         text-align: center;
         font-weight: var(--font-weight-medium);

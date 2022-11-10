@@ -51,6 +51,7 @@ add_action( 'after_setup_theme', function() {
     'logo_insta'              => '/svg/insta.svg',
     'chevron_right'           => '/svg/chevron-right.svg',
     'chevron_up'              => '/svg/chevron-up.svg',
+    'accessibilite'           => '/svg/accessibilite.svg',
 
     /**
      * Custom setting group settings when using Air setting groups plugin.
