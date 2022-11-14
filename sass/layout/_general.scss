@@ -66,11 +66,11 @@ body{
   max-width: 100%;
   overflow: hidden;
   position: relative;
+  min-height: 100vh;
 }
 
 .site-content {
   margin: auto;
-  max-width: $width-grid-base;
 }
 
 // Containers
