@@ -54,6 +54,18 @@ rm -r /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/css/dev
 rm -r /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/js/dev
 rm -r /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/js/src
 rm -r /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/ACF_export
+rm -r /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/gulp
+rm -r /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/.husky
+rm /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/localhost-key.pem
+rm /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/localhost.pem
+rm /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/sshkeydev
+rm /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/sshkeydev.pub
+rm /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/.commitlintrc.json
+rm /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/.jscsrc
+rm /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/.jshintrc
+rm /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/.pa11yci
+rm /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/gulpfile.js
+rm /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/readme.txt
 
 # Screenshot, related to: https://themes.trac.wordpress.org/ticket/100180#comment:2
 mv /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/screenshot.png $HOME/air-temp/

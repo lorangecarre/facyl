@@ -27,7 +27,7 @@ mkdir -p /var/www/certs && cd /var/www/certs && mkcert localhost 192.168.x.xxx :
 
 - Avant toutes choses : lancer la commande *gulp devstyles* et *gulp prodstyles*
 - Aller dans le dossier bin
-- Modifier /home/oc-001/Local_Sites/facyl/app/public/wp-content par le chemin de votre dossier dans les fichier air-move-out.sh, air-pack.sh et air-move-in.sh
+- Modifier /home/oc-001/Local_Sites/facyl/app/public/wp-content par le chemin de votre dossier dans les fichiers air-move-out.sh et air-pack.sh
 - Lancer les commandes : 
 ```bash
 sudo sh air-move-out.sh
