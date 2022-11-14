@@ -17,4 +17,3 @@ rm /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl.zip
 sh /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/bin/air-move-out.sh
 cd /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/
 zip -r facyl.zip facyl
-sh $HOME/air-temp/bin/air-move-in.sh
