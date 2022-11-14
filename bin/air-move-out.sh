@@ -13,33 +13,32 @@ echo "${YELLOW}Moving dev files out...${TXTRESET}"
 mkdir -p $HOME/air-temp
 find . -name '.DS_Store' -type f -delete
 find ../ -name '.DS_Store' -type f -delete
-rm /var/www/airdev/content/themes/facyl/sass/components/.gitkeep $HOME/air-temp/
-mv /var/www/airdev/content/themes/facyl/sass/modules/.gitkeep $HOME/air-temp/
-mv /var/www/airdev/content/themes/facyl/.hintrc $HOME/air-temp/
-mv /var/www/airdev/content/themes/facyl/.stylelintignore $HOME/air-temp/
-mv /var/www/airdev/content/themes/facyl/.nvmrc $HOME/air-temp/
-mv /var/www/airdev/content/themes/facyl/.eslintrc.js $HOME/air-temp/
-mv /var/www/airdev/content/themes/facyl/.browserslistrc $HOME/air-temp/
-mv /var/www/airdev/content/themes/facyl/.vscode $HOME/air-temp/
-mv /var/www/airdev/content/themes/facyl/.svgo.yml $HOME/air-temp/
-mv /var/www/airdev/content/themes/facyl/.accessibilityrc $HOME/air-temp/
-mv /var/www/airdev/content/themes/facyl/.git $HOME/air-temp/
-mv /var/www/airdev/content/themes/facyl/.gitignore $HOME/air-temp/
-mv /var/www/airdev/content/themes/facyl/.jshintignore $HOME/air-temp/
-mv /var/www/airdev/content/themes/facyl/.travis.yml $HOME/air-temp/
-mv /var/www/airdev/content/themes/facyl/package.json $HOME/air-temp/
-mv /var/www/airdev/content/themes/facyl/package-lock.json $HOME/air-temp/
-mv /var/www/airdev/content/themes/facyl/phpcs.xml $HOME/air-temp/
-sudo mv /var/www/airdev/content/themes/facyl/node_modules $HOME/air-temp/
-mv /var/www/airdev/content/themes/facyl/gulpfile.js $HOME/air-temp/
-mv /var/www/airdev/content/themes/facyl/bin $HOME/air-temp/
-mv /var/www/airdev/content/themes/facyl/content $HOME/air-temp/
-mv /var/www/airdev/content/themes/facyl/__MACOSX $HOME/air-temp/
-mv /var/www/airdev/content/themes/facyl/.scss-lint.yml $HOME/air-temp/
-mv /var/www/airdev/content/themes/facyl/front-page.php $HOME/air-temp/
-mv /var/www/airdev/content/themes/facyl/README.md $HOME/air-temp/
-mv /var/www/airdev/content/themes/facyl/.stylelintrc $HOME/air-temp/
-mv /var/www/airdev/content/themes/facyl/.editorconfig $HOME/air-temp/
+rm /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/sass/components/.gitkeep $HOME/air-temp/
+mv /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/sass/modules/.gitkeep $HOME/air-temp/
+mv /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/.hintrc $HOME/air-temp/
+mv /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/.stylelintignore $HOME/air-temp/
+mv /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/.nvmrc $HOME/air-temp/
+mv /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/.eslintrc.js $HOME/air-temp/
+mv /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/.browserslistrc $HOME/air-temp/
+mv /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/.vscode $HOME/air-temp/
+mv /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/.svgo.yml $HOME/air-temp/
+mv /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/.accessibilityrc $HOME/air-temp/
+mv /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/.git $HOME/air-temp/
+mv /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/.gitignore $HOME/air-temp/
+mv /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/.jshintignore $HOME/air-temp/
+mv /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/.travis.yml $HOME/air-temp/
+mv /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/package.json $HOME/air-temp/
+mv /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/package-lock.json $HOME/air-temp/
+mv /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/phpcs.xml $HOME/air-temp/
+sudo mv /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/node_modules $HOME/air-temp/
+mv /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/gulpfile.js $HOME/air-temp/
+mv /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/bin $HOME/air-temp/
+mv /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/content $HOME/air-temp/
+mv /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/__MACOSX $HOME/air-temp/
+mv /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/.scss-lint.yml $HOME/air-temp/
+mv /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/README.md $HOME/air-temp/
+mv /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/.stylelintrc $HOME/air-temp/
+mv /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/.editorconfig $HOME/air-temp/
 mkdir -p $HOME/air-temp/template-parts
 mkdir -p $HOME/air-temp/template-parts/header
 mkdir -p $HOME/air-temp/template-parts/footer
@@ -48,12 +47,17 @@ mkdir -p $HOME/air-temp/template-parts/footer
 # Because:
 # REQUIRED: The theme uses the register_taxonomy() function, which is plugin-territory functionality.
 # REQUIRED: The theme uses the register_post_type() function, which is plugin-territory functionality.
-rm /var/www/airdev/content/themes/facyl/inc/includes/taxonomy.php
-rm /var/www/airdev/content/themes/facyl/inc/includes/post-type.php
+rm /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/inc/includes/taxonomy.php
+rm /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/inc/includes/post-type.php
+rm -r /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/sass
+rm -r /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/css/dev
+rm -r /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/js/dev
+rm -r /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/js/src
+rm -r /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/ACF_export
 
 # Screenshot, related to: https://themes.trac.wordpress.org/ticket/100180#comment:2
-mv /var/www/airdev/content/themes/facyl/screenshot.png $HOME/air-temp/
-cd /var/www/airdev/content/themes/facyl/
+mv /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/screenshot.png $HOME/air-temp/
+cd /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/
 wget https://i.imgur.com/idVvQKv.png
 mv -v idVvQKv.png screenshot.png
 

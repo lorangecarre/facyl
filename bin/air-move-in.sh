@@ -10,39 +10,38 @@ white=$(tput setaf 7)
 txtreset=$(tput sgr0)
 
 mkdir -p $HOME/air-temp
-cp $HOME/air-temp/.gitkeep /var/www/airdev/content/themes/facyl/sass/components/
-cp $HOME/air-temp/.gitkeep /var/www/airdev/content/themes/facyl/sass/modules/
-mv $HOME/air-temp/.hintrc /var/www/airdev/content/themes/facyl/
-mv $HOME/air-temp/.stylelintignore /var/www/airdev/content/themes/facyl/
-mv $HOME/air-temp/.nvmrc /var/www/airdev/content/themes/facyl/
-mv $HOME/air-temp/.eslintrc.js /var/www/airdev/content/themes/facyl/
-mv $HOME/air-temp/.browserslistrc /var/www/airdev/content/themes/facyl/
-mv $HOME/air-temp/.vscode /var/www/airdev/content/themes/facyl/
-mv $HOME/air-temp/.svgo.yml /var/www/airdev/content/themes/facyl/
-mv $HOME/air-temp/.accessibilityrc /var/www/airdev/content/themes/facyl/
-mv $HOME/air-temp/.git /var/www/airdev/content/themes/facyl/
-mv $HOME/air-temp/.gitignore /var/www/airdev/content/themes/facyl/
-mv $HOME/air-temp/.jshintignore /var/www/airdev/content/themes/facyl/
-mv $HOME/air-temp/.travis.yml /var/www/airdev/content/themes/facyl/
-mv $HOME/air-temp/package.json /var/www/airdev/content/themes/facyl/
-mv $HOME/air-temp/package-lock.json /var/www/airdev/content/themes/facyl/
-mv $HOME/air-temp/phpcs.xml /var/www/airdev/content/themes/facyl/
-sudo mv $HOME/air-temp/node_modules /var/www/airdev/content/themes/facyl/
-mv $HOME/air-temp/gulpfile.js /var/www/airdev/content/themes/facyl/
-mv $HOME/air-temp/bin /var/www/airdev/content/themes/facyl/
-mv $HOME/air-temp/content /var/www/airdev/content/themes/facyl/content
-mv $HOME/air-temp/.scss-lint.yml /var/www/airdev/content/themes/facyl/
-mv $HOME/air-temp/front-page.php /var/www/airdev/content/themes/facyl/
-mv $HOME/air-temp/README.md /var/www/airdev/content/themes/facyl/
-mv $HOME/air-temp/.stylelintrc /var/www/airdev/content/themes/facyl/
-mv $HOME/air-temp/.editorconfig /var/www/airdev/content/themes/facyl/
+cp $HOME/air-temp/.gitkeep /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/sass/components/
+cp $HOME/air-temp/.gitkeep /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/sass/modules/
+mv $HOME/air-temp/.hintrc /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/
+mv $HOME/air-temp/.stylelintignore /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/
+mv $HOME/air-temp/.nvmrc /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/
+mv $HOME/air-temp/.eslintrc.js /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/
+mv $HOME/air-temp/.browserslistrc /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/
+mv $HOME/air-temp/.vscode /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/
+mv $HOME/air-temp/.svgo.yml /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/
+mv $HOME/air-temp/.accessibilityrc /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/
+mv $HOME/air-temp/.git /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/
+mv $HOME/air-temp/.gitignore /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/
+mv $HOME/air-temp/.jshintignore /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/
+mv $HOME/air-temp/.travis.yml /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/
+mv $HOME/air-temp/package.json /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/
+mv $HOME/air-temp/package-lock.json /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/
+mv $HOME/air-temp/phpcs.xml /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/
+sudo mv $HOME/air-temp/node_modules /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/
+mv $HOME/air-temp/gulpfile.js /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/
+mv $HOME/air-temp/bin /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/
+mv $HOME/air-temp/content /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/content
+mv $HOME/air-temp/.scss-lint.yml /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/
+mv $HOME/air-temp/README.md /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/
+mv $HOME/air-temp/.stylelintrc /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/
+mv $HOME/air-temp/.editorconfig /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/
 
 # Move the original starter screenshot back in, related to: https://themes.trac.wordpress.org/ticket/100180#comment:2
-rm /var/www/airdev/content/themes/facyl/screenshot.png
-mv $HOME/air-temp/screenshot.png /var/www/airdev/content/themes/facyl/
+rm /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/screenshot.png
+mv $HOME/air-temp/screenshot.png /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/
 
 # Restore repository state before move
-cd /var/www/airdev/content/themes/facyl/ && git stash
+cd /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/ && git stash
 git status
 
 echo "
