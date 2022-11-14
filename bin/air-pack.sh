@@ -11,10 +11,10 @@ txtreset=$(tput sgr0)
 
 mkdir -p /var/www
 mkdir -p /var/www/airdev
-mkdir -p /var/www/airdev/content
-mkdir -p /var/www/airdev/content/themes
-rm /var/www/airdev/content/themes/facyl.zip
-sh /var/www/airdev/content/themes/facyl/bin/air-move-out.sh
-cd /var/www/airdev/content/themes/
+mkdir -p /home/oc-001/Local_Sites/facyl/app/public/wp-content
+mkdir -p /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes
+rm /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl.zip
+sh /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/facyl/bin/air-move-out.sh
+cd /home/oc-001/Local_Sites/facyl/app/public/wp-content/themes/
 zip -r facyl.zip facyl
 sh $HOME/air-temp/bin/air-move-in.sh
