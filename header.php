@@ -27,7 +27,9 @@ namespace Air_Light;
   <link rel="preconnect" href="https://fonts.cdnfonts.com">
   <?php wp_enqueue_script( 'tweenmax', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js' ) ?>
 
-  <?php wp_head(); ?>
+  <?php   wp_deregister_script('jquery');
+          wp_head(); 
+  ?>
 </head>
 
 <body <?php body_class( 'no-js' ); ?>>
