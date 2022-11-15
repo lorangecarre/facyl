@@ -41,7 +41,11 @@ $menu_confidentiality_args = array(
   <div class="site-info">
     <div class="company">
       <?php include get_theme_file_path( THEME_SETTINGS['logo'] ); ?>
-      <p>Maintenance mensuelle (sauvegardes, corrections de bugs, mise à jours, Intégration de vos contenus au besoin, contrôle de sécurité ...)</p>
+      <p>L'ORANGE CARRÉ
+Hôtel d'entreprise Lincubacteur,
+ZA La Croix-Gaudin
+44360 – Saint-Etienne-de-Montluc <br>
+02 59 10 01 71</p>
     </div>
     <div class="social-media">
     <?php
