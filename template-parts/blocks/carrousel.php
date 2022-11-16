@@ -9,7 +9,7 @@
                       $logo = get_sub_field('logo'); $i++; ?>
                         <li>
                           <?php echo wp_get_attachment_image( $logo, 'full' ); ?>
-                            <img role="group" aria-label="<?php echo $i; ?> sur <?php echo $count; ?>" aria-roledescription="slide" id="content" src="<?php the_sub_field('logo'); ?>" class="carousel__content--img" alt="<?php the_sub_field('nom_de_lentreprise'); ?>"/>
+                            <img role="group" aria-label="<?php echo $i; ?> sur <?php echo $count; ?>" aria-roledescription="slide" id="content" src="<?php the_sub_field('logo'); ?>" loading="lazy" class="carousel__content--img" alt="<?php the_sub_field('nom_de_lentreprise'); ?>"/>
                         </li>
                   <?php endwhile; ?>
               <?php endif; ?>
