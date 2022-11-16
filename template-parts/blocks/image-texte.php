@@ -35,6 +35,6 @@ if ( $position[0] === 'droite' ) {
     <p> <?= $text ?> </p>
   </div>
   <div class="block-image <?php echo esc_attr( $style_image ) ?>">
-    <img src="<?= $image['url'] ?>" alt="<?= $image['alt'] ?>">
+    <img src="<?= $image['url'] ?>" loading="lazy" alt="<?= $image['alt'] ?>">
   </div>
 </section>
