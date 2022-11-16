@@ -20,11 +20,11 @@ $text = get_field( 'text_block' ) ?: 'Author name';
 <section id="<?php echo esc_attr( $id ); ?>" class="<?php echo esc_attr( $class_name ); ?>">
 
   <div class="eco-conception-container">
-    <span class="title-container"><?php printf( esc_html__( 'Google speed test', 'facyl' ) ); ?></span>
+    <h3><?php printf( esc_html__( 'Google speed test', 'facyl' ) ); ?></h3>
     <div class="gauge-container">
       <svg class="gauge" viewBox="0 0 150 150" preserveAscpectRatio="xMinYMin Meet">
-        <title id="gaugeTitle">Google speed test</title>
-        <desc id="gaugeDesc">Ceci est une jauge correspondant au pourcentage du google speed test</desc>
+        <title id="gaugeTitle">PageSpeed Insights</title>
+        <desc id="gaugeDesc">Ceci est une jauge correspondant au pourcentage du PageSpeed Insights</desc>
         <circle class="rail" r="67" cx="75" cy="75" />
         <circle class="progress" r="67" data-target="99" cx="75" cy="75" />
       </svg>
@@ -34,10 +34,10 @@ $text = get_field( 'text_block' ) ?: 'Author name';
 
   <div class="green-it-container">
     <div class="link">
-      <a href="https://pagespeed.web.dev/report?url=https%3A%2F%2Ftemplate.orangecarre.fr%2F&hl=fr&form_factor=desktop" class="link-google-speed-test no-external-link-indicator" target="_blank">
+      <a href="https://pagespeed.web.dev/report?url=https%3A%2F%2Ftemplate.orangecarre.fr%2F&hl=fr&form_factor=desktop" class="link-google-speed-test no-external-link-indicator" target="_blank" title="Aller au site pagespeed" aria-label="Aller au site pagespeed">
         <svg focusable="false" aria-hidden="true" fill="currentColor" width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1363 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45L531 45q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z"/></svg>
       </a>
-      <a href="https://www.greenit.fr/" class="link-green-it no-external-link-indicator" target="_blank">
+      <a href="https://template.orangecarre.fr/greenit/" class="link-green-it no-external-link-indicator" target="_blank" title="Aller à la page sur GreenIT" aria-label="Aller à la page sur GreenIT">
         <svg focusable="false" aria-hidden="true" fill="currentColor" width="20" height="20" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1363 877l-742 742q-19 19-45 19t-45-19l-166-166q-19-19-19-45t19-45l531-531-531-531q-19-19-19-45t19-45L531 45q19-19 45-19t45 19l742 742q19 19 19 45t-19 45z"/></svg>
       </a>
     </div>

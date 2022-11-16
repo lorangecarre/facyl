@@ -574,7 +574,7 @@
                 "label": "Paragraphe du bloc",
                 "name": "text_block",
                 "aria-label": "",
-                "type": "textarea",
+                "type": "wysiwyg",
                 "instructions": "",
                 "required": 1,
                 "conditional_logic": 0,
@@ -584,10 +584,10 @@
                     "id": ""
                 },
                 "default_value": "",
-                "placeholder": "",
-                "maxlength": "",
-                "rows": "",
-                "new_lines": ""
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
             }
         ],
         "location": [

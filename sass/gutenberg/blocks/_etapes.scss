@@ -31,10 +31,36 @@
         }
       }
     }
+  }
+    .etape-texte{
+      @include box-with-shadow();
+      margin-bottom: var(--margin-large);
+      width: 100%;
+      @media (min-width: $container-ipad) {
+        width: 60%;
+        margin-bottom: var(--margin-medium);
+        flex-direction: row-reverse;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      &:nth-child(even) {
+        align-self: flex-end;
+        @media (min-width: $container-ipad) {
+          flex-direction: row;
+        }
+        span{
+          transform: translateY(-50%);
+          @media (min-width: $container-ipad) {
+            transform: translateX(-50%);
+          }
+        }
+      }
+    }
     span{
       background-color: var(--color-orange);
       width: 50px;
-      height: 50px;
+      height: 46px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -67,7 +93,7 @@
         margin: 0;
       }
     }
-  }
+
   .button-w{
     margin: auto;
   }
@@ -75,7 +101,7 @@
 
 @media (min-width: $container-ipad) {
   .block-etapes-texte{
-    .etape{
+    .etape-texte{
       &:nth-child(2)::before{
         content: '';
         background-image: url('../../svg/fleche_suite.svg');
