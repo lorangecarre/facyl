@@ -10,7 +10,7 @@ namespace Facyl;
 if ( have_rows( 'etapes' ) ) : ?>
 <div class="blocks-etapes block-etapes-texte">
   <?php while ( have_rows( 'etapes' ) ) : the_row(); ?>
-    <div class="etape">
+    <div class="etape-texte">
       <span><?php echo get_row_index(); ?></span>
       <div class="contenu">
         <h2><?php the_sub_field( 'titre' ); ?></h2>

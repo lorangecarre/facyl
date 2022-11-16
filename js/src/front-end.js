@@ -11,6 +11,7 @@ import {
 } from './modules/external-link';
 import initAnchors from './modules/anchors';
 import backToTop from './modules/top';
+import scroll from './modules/scroll';
 import initA11ySkipLink from './modules/a11y-skip-link';
 import 'what-input';
 import './modules/navigation';
@@ -32,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
   styleExternalLinks();
   initExternalLinkLabels();
   initA11ySkipLink();
+  scroll();
 
   // Fit video embeds to container
   reframe('.wp-has-aspect-ratio iframe');

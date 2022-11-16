@@ -129,6 +129,7 @@ add_action( 'after_setup_theme', function() {
         'post_types'        => array( 'post', 'page' ),
         'prevent_cache'  => false,
         'icon'  => 'heading',
+        'enqueue_style'   => get_template_directory_uri() . '/css/prod/global.css',
       ],
       [
         // Bloc eco-conception
@@ -140,7 +141,7 @@ add_action( 'after_setup_theme', function() {
         'icon'            => 'palmtree',
         'keywords'        => array( 'éco-conception', 'accueil' ),
         'post_types'      => array( 'post', 'page' ),
-        'enqueue_script'  => '/css/prod/global.css',
+        'enqueue_style'   => get_template_directory_uri() . '/css/prod/global.css',
       ],
       [
         // Bloc chiffres
@@ -153,43 +154,43 @@ add_action( 'after_setup_theme', function() {
         'keywords'        => array( 'chiffres', 'accueil' ),
         'post_types'      => array( 'post', 'page' ),
         'icon'            => 'editor-ol',
-        'enqueue_script'  => '/css/prod/global.css',
-      ],
+        'enqueue_style'   => get_template_directory_uri() . '/css/prod/global.css',
+            ],
       [
          'name'            => 'image-texte',
          'title'           => 'Bloc texte et image ',
          'render_template' => '/template-parts/blocks/image-texte.php',
          'category'        => 'formatting',
-         'enqueue_script'  => '/css/prod/global.css',
-        ],
+         'enqueue_style'   => get_template_directory_uri() . '/css/prod/global.css',
+                ],
          [
           //bloc les etape
           'name'            => 'etapes',
           'title'           => 'Les étapes de conception',
           'render_template' => '/template-parts/blocks/etape.php',
-          'enqueue_script'  => '/css/prod/global.css',
-        ],
+          'enqueue_style'   => get_template_directory_uri() . '/css/prod/global.css',
+                ],
         [
           //bloc les etapes et texte
           'name'            => 'etapes-texte',
           'title'           => 'Les étapes de conception et texte',
           'render_template' => '/template-parts/blocks/etape-texte.php',
-          'enqueue_script'  => '/css/prod/global.css',
-        ],
+          'enqueue_style'   => get_template_directory_uri() . '/css/prod/global.css',
+                ],
         [
           //bloc les etape
           'name'            => 'carrousel',
           'title'           => 'Carrousel',
           'render_template' => '/template-parts/blocks/carrousel.php',
-          'enqueue_script'  => '/css/prod/global.css',
-        ],
+          'enqueue_style'   => get_template_directory_uri() . '/css/prod/global.css',
+          ],
 
         [
           //bloc les etape
           'name'            => 'temoignage',
           'title'           => 'Témoignage',
           'render_template' => '/template-parts/blocks/temoignage.php',
-          'enqueue_script'  => '/css/prod/global.css',
+          'enqueue_style'   => get_template_directory_uri() . '/css/prod/global.css',
         ],
 
           [
@@ -197,8 +198,8 @@ add_action( 'after_setup_theme', function() {
           'title'           => 'Bloc dernières réalisations',
           'render_template' => '/template-parts/blocks/dernieres-realisations.php',
           'category'        => 'formatting',
-          'enqueue_script'  => '/css/prod/global.css',
-        ],
+          'enqueue_style'   => get_template_directory_uri() . '/css/prod/global.css',
+          ],
 
       // [
       //   'name'           => 'block-file-slug',
@@ -215,8 +216,8 @@ add_action( 'after_setup_theme', function() {
          'keywords'        => array( 'images', 'accueil' ),
          'post_types'      => array( 'post', 'page' ),
          'icon'            => 'image',
-         'enqueue_script'  => '/css/prod/global.css',
-        ],
+         'enqueue_style'   => get_template_directory_uri() . '/css/prod/global.css',
+                ],
        [
         // Bloc tarifs
         'name'            => 'bloc-tarifs',
@@ -228,8 +229,8 @@ add_action( 'after_setup_theme', function() {
         'keywords'        => array( 'tarifs', 'accueil' ),
         'post_types'      => array( 'post', 'page' ),
         'icon'            => 'money',
-        'enqueue_script'  => '/css/prod/global.css',
-      ],
+        'enqueue_style'   => get_template_directory_uri() . '/css/prod/global.css',
+       ],
     ],
 
     // Custom ACF block default settings
@@ -252,6 +253,39 @@ add_action( 'after_setup_theme', function() {
     // Set the value to 'all' to allow all blocks everywhere
    'allowed_blocks' => [
       'default' => [
+        'core/archives',
+        'core/audio',
+        'core/buttons',
+        'core/categories',
+        'core/code',
+        'core/column',
+        'core/columns',
+        'core/coverImage',
+        'core/embed',
+        'core/file',
+        'core/freeform',
+        'core/gallery',
+        'core/heading',
+        'core/html',
+        'core/image',
+        'core/latestComments',
+        'core/latestPosts',
+        'core/list',
+        'core/more',
+        'core/nextpage',
+        'core/paragraph',
+        'core/preformatted',
+        'core/pullquote',
+        'core/quote',
+        'core/block',
+        'core/separator',
+        'core/shortcode',
+        'core/spacer',
+        'core/subhead',
+        'core/table',
+        'core/textColumns',
+        'core/verse',
+        'core/video',
       ],
       'post' => [
         'core/archives',

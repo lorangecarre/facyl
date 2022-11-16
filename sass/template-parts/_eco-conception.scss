@@ -3,13 +3,15 @@
     display: grid;
     grid-column-gap: var(--margin-medium);
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-rows: repeat(2,max-content);
     margin: var(--margin-extra-large) 0;
   }
 
   .eco-conception-text {
     grid-column-end: 5;
     grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
     h2 {
       margin-bottom: var(--margin-small);
     }
@@ -28,12 +30,11 @@
     display: flex;
     flex-direction: column;
 
-    .title-container {
-      color: var(--color-white);
+    h3 {
       text-align: center;
-      margin-top: var(--margin-medium);
-      font-size: var(--font-size-h4);
-      font-weight: var(--font-weight-semibold);
+      font-weight: var(--font-weight-medium);
+      padding-top: var(--margin-medium);
+      color: var(--color-white);
     }
 
     .rail {
@@ -100,17 +101,13 @@
     @include box-with-shadow(20px,50px);
     height: 50%;
     h3 {
-      font-size: var(--font-size-h4);
       text-align: center;
       font-weight: var(--font-weight-medium);
-      padding-top: var(--margin-small);
+      padding-top: var(--margin-medium);
     }
     .green-it-note {
       display: flex;
       justify-content: center;
-    }
-    svg {
-      width: 65px;
     }
   }
 

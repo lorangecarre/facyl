@@ -18,7 +18,6 @@ body{
 
 // Default structural element
 .block {
-  background-color: var(--color-white);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -220,7 +219,7 @@ body{
   }
 
   .search-button{
-    @include button(max-content,var(--color-white),var(--color-white),var(--color-black),var(--color-black),30px,1px solid var(--color-black),1px solid var(--color-black),var(--font-weight-semibold),true);
+    @include button(max-content,var(--color-white),var(--color-black),var(--color-black),var(--color-white),30px,1px solid var(--color-black),1px solid var(--color-black),var(--font-weight-semibold),true);
     display: inline;
     svg{
       margin-left: 0;

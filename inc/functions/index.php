@@ -60,6 +60,10 @@ function filter_projects_keyword() {
 	exit;
 }
 
+function my_acf_field_group_admin_enqueue_scripts() {
+  wp_enqueue_style( 'my-acf-field-group-css', get_stylesheet_directory_uri() . '/css/prod/global.css', false, '1.0.0' );
+}
+
 
 function customizer_footer($wp_customize)
 {

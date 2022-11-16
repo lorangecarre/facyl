@@ -19,7 +19,7 @@ namespace Air_Light;
 	<div role="document" class="c-dialog__box">
 		<header>
 			<h2 id="dialog-title">Paramètres d'accessibilité</h2>
-			<button type="button" aria-label="Fermer" title="Fermer les paramètres d'accessibilité" data-dismiss="dialog" class="c-dialog__closeBtn">&#9747;
+			<button type="button" aria-label="Fermer" title="Fermer les paramètres d'accessibilité" data-dismiss="dialog" class="c-dialog__closeBtn">&#215;
 			</button>
 		</header>
 		<fieldset>
