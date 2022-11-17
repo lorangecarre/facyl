@@ -1,9 +1,8 @@
 .chiffres {
   &__title {
     text-align: center;
-    font-size: var(--font-size-h3);
-    font-family: var(--font-heading), sans-serif;
-    margin-bottom: var(--margin-small);
+    margin-bottom: var(--margin-medium);
+    margin-top: var(--margin-small);
   }
 
   &__list {
@@ -29,7 +28,7 @@
 
   &__listItemTitle {
     font-size: var(--font-size-h2);
-    color: var(--color-orange);
+    color: var(--color-primary);
     margin: 0;
   }
 

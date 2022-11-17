@@ -17,10 +17,13 @@
 }
 #prev,
 #next {
-  @include button(50px,var(--color-white),var(--color-white),var(--color-black),var(--color-orange), 50%, 1px solid var(--color-black), 1px solid var(--color-orange));
+  @include button(50px,var(--color-white),var(--color-white),var(--color-black),var(--color-primary), 50%, 1px solid var(--color-black), 1px solid var(--color-primary));
   padding: 8px;
   width: 50px;
   height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #next svg{
   transform: rotate(90deg);

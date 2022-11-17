@@ -13,7 +13,7 @@ if ( have_rows( 'etapes' ) ) : ?>
     <div class="etape-texte">
       <span><?php echo get_row_index(); ?></span>
       <div class="contenu">
-        <h2><?php the_sub_field( 'titre' ); ?></h2>
+        <h3><?php the_sub_field( 'titre' ); ?></h3>
         <?php the_sub_field( 'description' ); ?>
 
         <?php if ( have_rows( 'bouton' ) ) : ?>

@@ -13,7 +13,7 @@ namespace Facyl;
     <div class="etape">
       <span><?php echo get_row_index(); ?></span>
       <div class="contenu">
-        <h2><?php the_sub_field('titre'); ?></h2>
+        <h3><?php the_sub_field('titre'); ?></h3>
 
         <?php if( have_rows('bouton') ): ?>
           <?php while( have_rows('bouton') ): the_row(); ?>

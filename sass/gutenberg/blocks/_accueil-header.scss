@@ -62,9 +62,9 @@
 .button-w {
   @include button(
     max-content,
+    var(--color-white),
     var(--color-black),
     var(--color-black),
-    transparent,
     var(--color-white),
     30px,
     1px solid var(--color-black),
@@ -72,56 +72,23 @@
     var(--font-weight-semibold),
     true);
   margin: var(--margin-small);
-  transition: all 500ms ease-in-out;
 }
 
-.button-w:hover {
-  @include button(
-    max-content,
-    var(--color-black),
-    var(--color-black),
-    transparent,
-    var(--color-white),
-    30px,
-    1px solid var(--color-white),
-    1px solid var(--color-white),
-    var(--font-weight-semibold),
-    true);
-  transition: all 500ms ease-in-out;
-  margin: var(--margin-small);
-}
+
 
 .button-b {
   @include button(
     max-content,
     var(--color-white),
+    var(--color-black),
+    var(--color-black),
     var(--color-white),
-    var(--color-black),
-    var(--color-black),
     30px,
     1px solid var(--color-black),
     1px solid var(--color-black),
     var(--font-weight-semibold),
     true);
-  margin: 0 var(--margin-smal);
-  transition: all 500ms ease-in-out;
-}
-
-.button-b:hover {
-  @include button(
-    max-content,
-    var(--color-black),
-    var(--color-black),
-    var(--color-white),
-    var(--color-white),
-    30px,
-    1px solid var(--color-white),
-    1px solid var(--color-white),
-    var(--font-weight-semibold),
-    true);
-  transition: all 500ms ease-in-out;
-  margin: var(--margin-small);
-
+  margin: 0 var(--margin-small);
 }
 
 @media (min-width: $container-mobile) {
@@ -131,58 +98,25 @@
 
   .button-w {
     @include button(
-      max-content,
-      var(--color-black),
-      var(--color-black),
-      transparent,
-      var(--color-white),
-      30px,
-      1px solid var(--color-black),
-      1px solid var(--color-black),
-      var(--font-weight-semibold),
-      true);
+    max-content,
+    var(--color-white),
+    var(--color-black),
+    var(--color-black),
+    var(--color-white),
+    30px,
+    1px solid var(--color-black),
+    1px solid var(--color-black),
+    var(--font-weight-semibold),
+    true);
     margin: var(--margin-small);
-    transition: all 500ms ease-in-out;
-  }
-
-  .button-w:hover {
-    @include button(
-      max-content,
-      var(--color-white),
-      var(--color-white),
-      transparent,
-      var(--color-black),
-      30px,
-      1px solid var(--color-black),
-      1px solid var(--color-black),
-      var(--font-weight-semibold),
-      true);
-    margin: var(--margin-small);
-    transition: all 500ms ease-in-out;
   }
 
   .button-b {
     @include button(
       max-content,
       var(--color-white),
-      var(--color-white),
       var(--color-black),
       var(--color-black),
-      30px,
-      1px solid var(--color-black),
-      1px solid var(--color-black),
-      var(--font-weight-semibold),
-      true);
-      margin: var(--margin-small);
-      transition: all 500ms ease-in-out;
-
-  }
-  .button-b:hover {
-    @include button(
-      max-content,
-      var(--color-black),
-      var(--color-black),
-      var(--color-white),
       var(--color-white),
       30px,
       1px solid var(--color-black),
@@ -190,6 +124,5 @@
       var(--font-weight-semibold),
       true);
       margin: var(--margin-small);
-    transition: all 500ms ease-in-out;
   }
 }

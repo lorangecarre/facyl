@@ -1,7 +1,6 @@
 .blocks-etapes{
   display:flex;
   flex-direction: column;
-  margin: var(--margin-medium) 0 var(--margin-medium) 0;
   @media screen and (max-width: $width-max-mobile) {
     h2{
         margin-bottom: var(--margin-large);
@@ -58,7 +57,7 @@
       }
     }
     span{
-      background-color: var(--color-orange);
+      background-color: var(--color-primary);
       width: 50px;
       height: 46px;
       display: flex;
@@ -84,7 +83,7 @@
       @media (min-width: $container-ipad) {
         padding: var(--margin-large);
       }
-      h2{
+      h3{
         text-align: center;
         margin-bottom: 0;
         text-transform: uppercase;
