@@ -226,3 +226,7 @@ body{
     }
   }
 }
+
+main>section:not(:last-child){
+  margin-bottom: var(--margin-large);
+}

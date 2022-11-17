@@ -130,10 +130,10 @@
     .contact {
       @include button(
         max-content,
-        var(--color-black),
-        var(--color-white),
         var(--color-white),
         var(--color-black),
+        var(--color-black),
+        var(--color-white),
         30px,
         1px solid var(--color-black),
         1px solid var(--color-black),
@@ -217,10 +217,10 @@
     .contact {
       @include button(
         max-content,
-        var(--color-black),
-        var(--color-white),
         var(--color-white),
         var(--color-black),
+        var(--color-black),
+        var(--color-white),
         30px,
         1px solid var(--color-black),
         1px solid var(--color-black),

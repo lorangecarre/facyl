@@ -1,5 +1,4 @@
 .tarifs {
-  margin-bottom: var(--margin-large);
   &__mainTitle {
     text-align: center;
     font-size: var(--font-size-h2);
@@ -28,7 +27,7 @@
 .plan {
   border-radius: 20px;
   background-color: var(--color-white);
-  padding: 3.125rem 1.5rem;
+  padding: 3.125rem 2.5rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -72,7 +71,7 @@
   }
 
   &__price {
-    color: var(--color-green);
+    color: var(--color-secondary);
     margin-top: 0;
     font-weight: var(--font-weight-extra-bold);
   }
@@ -81,6 +80,12 @@
     list-style-type: none;
     padding-left: 0;
     width:100%;
+    @media screen and (max-width: $width-max-mobile) {
+      max-height: 0;
+      overflow: hidden;
+      transition: all 1s ease-in-out;
+
+    }
   }
 
   &__prestation {
@@ -121,6 +126,12 @@
     align-items: center;
     margin-top: var(--margin-small);
     line-height: var(--line-height-footer);
+    @media screen and (max-width: $width-max-mobile) {
+      max-height: 0;
+      overflow: hidden;
+      transition: all 1s ease-in-out;
+
+    }
     .plan__mail{
       .mail{
         display: inline-block;
@@ -143,8 +154,7 @@
   }
 }
 @media screen and (max-width: $width-max-mobile) {
-  .close{
-    display: none;
-    transition: display 1s;
+  .open{
+    max-height: 1000px;
   }
 }

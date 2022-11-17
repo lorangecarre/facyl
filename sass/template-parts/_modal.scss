@@ -3,12 +3,20 @@
 #dialog_open_button {
   border: 0px;
   background-color: transparent;
+
+  .back, .head, .body {
+    transition: all .5s ease-in-out;
+  }
+
   svg{
     cursor: pointer;
   }
+
   .stickyAccessibilityHeader{
     .back{
       fill:var(--color-white);
+      stroke: var(--color-black);
+      stroke-width: 1;
     }
     .head{
       fill:var(--color-black);
@@ -16,7 +24,21 @@
     .body{
       fill:var(--color-black);
     }
+    &:hover{
+      .back{
+        fill:var(--color-black);
+        stroke: var(--color-white);
+
+      }
+      .head{
+        fill:var(--color-white);
+      }
+      .body{
+        fill:var(--color-white);
+      }
+    }
   }
+
   .nonStickyAccessibilityHeader{
     .back{
       fill:var(--color-black);
@@ -26,6 +48,19 @@
     }
     .body{
       fill:var(--color-white);
+    }
+
+    &:hover{
+      .back{
+        stroke: var(--color-black);
+        fill:var(--color-white);
+      }
+      .head{
+        fill:var(--color-black);
+      }
+      .body{
+        fill:var(--color-black);
+      }
     }
   }
   @media screen and (max-width: $width-max-mobile) {
