@@ -339,3 +339,18 @@ require get_theme_file_path( '/inc/clean.php' );
 // Run theme setup
 add_action( 'init', __NAMESPACE__ . '\theme_setup' );
 add_action( 'after_setup_theme', __NAMESPACE__ . '\build_theme_support' );
+
+
+/**
+ * Defer JS
+ */
+
+function add_defer_attribute($tag, $handle) {
+  if ( 'nom-script-js' !== $handle )
+    return $tag;
+  return str_replace( ' src', ' defer="defer" src', $tag );
+}
+
+add_filter('script_loader_tag', 'add_defer_attribute', 10, 2);
+
+wp_register_script('nom-script-js', $src, $deps, $ver, $in_footer);
