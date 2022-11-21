@@ -344,7 +344,7 @@ add_action( 'after_setup_theme', __NAMESPACE__ . '\build_theme_support' );
 /**
  * Defer JS
  */
-
+/*
 function add_defer_attribute($tag, $handle) {
   if ( 'nom-script-js' !== $handle )
     return $tag;
@@ -354,3 +354,4 @@ function add_defer_attribute($tag, $handle) {
 add_filter('script_loader_tag', 'add_defer_attribute', 10, 2);
 
 wp_register_script('nom-script-js', $src, $deps, $ver, $in_footer);
+*/
