@@ -52,7 +52,7 @@ ZA La Croix-Gaudin
       $linkedin = get_theme_mod( 'show_linkedin' );
       if ( $linkedin ) {
           ?>
-          <a href="<?php echo( get_theme_mod( 'show_linkedin' ) ); ?>" class="no-external-link-indicator" target="_blank">
+          <a href="<?php echo( get_theme_mod( 'show_linkedin' ) ); ?>" title="Visiter la page Linkedin - nouvelle fenêtre" class="no-external-link-indicator" target="_blank">
             <?php include get_theme_file_path( THEME_SETTINGS['logo_linkedin'] ); ?>
           </a>
         <?php
@@ -62,7 +62,7 @@ ZA La Croix-Gaudin
       $instagram = get_theme_mod( 'show_instagram' );
       if ( $instagram ) {
           ?>
-          <a href="<?php echo( get_theme_mod( 'show_instagram' ) ); ?>" class="no-external-link-indicator" target="_blank">
+          <a href="<?php echo( get_theme_mod( 'show_instagram' ) ); ?>" title="Visiter la page Instagram - nouvelle fenêtre" class="no-external-link-indicator" target="_blank">
             <?php include get_theme_file_path( THEME_SETTINGS['logo_insta'] ); ?>
           </a>
         <?php
@@ -72,7 +72,7 @@ ZA La Croix-Gaudin
       $facebook = get_theme_mod( 'show_facebook' );
       if ( $facebook ) {
           ?>
-          <a href="<?php echo( get_theme_mod( 'show_facebook' ) ); ?>" class="no-external-link-indicator" target="_blank">
+          <a href="<?php echo( get_theme_mod( 'show_facebook' ) ); ?>" title="Visiter la page Facebook - nouvelle fenêtre" class="no-external-link-indicator" target="_blank">
             <?php include get_theme_file_path( THEME_SETTINGS['logo_facebook'] ); ?>
           </a>
         <?php
@@ -82,7 +82,7 @@ ZA La Croix-Gaudin
       $youtube = get_theme_mod( 'show_youtube' );
       if ( $youtube ) {
           ?>
-          <a href="<?php echo( get_theme_mod( 'show_youtube' ) ); ?>" class="no-external-link-indicator" target="_blank">
+          <a href="<?php echo( get_theme_mod( 'show_youtube' ) ); ?>" title="Visiter la page Youtube - nouvelle fenêtre" class="no-external-link-indicator" target="_blank">
             <?php include get_theme_file_path( THEME_SETTINGS['logo_youtube'] ); ?>
           </a>
         <?php
@@ -92,7 +92,7 @@ ZA La Croix-Gaudin
       $twitter = get_theme_mod( 'show_twitter' );
       if ( $twitter ) {
           ?>
-          <a href="<?php echo( get_theme_mod( 'show_twitter' ) ); ?>" class="no-external-link-indicator" target="_blank">
+          <a href="<?php echo( get_theme_mod( 'show_twitter' ) ); ?>" title="Visiter la page Twitter - nouvelle fenêtre" class="no-external-link-indicator" target="_blank">
             <?php include get_theme_file_path( THEME_SETTINGS['logo_twitter'] ); ?>
           </a>
         <?php
@@ -102,7 +102,7 @@ ZA La Croix-Gaudin
       $tiktok = get_theme_mod( 'show_tiktok' );
       if ( $tiktok ) {
           ?>
-          <a href="<?php echo( get_theme_mod( 'show_tiktok' ) ); ?>" class="no-external-link-indicator" target="_blank">
+          <a href="<?php echo( get_theme_mod( 'show_tiktok' ) ); ?>" title="Visiter la page Twitter - nouvelle fenêtre" class="no-external-link-indicator" target="_blank">
             <?php include get_theme_file_path( THEME_SETTINGS['logo_tiktok'] ); ?>
           </a>
         <?php
