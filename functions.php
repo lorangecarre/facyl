@@ -141,7 +141,6 @@ add_action( 'after_setup_theme', function() {
         'icon'            => 'palmtree',
         'keywords'        => array( 'éco-conception', 'accueil' ),
         'post_types'      => array( 'post', 'page' ),
-        'enqueue_style'   => get_template_directory_uri() . '/css/prod/global.css',
       ],
       [
         // Bloc chiffres
@@ -154,35 +153,30 @@ add_action( 'after_setup_theme', function() {
         'keywords'        => array( 'chiffres', 'accueil' ),
         'post_types'      => array( 'post', 'page' ),
         'icon'            => 'editor-ol',
-        'enqueue_style'   => get_template_directory_uri() . '/css/prod/global.css',
             ],
       [
          'name'            => 'image-texte',
          'title'           => 'Bloc texte et image ',
          'render_template' => '/template-parts/blocks/image-texte.php',
          'category'        => 'formatting',
-         'enqueue_style'   => get_template_directory_uri() . '/css/prod/global.css',
                 ],
          [
           //bloc les etape
           'name'            => 'etapes',
           'title'           => 'Les étapes de conception',
           'render_template' => '/template-parts/blocks/etape.php',
-          'enqueue_style'   => get_template_directory_uri() . '/css/prod/global.css',
                 ],
         [
           //bloc les etapes et texte
           'name'            => 'etapes-texte',
           'title'           => 'Les étapes de conception et texte',
           'render_template' => '/template-parts/blocks/etape-texte.php',
-          'enqueue_style'   => get_template_directory_uri() . '/css/prod/global.css',
                 ],
         [
           //bloc les etape
           'name'            => 'carrousel',
           'title'           => 'Carrousel',
           'render_template' => '/template-parts/blocks/carrousel.php',
-          'enqueue_style'   => get_template_directory_uri() . '/css/prod/global.css',
           ],
 
         [
@@ -190,7 +184,6 @@ add_action( 'after_setup_theme', function() {
           'name'            => 'temoignage',
           'title'           => 'Témoignage',
           'render_template' => '/template-parts/blocks/temoignage.php',
-          'enqueue_style'   => get_template_directory_uri() . '/css/prod/global.css',
         ],
 
           [
@@ -198,7 +191,6 @@ add_action( 'after_setup_theme', function() {
           'title'           => 'Bloc dernières réalisations',
           'render_template' => '/template-parts/blocks/dernieres-realisations.php',
           'category'        => 'formatting',
-          'enqueue_style'   => get_template_directory_uri() . '/css/prod/global.css',
           ],
 
       // [
@@ -216,7 +208,6 @@ add_action( 'after_setup_theme', function() {
          'keywords'        => array( 'images', 'accueil' ),
          'post_types'      => array( 'post', 'page' ),
          'icon'            => 'image',
-         'enqueue_style'   => get_template_directory_uri() . '/css/prod/global.css',
                 ],
        [
         // Bloc tarifs
@@ -229,7 +220,6 @@ add_action( 'after_setup_theme', function() {
         'keywords'        => array( 'tarifs', 'accueil' ),
         'post_types'      => array( 'post', 'page' ),
         'icon'            => 'money',
-        'enqueue_style'   => get_template_directory_uri() . '/css/prod/global.css',
        ],
     ],
 

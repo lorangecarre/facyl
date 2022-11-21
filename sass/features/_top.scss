@@ -36,29 +36,6 @@
 
 @media screen and (max-width: $width-max-mobile) {
   .top {
-    border: 1px solid;
-    border-radius: 15px;
-    bottom: var(--padding-container-horizontal);
-    color: var(--color-black);
-    cursor: pointer;
-    display: block;
-    font-size: var(--font-size-text);
-    height: 3rem;
-    margin: var(--margin-small) auto;
-    line-height: 30px;
-    right: var(--padding-container-horizontal);
-    text-align: center;
-    text-decoration: none;
-    transition: 500ms opacity;
-    width: 3rem;
-    z-index: 1;
-
-    &:hover {
-      background-color: var(--color-background-top-hover);
-    }
-
-    &:focus {
-      background-color: var(--color-background-top);
-    }
+   display: none;
   }
 }
