@@ -178,11 +178,6 @@ $hamburger-hover-transition-timing-function: linear;
     padding-left: calc(var(--padding-sub-menu-horizontal-mobile) + var(--margin-left-sub-menu) + var(--margin-left-sub-menu));
   }
 
-  .menu-item a:hover,
-  .menu-item a:focus {
-    color: var(--color-active-main-level-mobile);
-  }
-
   // Current menu item color
   .menu-item.current-menu-parent > a,
   .menu-item.current-menu-item > a {
