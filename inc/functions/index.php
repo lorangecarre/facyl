@@ -69,7 +69,7 @@ function customizer_footer($wp_customize)
 {
       // on ajoute une nouvelle section
       $wp_customize->add_section('theme_footer', array(
-        'title' => 'Reseaux Sociaux',
+        'title' => 'Contact',
         'description' => "",
         'priority' => 20
       ));
@@ -175,6 +175,56 @@ function customizer_footer($wp_customize)
             )
         )
     );
+    $wp_customize->add_setting('show_address', array(
+        'capability' => 'edit_theme_options',
+      ));
+  
+      $wp_customize->add_control(
+          new WP_Customize_Control(
+              $wp_customize,
+              'show_address',
+              array(
+                  'label'     => __("Adresse de l'organisation", 'dd_theme'),
+                  'section'   => 'theme_footer',
+                  'settings'  => 'show_address',
+                  'type'      => 'textarea',
+              )
+          )
+      );
+
+    $wp_customize->add_setting('show_tel', array(
+        'capability' => 'edit_theme_options',
+        ));
+  
+      $wp_customize->add_control(
+          new WP_Customize_Control(
+              $wp_customize,
+              'show_tel',
+              array(
+                  'label'     => __("Téléphone de l'organisation", 'dd_theme'),
+                  'section'   => 'theme_footer',
+                  'settings'  => 'show_tel',
+                  'type'      => 'text',
+              )
+          )
+      );
+
+      $wp_customize->add_setting('show_mail', array(
+        'capability' => 'edit_theme_options',
+        ));
+  
+      $wp_customize->add_control(
+          new WP_Customize_Control(
+              $wp_customize,
+              'show_mail',
+              array(
+                  'label'     => __("Mail de l'organisation", 'dd_theme'),
+                  'section'   => 'theme_footer',
+                  'settings'  => 'show_mail',
+                  'type'      => 'text',
+              )
+          )
+      );
 }
 
 function custom_wp_remove_global_css() {
