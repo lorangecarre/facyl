@@ -123,3 +123,9 @@
     }
   }
 }
+@media screen and (min-width: $container-ipad-landscape) {
+    .only-etape{
+        max-width: 70%;
+        margin: auto;
+    }
+}
