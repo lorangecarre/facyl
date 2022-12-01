@@ -32,7 +32,10 @@
             margin-bottom: var(--margin-small);
             line-height: var(--line-height-core-heading);
           }
-
+          img{
+             height: 300px;
+             object-fit: cover;
+          }
           a {
             font-size: 0.8em;
             padding: 0 5px;
