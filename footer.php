@@ -41,11 +41,8 @@ $menu_confidentiality_args = array(
   <div class="site-info">
     <div class="company">
       <?php include get_theme_file_path( THEME_SETTINGS['logo'] ); ?>
-      <p>L'ORANGE CARRÉ
-Hôtel d'entreprise Lincubacteur,
-ZA La Croix-Gaudin
-44360 – Saint-Etienne-de-Montluc <br>
-02 59 10 01 71</p>
+        <p><?php echo( get_theme_mod( 'show_address' ) ); ?></p>
+        <p><?php echo( get_theme_mod( 'show_tel' ) ); ?> - <?php echo( get_theme_mod( 'show_mail' ) ); ?></p>
     </div>
     <div class="social-media">
     <?php
@@ -121,7 +118,7 @@ ZA La Croix-Gaudin
   </a>
   <div class="theme-info">
     <span class="copyright">
-        <?php printf( esc_html__( 'copyright &copy; 2022,', 'facyl' ) ); ?>
+        <?php printf( esc_html__( '2022 - ', 'facyl' ) ); ?>
     </span>
     <span class="name">
         <?php printf( esc_html__( 'Thème Facyl de L\'Orange Carré.', 'facyl' ) ); ?>
