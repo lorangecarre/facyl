@@ -98,7 +98,16 @@
     display: flex;
   }
 }
-
+.site-title svg{
+    width: 80px;
+    height: 80px;
+}
+@media screen and (min-width: $width-max-mobile){
+    .site-title svg{
+        width: 100px;
+        height: 100px;
+    }
+}
 // Nav container visibility fix
 .nav-container {
   z-index: 10;
