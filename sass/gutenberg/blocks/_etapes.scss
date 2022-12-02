@@ -100,6 +100,9 @@
 }
 
 @media (min-width: $container-ipad) {
+  .text-span-etape{
+      font-size: var(--font-size-h2) !important;
+  }
   .block-etapes-texte{
     .etape-texte{
       &:nth-child(2)::before{
