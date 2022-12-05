@@ -38,11 +38,11 @@ get_header(); ?>
 		]);
 
     if ( $projects->have_posts() ) : ?>
-        <div class="articles newsPreview">
+        <ul class="articles newsPreview">
           <?php while ( $projects->have_posts() ) : $projects->the_post();
               get_template_part( 'template-parts/component/realisations' );
           endwhile; ?>
-        </div>
+        </ul>
 			<?php wp_reset_postdata(); ?>
 		<?php endif; ?>
   </section>

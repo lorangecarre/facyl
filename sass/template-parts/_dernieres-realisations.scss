@@ -10,6 +10,8 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-column-gap: var(--margin-medium);
+      list-style-type: none;
+      padding: 0;
 
       img {
         max-width: 100%;
@@ -19,7 +21,6 @@
 
       .article {
         @include box-with-shadow(25px, 50px, var(--color-secondary));
-        margin-bottom: var(--margin-medium);
         .article-info {
           padding: var(--margin-small);
 
@@ -58,6 +59,8 @@
     .articles {
       display: grid;
       grid-row-gap: var(--margin-medium);
+      list-style-type: none;
+      padding: 0;
 
       img {
         max-width: 100%;

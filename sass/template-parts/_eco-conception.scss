@@ -32,8 +32,8 @@
     h3 {
       text-align: center;
       font-weight: var(--font-weight-medium);
-      padding-top: var(--margin-medium);
       color: var(--color-white);
+      padding: var(--margin-medium) var(--margin-small) 0 var(--margin-small);
     }
 
     .rail {
@@ -102,7 +102,7 @@
     h3 {
       text-align: center;
       font-weight: var(--font-weight-medium);
-      padding-top: var(--margin-medium);
+      padding: var(--margin-medium) var(--margin-small) 0 var(--margin-small);
     }
     .green-it-note {
       display: flex;
@@ -188,8 +188,8 @@
     h3 {
       text-align: center;
       font-weight: var(--font-weight-medium);
-      padding-top: var(--margin-medium);
       color: var(--color-white);
+      padding: var(--margin-medium) var(--margin-small) 0 var(--margin-small);
     }
 
     .title-container {
@@ -273,8 +273,7 @@
         font-size: var(--font-size-h2);
         text-align: center;
         font-weight: var(--font-weight-medium);
-        padding-top: var(--margin-medium);
-        padding-bottom: var(--margin-small);
+        padding: var(--margin-medium) var(--margin-small) var(--margin-small) var(--margin-small);
       }
       .green-it-note {
         display: flex;

@@ -1,4 +1,9 @@
 // dialog overlay
+
+.is-fixed .accessibility-button i{
+  color: var(--color-white);
+}
+
 .accessibility-button{
   display: flex;
   align-items: center;
@@ -7,13 +12,13 @@
       color: var(--color-white);
     }
   @media screen and (min-width: $width-max-mobile) {
-    flex-direction: row-reverse;
-    i{
-      color:var(--color-black);
-    }
+      flex-direction: row-reverse;
+      i{
+        color:var(--color-black);
+      }
+  }
 }
-}
-}
+
 #dialog_open_button {
   border: 0px;
   background-color: transparent;
