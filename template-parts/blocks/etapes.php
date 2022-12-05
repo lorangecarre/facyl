@@ -7,7 +7,7 @@
 namespace Facyl;
 ?>
 <?php if( have_rows('etapes') ): ?>
-<section class="blocks-etapes">
+<section class="blocks-etapes only-etape">
   <h2><?php the_field( 'titre' ); ?></h2>
   <?php while( have_rows('etapes') ): the_row(); ?>
     <div class="etape">
