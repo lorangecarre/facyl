@@ -117,3 +117,15 @@
     width: 12px;
   }
 }
+
+@media (max-width: $container-ipad) {
+    .nav-container .content-link{
+    display:none;}
+}
+.nav-container .content-link{
+    top: 9px;
+    z-index: 999;
+    position: absolute;
+    font-size: 15px;
+}
+.is-fixed .content-link{display:none}
