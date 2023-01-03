@@ -38,7 +38,6 @@ namespace Air_Light;
 
     <div class="nav-container">
       <header class="site-header">
-        <a class="content-link" href="#content" >Aller au contenu</a>
         <?php get_template_part( 'template-parts/header/branding' ); ?>
         <?php get_template_part( 'template-parts/header/navigation' ); ?>
 
