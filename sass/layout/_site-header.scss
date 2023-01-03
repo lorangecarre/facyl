@@ -15,6 +15,9 @@
 // Colors
 :root {
   --logo-size: 80px;
+  @media screen and (min-width: $width-max-mobile){
+    --logo-size: 100px;
+  }
 }
 
 .site-header {
@@ -87,6 +90,17 @@
 .site-branding {
   max-height: var(--logo-size);
   width: auto;
+  .js-trigger{
+    top: 4px;
+    z-index: 999;
+    position: absolute;
+    font-size: 15px;
+    width: var(--logo-size);
+    text-align: center;
+    @media screen and (max-width: $width-max-mobile) {
+      display: none;
+    }
+  }
 }
 
 .site-title {
@@ -98,12 +112,12 @@
     display: flex;
   }
 }
-.site-title svg{
-    width: 80px;
-    height: 80px;
+.site-title img{
+    width: var(--logo-size);
+    height: var(--logo-size);
 }
 @media screen and (min-width: $width-max-mobile){
-    .site-title svg{
+    .site-title img{
         width: 100px;
         height: 100px;
     }

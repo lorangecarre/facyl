@@ -11,7 +11,7 @@ const backToTop = () => {
   // Back to top button
   const moveToTop = new MoveTo({ duration: 300, easing: 'easeOutQuart' });
   const topButton = document.getElementById('top');
-  const focusableElements = document.querySelectorAll('button, a, input, select, textarea, [tabindex]:not([tabindex="-1"])');
+  const focusableElements = document.querySelectorAll('h1, h2, h3');
 
   function trackScroll() {
     const scrolled = window.pageYOffset;

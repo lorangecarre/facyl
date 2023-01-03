@@ -16,7 +16,7 @@
 namespace Air_Light;
 
 $menu_footer_args = array(
-  'menu' => 'footer',
+  'theme_location' => 'footer',
   'menu_class' => '',
   'menu_id' => '',
   'container' => 'div',
@@ -24,7 +24,7 @@ $menu_footer_args = array(
 );
 
 $menu_confidentiality_args = array(
-  'menu' => 'confidentiality',
+  'theme_location' => 'confidentiality',
   'menu_class' => '',
   'menu_id' => '',
   'container' => 'div',
@@ -40,7 +40,7 @@ $menu_confidentiality_args = array(
   </div>
   <div class="site-info">
     <div class="company">
-      <?php include get_theme_file_path( THEME_SETTINGS['logo'] ); ?>
+      <?php the_custom_logo(); ?>
         <p><?php echo( get_theme_mod( 'show_address' ) ); ?></p>
         <p><?php echo( get_theme_mod( 'show_tel' ) ); ?> - <?php echo( get_theme_mod( 'show_mail' ) ); ?></p>
     </div>
@@ -118,7 +118,7 @@ $menu_confidentiality_args = array(
   </a>
   <div class="theme-info">
     <span class="copyright">
-        <?php printf( esc_html__( '2022 - ', 'facyl' ) ); ?>
+        <?php printf( esc_html__( date( 'Y' ) . ' - ', 'facyl' ) ); ?>
     </span>
     <span class="name">
         <?php printf( esc_html__( 'Thème Facyl de L\'Orange Carré.', 'facyl' ) ); ?>

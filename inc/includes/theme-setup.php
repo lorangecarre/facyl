@@ -99,6 +99,7 @@ function build_theme_support() {
   add_theme_support( 'post-thumbnails' );
   add_theme_support( 'align-wide' );
   add_theme_support( 'wp-block-styles' );
+  add_theme_support( 'custom-logo' );
   add_theme_support(
     'html5',
     [

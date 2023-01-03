@@ -7,8 +7,7 @@
     justify-content: center;
 
     @media (min-width: $container-mobile) {
-      height: 100vh;
-      max-height: 70rem;
+      min-height: 100vh;
     }
   }
   .background-header {
