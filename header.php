@@ -25,20 +25,19 @@ namespace Air_Light;
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="profile" href="http://gmpg.org/xfn/11">
   <link rel="preconnect" href="https://fonts.cdnfonts.com">
-  <?php wp_enqueue_script( 'tweenmax', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js' ) ?>
+  <?php wp_enqueue_script( 'tweenmax', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js' ) ?>
 
   <?php wp_head(); ?>
 </head>
 
 <body <?php body_class( 'no-js' ); ?>>
-  <a class="skip-link screen-reader-text js-trigger" href="#content"><?php echo esc_html( get_default_localization( 'Aller au contenu' ) ); ?></a>
 
   <?php wp_body_open(); ?>
   <div id="page" class="site">
 
     <div class="nav-container">
       <header class="site-header">
-
+        <a class="content-link" href="#content" >Aller au contenu</a>
         <?php get_template_part( 'template-parts/header/branding' ); ?>
         <?php get_template_part( 'template-parts/header/navigation' ); ?>
 
