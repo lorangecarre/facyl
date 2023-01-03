@@ -78,9 +78,34 @@ function get_default_localization_strings( $language = 'fi' ) {
       'Next slide'                                   => 'Seuraava dia',
       'Last slide'                                   => 'Viimeinen dia',
     ],
+    'fr'  => [
+      'Add a menu'                                   => __( 'Ajouter un menu', 'facyl' ),
+      'Open main menu'                               => __( 'Ouvrir le menu principal', 'facyl' ),
+      'Close main menu'                              => __( 'Fermer le menu principal', 'facyl' ),
+      'Main navigation'                              => __( 'Navigation principale', 'facyl' ),
+      'Back to top'                                  => __( 'Retour au début', 'facyl' ),
+      'Open child menu'                              => __( 'Ouvrir le menu enfant', 'facyl' ),
+      'Open child menu for'                          => __( 'Ouvrir le menu enfant pour', 'facyl' ),
+      'Close child menu'                             => __( 'Fermer le menu enfant', 'facyl' ),
+      'Close child menu for'                         => __( 'Fermer le menu enfant pour', 'facyl' ),
+      'Skip to content'                              => __( 'Aller au contenu', 'facyl' ),
+      'Skip over the carousel element'               => __( "Sauter l'élément carrousel", 'facyl' ),
+      'External site'                                => __( 'Site externe', 'facyl' ),
+      'opens in a new window'                        => __( "s'ouvre dans une nouvelle fenêtre", 'facyl' ),
+      'Page not found.'                              => __( 'Page non trouvée.', 'facyl' ),
+      'The reason might be mistyped or expired URL.' => __( 'La raison peut être une erreur de frappe ou une URL expirée.', 'facyl' ),
+      'Search'                                       => __( 'Recherche', 'facyl' ),
+      'Block missing required data'                  => __( 'Bloc manquant des données requises', 'facyl' ),
+      'This error is shown only for logged in users' => __( "Cette erreur n'est affichée que pour les utilisateurs connectés", 'facyl' ),
+      'No results found for your search'             => __( 'Aucun résultat trouvé pour votre recherche', 'facyl' ),
+      'Edit'                                         => __( 'Modifier', 'facyl' ),
+      'Previous slide'                               => __( 'Diapositive précédente', 'facyl' ),
+      'Next slide'                                   => __( 'Diapositive suivante', 'facyl' ),
+      'Last slide'                                   => __( 'Last slide', 'facyl' ),
+    ],
   ];
 
-  return ( array_key_exists( $language, $strings ) ) ? $strings[ $language ] : $strings['en'];
+  return ( array_key_exists( $language, $strings ) ) ? $strings[ $language ] : $strings['fr'];
 } // end get_default_localization_strings
 
 function get_default_localization( $string ) {
