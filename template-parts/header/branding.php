@@ -11,7 +11,7 @@ $description = get_bloginfo( 'description', 'display' );
 ?>
 
 <div class="site-branding">
-  <a class="skip-link js-trigger" href="#content">Aller au contenu</a>
+  <a class="skip-link js-trigger content-link" href="#content">Aller au contenu</a>
   <p class="site-title">
     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
       <span class="screen-reader-text"><?php bloginfo( 'name' ); ?></span>
