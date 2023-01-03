@@ -179,9 +179,15 @@ add_action( 'after_setup_theme', function() {
         'render_template' => '/template-parts/blocks/carrousel.php',
       ],
       [
-        // bloc les etape
-        'name'            => 'temoignage-front',
+        // bloc temoignage
+        'name'            => 'temoignage',
         'title'           => 'Témoignage',
+        'render_template' => '/template-parts/blocks/temoignage.php',
+      ],
+      [
+        // bloc temoignage front
+        'name'            => 'temoignage-front',
+        'title'           => 'Témoignage accueil',
         'render_template' => '/template-parts/blocks/temoignage-front.php',
       ],
       [
