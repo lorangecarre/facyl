@@ -113,7 +113,7 @@ $menu_confidentiality_args = array(
     </a>
   </div>
   <a href="#page" id="top" class="top no-external-link-indicator" data-version="<?php echo esc_attr( AIR_LIGHT_VERSION ); ?>">
-    <span class="screen-reader-text"><?php echo esc_html( get_default_localization( 'Back to top' ) ); ?></span>
+    <span class="screen-reader-text"><?php echo esc_html( get_default_localization( 'Retour au début' ) ); ?></span>
     <span aria-hidden="true"><?php include get_theme_file_path( THEME_SETTINGS['chevron_up'] ); ?></span>
   </a>
   <div class="theme-info">
