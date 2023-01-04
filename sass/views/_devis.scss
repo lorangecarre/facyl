@@ -1,0 +1,126 @@
+.devis{
+  .wpcf7-form > *{
+    display: flex;
+    flex-direction: column;
+    margin: var(--margin-small) 0;
+    textarea, input:not([type="checkbox"],[type="radio"]){
+      width: 100%;
+    }
+  }
+  .wpcf7-checkbox{
+    display: flex;
+    flex-direction: column;
+  }
+  .wpcf7-list-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0 0.5em 1em;
+    &>label{
+      display: flex;
+      align-items: center;
+      font-weight: var(--font-weight-paragraph);
+    }
+  }
+  input[type="checkbox"], input[type="radio"]{
+    margin-right: var(--margin-small);
+  }
+  .wpcf7-spinner{
+    display: none;
+  }
+  .required::after{
+    content: "*";
+    color: var(--color-error);
+
+  }
+  &__estimation{
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    background-color: var(--color-white);
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 5px 31px -7px rgb(0 0 0/75%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 150px;
+    &_value{
+      font-family: var(--font-dosis-extra-bold);
+      line-height: 0;
+      margin-bottom: 20px;
+      font-size: var(--font-size-h3);
+    }
+  }
+}
+
+@media only screen and (min-width: $width-max-mobile) {
+  .devis{
+    .wpcf7-form{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    &__checkbox-fonction{
+      grid-row-start: 4;
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+    &__checkbox-prestations{
+      grid-row-start: 4;
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+    &__fonction{
+      grid-row-start: 5;
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+    &__radio-facyl{
+      grid-row-start: 6;
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+    &__entreprise{
+      grid-row-start: 7;
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+    &__date-mise-ligne{
+      grid-row-start: 7;
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+    &__projet{
+      grid-row-start: 8;
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+    &__prenom{
+      grid-row-start: 9;
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+    &__nom{
+      grid-row-start: 9;
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+    &__email{
+      grid-row-start: 10;
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+    &__telephone{
+      grid-row-start: 10;
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+    input[type="submit"]{
+      grid-row-start: 11;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      margin: auto;
+    }
+  }
+}
