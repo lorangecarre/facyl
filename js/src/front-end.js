@@ -19,6 +19,7 @@ import './modules/sticky-nav';
 import './modules/jauge';
 import './modules/filtres';
 import './modules/tarif-mobile';
+import './modules/tarif-accessibilite';
 import './modules/carrousel';
 import './modules/temoignage';
 import './modules/accessibilite';
