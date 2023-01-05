@@ -21,7 +21,7 @@ $title = get_field( 'plans_blockTitle' );
 <section id="<?php echo esc_attr( $bloc_tarif_id ); ?>" class="tarifs <?php echo esc_attr( $block_tarifs_class ); ?>" >
   <h2 class="tarifs__mainTitle"><?php echo esc_html( $title ); ?></h2>
   <?php if ( have_rows( 'plans' ) ) : ?>
-    <ul class="tarifs__plans">
+    <ul class="tarifs__plans" >
     <?php while ( have_rows( 'plans' ) ) : the_row(); ?>
       <li class="plan">
         <header class="plan__header">
@@ -29,7 +29,7 @@ $title = get_field( 'plans_blockTitle' );
           <p class="plan__price"><?php echo esc_html( $parent_price = get_sub_field( 'plan_price' ) ); ?></p>
         </header>
         <?php if ( have_rows( 'plan_prestations' ) ) : ?>
-        <ul class="plan__prestations">
+        <ul class="plan__prestations" >
         <?php while ( have_rows( 'plan_prestations' ) ) : the_row(); ?>
           <li class="plan__prestation">
             <svg class="checkmark" version="1.1" viewBox="0 0 16 16" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
@@ -42,7 +42,7 @@ $title = get_field( 'plans_blockTitle' );
         </ul>
         <?php endif; ?>
         <?php if ( get_sub_field( 'plan_buttonLink' ) !== '' || get_sub_field( 'plan_mail' ) !== '' || get_sub_field( 'plan_phone' ) !== '' ) : ?>
-        <footer class="plan__footer">
+        <footer class="plan__footer" >
           <?php if ( have_rows( 'plan_buttonLink' ) !== '' ) : ?>
           <a class="plan__button" href="<?php echo esc_html( $parent_btn_texte = get_sub_field( 'plan_buttonLink' ) ); ?>">
             <?php echo esc_html( $parent_btn_texte = get_sub_field( 'plan_buttonText' ) ); ?> <?php include get_theme_file_path( THEME_SETTINGS['chevron_right'] ); ?>
@@ -80,7 +80,7 @@ $title = get_field( 'plans_blockTitle' );
           <?php endif; ?>
         </footer>
         <?php endif; ?>
-        <span id="plan__buttonOpen" class="plan__buttonOpen" aria-hidden="true"><?php include get_theme_file_path( THEME_SETTINGS['chevron_up'] ); ?></span>
+        <button id="plan__buttonOpen" class="plan__buttonOpen" aria-controls="sect<?php echo get_row_index(); ?>" aria-expanded="false"><?php include get_theme_file_path( THEME_SETTINGS['chevron_up'] ); ?></button>
       </li>
       <?php endwhile; ?>
     </ul>
