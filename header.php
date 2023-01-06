@@ -30,7 +30,7 @@ namespace Air_Light;
   <?php wp_head(); ?>
 </head>
 
-<body <?php body_class( 'no-js' ); ?>>
+<body <?php body_class( 'js' ); ?>>
 
 
   <?php wp_body_open(); ?>
