@@ -17,20 +17,20 @@ namespace Air_Light;
   <a class="button button-small button-isContact buttonNonSticky" href="/contact">Nous contacter</a>
   <div class="accessibility-button">
     <button tabindex="0" id="dialog_open_button" type="button" aria-haspopup="dialog" aria-controls="dialog" title="Accessibilité, gérer les paramètres"><?php include get_theme_file_path( THEME_SETTINGS['accessibilite'] ); ?></button>
-    <i aria-hidden="true">Bouton d'accéssibilité</i>
+    <i aria-hidden="true">Bouton d'accessibilité</i>
   </div>
 </div>
 
 <div class="main-navigation-wrapper" id="main-navigation-wrapper">
   <!-- NB! Accessibility: Add/remove has-visible-label class for button if you want to enable/disable visible "Show menu/Hide menu" label for seeing users -->
-  <button aria-controls="nav" id="nav-toggle" class="nav-toggle hamburger" type="button" aria-label="<?php echo esc_html( get_default_localization( 'Ouvrir le menu principal' ) ); ?>">
+  <button aria-controls="nav" id="nav-toggle" class="nav-toggle hamburger" type="button" aria-label="Ouvrir le menu principal">
     <span class="hamburger-box">
       <span class="hamburger-inner"></span>
     </span>
-    <span id="nav-toggle-label" class="nav-toggle-label"><?php echo esc_html( get_default_localization( 'Ouvrir le menu principal' ) ); ?></span>
+    <span id="nav-toggle-label" class="nav-toggle-label">Ouvrir le menu principal</span>
   </button>
 
-  <nav id="nav" class="nav-primary nav-menu" aria-label="<?php echo esc_html( get_default_localization( 'Navigation principale' ) ); ?>">
+  <nav id="nav" class="nav-primary nav-menu" aria-label="Menu principal">
 
     <?php wp_nav_menu( array(
       'theme_location' => 'primary',
