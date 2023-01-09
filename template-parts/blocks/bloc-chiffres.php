@@ -22,9 +22,9 @@ $values  = get_field( 'chiffres_container' );
 <section id="<?php echo esc_attr( $bloc_chiffre_id ); ?>" class="chiffres <?php echo esc_attr( $block_chiffres_class ); ?>" >
   <h2 class="chiffres__title"><?php the_field( 'chiffres_titre' ); ?></h2>
   <?php if ( $values ) : ?>
-    <ul class="chiffres__list">
+    <ul class="chiffres__list" role="list">
     <?php foreach ( $values  as $value ) : ?>
-        <li class="chiffres__listItem">
+        <li class="chiffres__listItem" role="listitem">
           <h3 class="chiffres__listItemTitle"><?php echo esc_html( $value['chiffres_valeur'] ); ?></h3>
           <p class="chiffres__listItemText"><?php echo esc_html( $value['chiffres_description'] ); ?></p>
         </li>
