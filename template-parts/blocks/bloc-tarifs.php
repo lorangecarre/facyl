@@ -21,17 +21,17 @@ $title = get_field( 'plans_blockTitle' );
 <section id="<?php echo esc_attr( $bloc_tarif_id ); ?>" class="tarifs <?php echo esc_attr( $block_tarifs_class ); ?>" >
   <h2 class="tarifs__mainTitle"><?php echo esc_html( $title ); ?></h2>
   <?php if ( have_rows( 'plans' ) ) : ?>
-    <ul class="tarifs__plans" >
+    <ul class="tarifs__plans" role="list">
     <?php while ( have_rows( 'plans' ) ) : the_row(); ?>
-      <li class="plan">
+      <li class="plan" role="listitem">
         <header class="plan__header">
           <h3 class="plan__title"><?php echo esc_html( $parent_title = get_sub_field( 'plan_title' ) ); ?></h3>
           <p class="plan__price"><?php echo esc_html( $parent_price = get_sub_field( 'plan_price' ) ); ?></p>
         </header>
         <?php if ( have_rows( 'plan_prestations' ) ) : ?>
-        <ul class="plan__prestations" >
+        <ul class="plan__prestations" role="list">
         <?php while ( have_rows( 'plan_prestations' ) ) : the_row(); ?>
-          <li class="plan__prestation">
+          <li class="plan__prestation" role="listitem">
             <svg class="checkmark" version="1.1" viewBox="0 0 16 16" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
             <g fill="var(--color-primary)" transform="matrix(.046715 0 0 .046714 -.00014015 0)">
               <path d="m171.25 0c-94.417 0-171.25 76.819-171.25 171.25 0 94.428 76.829 171.26 171.25 171.26 94.438 0 171.25-76.826 171.25-171.26 0-94.429-76.808-171.25-171.25-171.25zm74.117 136.16-89.69 89.69c-2.693 2.69-6.242 4.048-9.758 4.048-3.543 0-7.059-1.357-9.761-4.048l-39.007-39.007c-5.393-5.398-5.393-14.129 0-19.521 5.392-5.392 14.123-5.392 19.516 0l29.252 29.262 79.944-79.948c5.381-5.386 14.111-5.386 19.504 0 5.393 5.401 5.393 14.132 0 19.524z"/>
