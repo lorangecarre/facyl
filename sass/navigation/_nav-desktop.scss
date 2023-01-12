@@ -106,7 +106,7 @@ $use-dropdown-toggle-animation: true;
   .menu-item > a {
     align-items: center;
     color: var(--color-main-level);
-    display: inline-flex;
+    display: inline;
     font-size: var(--font-size-main-level);
     font-weight: var(--font-weight-main-level);
     margin-left: 0;
@@ -121,7 +121,7 @@ $use-dropdown-toggle-animation: true;
   .menu-item .sub-menu a {
     align-items: center;
     color: var(--color-sub-menu);
-    display: inline-flex;
+    display: inline;
     font-size: var(--font-size-sub-menu);
     font-weight: var(--font-weight-sub-menu);
     line-height: 1.5;
