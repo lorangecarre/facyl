@@ -40,7 +40,7 @@ namespace Air_Light;
       'menu_id'        => 'main-menu',
       'echo'           => true,
       'fallback_cb'    => __NAMESPACE__ . '\Nav_Walker::fallback',
-      'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+      'items_wrap'     => '<ul id="%1$s" class="%2$s" role="menu">%3$s</ul>',
       'has_dropdown'   => true,
       'walker'         => new Nav_Walker(),
     ) ); ?>
