@@ -198,65 +198,68 @@ class Nav_Walker extends \Walker_Nav_Menu {
 		$class_names = join( ' ', $classes );
 		$class_names = $class_names ? ' class="' . esc_attr( $class_names ) . '"' : '';
 
-    /**
-		 * Filters the ID applied to a menu item's list item element.
-		 *
-		 * @since WP 3.0.1
-		 * @since WP 4.1.0 The `$depth` parameter was added.
-		 *
-		 * @param string           $menu_id The ID that is applied to the menu item's `<li>` element.
-		 * @param WP_Nav_Menu_Item $item    The current menu item.
-		 * @param WP_Nav_Menu_Args $args    An object of wp_nav_menu() arguments.
-		 * @param int              $depth   Depth of menu item. Used for padding.
-		 */
-		$id = apply_filters( 'nav_menu_item_id', 'menu-item-' . $item->ID, $item, $args, $depth );
-		$id = $id ? ' id="' . esc_attr( $id ) . '"' : '';
+/**
+ * Filters the ID applied to a menu item's list item element.
+ *
+ * @since WP 3.0.1
+ * @since WP 4.1.0 The `$depth` parameter was added.
+ *
+ * @param string           $menu_id The ID that is applied to the menu item's `<li>` element.
+ * @param WP_Nav_Menu_Item $item    The current menu item.
+ * @param WP_Nav_Menu_Args $args    An object of wp_nav_menu() arguments.
+ * @param int              $depth   Depth of menu item. Used for padding.
+ */
+$id = apply_filters( 'nav_menu_item_id', 'menu-item-' . $item->ID, $item, $args, $depth );
+$id = $id ? ' id="' . esc_attr( $id ) . '"' : '';
 
-    // Output
-    $output .= $indent . '<li' . $id . $class_names . '>';
+$class_names .= $depth === 0 ? ' role="none" ' : ' role="none" ';
 
-    // Initialize array for holding the $atts for the link item.
-	  $atts           = array();
-		$atts['title']  = ! empty( $item->attr_title ) ? $item->attr_title : '';
-		$atts['target'] = ! empty( $item->target ) ? $item->target : '';
+// Output
+$output .= $indent . '<li' . $id . $class_names . '>';
 
-    if ( '_blank' === $item->target && empty( $item->xfn ) ) {
-			$atts['rel'] = 'noopener noreferrer';
-		} else {
-			$atts['rel'] = ! empty( $item->xfn ) ? $item->xfn : '';
-		}
+// Initialize array for holding the $atts for the link item.
+$atts           = array();
+$atts['title']  = ! empty( $item->attr_title ) ? $item->attr_title : '';
+$atts['target'] = ! empty( $item->target ) ? $item->target : '';
+$atts['role'] = 'menuitem';
 
-    // If the item has_children add atts to <a>.
-		if ( $this->has_children && 0 === $depth ) {
-			$atts['href']          = ! empty( $item->url ) ? $item->url : '';
-			$atts['aria-haspopup'] = 'true';
-			$atts['class']         = 'dropdown nav-link';
-			$atts['id']            = 'menu-item-dropdown-' . $item->ID;
-		} else {
-			if ( true === $this->has_schema ) {
-				$atts['itemprop'] = 'url';
-			}
+if ( '_blank' === $item->target && empty( $item->xfn ) ) {
+  $atts['rel'] = 'noopener noreferrer';
+} else {
+  $atts['rel'] = ! empty( $item->xfn ) ? $item->xfn : '';
+}
 
-			$atts['href'] = ! empty( $item->url ) ? $item->url : '#';
-			// For items in dropdowns use .dropdown-item instead of .nav-link.
-			if ( $depth > 0 ) {
-				$atts['class'] = 'dropdown-item';
-			} else {
-				$atts['class'] = 'nav-link';
-			}
-		}
-
-    // Aria current
-    $atts['aria-current'] = $item->current ? 'page' : '';
-
-    // Update atts of this item based on any custom linkmod classes.
-		$atts = self::update_atts_for_linkmod_type( $atts, $linkmod_classes );
-
-    // Allow filtering of the $atts array before using it.
-		$atts = apply_filters( 'nav_menu_link_attributes', $atts, $item, $args, $depth );
-
-    // Build a string of html containing all the atts for the item.
-		$attributes = '';
+// If the item has_children add atts to <a>.
+if ( $this->has_children && 0 === $depth ) {
+  $atts['href']          = ! empty( $item->url ) ? $item->url : '';
+  $atts['aria-haspopup'] = 'true';
+  $atts['class']         = 'dropdown nav-link';
+  $atts['id']            = 'menu-item-dropdown-' . $item->ID;
+} else {
+	if ( true === $this->has_schema ) {
+		$atts['itemprop'] = 'url';
+	  }
+	
+	  $atts['href'] = ! empty( $item->url ) ? $item->url : '#';
+	  // For items in dropdowns use .dropdown-item instead of .nav-link.
+	  if ( $depth > 0 ) {
+		$atts['class'] = 'dropdown-item';
+	  } else {
+		$atts['class'] = 'nav-link';
+	  }
+	}
+	
+	// Aria current
+	$atts['aria-current'] = $item->current ? 'page' : '';
+	
+	// Update atts of this item based on any custom linkmod classes.
+	$atts = self::update_atts_for_linkmod_type( $atts, $linkmod_classes );
+	
+	// Allow filtering of the $atts array before using it.
+	$atts = apply_filters( 'nav_menu_link_attributes', $atts, $item, $args, $depth );
+	
+	// Build a string of html containing all the atts for the item.
+	$attributes = '';
 		foreach ( $atts as $attr => $value ) {
 			if ( ! empty( $value ) ) {
 				$value       = ( 'href' === $attr ) ? esc_url( $value ) : esc_attr( $value );
@@ -281,6 +284,8 @@ class Nav_Walker extends \Walker_Nav_Menu {
 			// With no link mod type set this must be a standard <a> tag.
       $item_output .= '<a' . $attributes . '>';
 		}
+	
+
 
     /** This filter is documented in wp-includes/post-template.php */
 		$title = apply_filters( 'the_title', $item->title, $item->ID );
