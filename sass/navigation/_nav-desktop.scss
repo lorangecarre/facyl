@@ -331,38 +331,40 @@ $use-dropdown-toggle-animation: true;
   }
   // link visible in hover desktop
   @media only screen and (min-width: $width-max-mobile) {
-.menu-items a::after, #menu-footer a::after, #menu-confidentialite a::after {
-	 width: 0%;
-	 height: 2px;
-	 display: block;
-	 background-color: var(--color-black);
-	 content: " ";
-	 position: absolute;
-	 top: 34px;
-	 left: 50%;
-	 transition: left 0.2s cubic-bezier(0.215, 0.61, 0.355, 1), width 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-.menu-items a:hover::after, #menu-footer a:hover::after, #menu-confidentialite a:hover::after{
-	 width: 100%;
-	 height: 2px;
-	 display: block;
-	 background-color: var(--color-black);
-	 content: " ";
-	 position: absolute;
-	 top: 34px;
-	 left: 0;
-}
-#menu-footer li, #menu-confidentialite li{
-    display: inline;
-}
-
-
-.is-fixed .menu-items a::after {
-	 background-color: var(--color-white);
-}
-.is-fixed .menu-items a:hover::after {
-	 background-color: var(--color-white) ;
-}
+    .menu-items a::after, #menu-footer a::after, #menu-confidentialite a::after {
+       width: 0%;
+       height: 2px;
+       display: block;
+       background-color: var(--color-black);
+       content: " ";
+       position: absolute;
+       top: 34px;
+       left: 50%;
+       transition: left 0.2s cubic-bezier(0.215, 0.61, 0.355, 1), width 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    .menu-items a:hover::after, #menu-footer a:hover::after, #menu-confidentialite a:hover::after{
+       width: 100%;
+       height: 2px;
+       display: block;
+       background-color: var(--color-black);
+       content: " ";
+       position: absolute;
+       top: 34px;
+       left: 0;
+    }
+    .current-menu-item a:after {
+        width: 100%;
+        left: 0;  
+    }
+    #menu-footer li, #menu-confidentialite li{
+        display: inline;
+    }
+    .is-fixed .menu-items a::after {
+       background-color: var(--color-white);
+    }
+    .is-fixed .menu-items a:hover::after {
+       background-color: var(--color-white) ;
+    }
 }
   // Disable animations on IE10 + IE11
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
