@@ -9,6 +9,11 @@ get_header(); ?>
 
 <main class="site-main">
   <section class="devis">
+   <?php
+     if ( function_exists('yoast_breadcrumb') ) {
+       yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+    }
+  ?>
     <h1>  <?php the_title(); ?> </h1>
     <?php the_content(); ?>
     <div class="devis__estimation">
