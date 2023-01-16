@@ -195,3 +195,17 @@ document.addEventListener(
     );
   },
 );
+
+// Focus auto au premier champs non valide d'un formulaire fait avec Contact Form 7
+document.addEventListener('wpcf7invalid', () => {
+  setTimeout(() => {
+    const firstInput = document.querySelector('.wpcf7-not-valid');
+    firstInput.scrollIntoView(false);
+    firstInput.focus();
+    firstInput.style.outline = 'solid 2px #e95420';
+    firstInput.style.borderRadius = '10px';
+    firstInput.onblur = () => {
+      firstInput.style = '';
+    };
+  }, 100);
+}, false);
