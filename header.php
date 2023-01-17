@@ -17,7 +17,7 @@ namespace Air_Light;
 ?>
 
 <!doctype html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> >
 
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>">

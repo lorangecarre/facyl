@@ -25,7 +25,7 @@ $articles = new WP_Query( $args );
 
 <section id="<?php echo esc_attr( $id ); ?>" class="<?php echo esc_attr( $class_name ); ?>" >
   <h2><?php echo esc_html( $title ) ?></h2>
-  <ul class="articles" role="list">
+  <ul class="articles">
   <?php
   while ( $articles->have_posts() ) {
       $articles->the_post();

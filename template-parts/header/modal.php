@@ -14,14 +14,32 @@ namespace Air_Light;
 
 ?>
 
-<div id="dialog" role="dialog" aria-labelledby="dialog-title" aria-describedby="dialog-desc" aria-modal="true"
-	 aria-hidden="true" tabindex="-1" class="c-dialog">
+<div
+  id="dialog"
+  role="dialog"
+  aria-labelledby="dialog-title"
+  aria-describedby="dialog-desc"
+  aria-modal="true"
+  aria-hidden="true"
+  tabindex="-1"
+  class="c-dialog"
+>
 	<div role="document" class="c-dialog__box">
-		<header>
+		<div>
 			<h2 id="dialog-title">Paramètres d'accessibilité</h2>
-			<button type="button" aria-label="Fermer" title="Fermer les paramètres d'accessibilité" data-dismiss="dialog" class="c-dialog__closeBtn">&#215;
+      <p id="dialog-desc" class="sr-only">
+        Depuis ce menu, vous pouvez changer le contraste, la police d'écriture et l'interlignage du site
+      </p>
+			<button
+        type="button"
+        aria-label="Fermer"
+        title="Fermer les paramètres d'accessibilité"
+        data-dismiss="dialog"
+        class="c-dialog__closeBtn"
+      >
+        &#215;
 			</button>
-		</header>
+		</div>
 		<fieldset>
 			<legend>Contrastes</legend>
 			<button id="themeDefault">Défaut</button>
