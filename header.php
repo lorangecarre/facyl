@@ -17,7 +17,7 @@ namespace Air_Light;
 ?>
 
 <!doctype html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> >
 
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -44,4 +44,4 @@ namespace Air_Light;
       </header>
     </div><!-- .nav-container -->
 
-    <div class="site-content">
+    <div id="#content" class="site-content">

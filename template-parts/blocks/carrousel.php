@@ -1,13 +1,13 @@
 <section class="content__flex" aria-label="<?php the_field('titre546'); ?>" aria-roledescription="carousel">
   <h2 class="footer__confiance-titre"><?php the_field('titre546'); ?></h2>
   <div class="carousel">
-      <div id="carousel" class="carousel__content" >
-          <ul class="carousel__content--child" role="list">
+      <div id="carousel" class="carousel__content">
+          <ul class="carousel__content--child">
           <?php $count = count(get_field('logos')); ?>
               <?php if( have_rows('logos') ):  ?>
                   <?php while( have_rows('logos') ): the_row();
                       $logo = get_sub_field('logo'); $i++; ?>
-                        <li role="listitem">
+                        <li>
                           <?php echo wp_get_attachment_image( $logo, 'full' ); ?>
                             <img role="group" aria-label="<?php echo $i; ?> sur <?php echo $count; ?>" aria-roledescription="slide" id="content" src="<?php the_sub_field('logo'); ?>" loading="lazy" class="carousel__content--img" alt="<?php the_sub_field('nom_de_lentreprise'); ?>"/>
                         </li>
