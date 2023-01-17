@@ -4,18 +4,13 @@
  * @Last Modified by: mikey.zhaopeng
  * @Last Modified time: 2022-09-30 17:02:49
  */
-/*
- * @Author: mikey.zhaopeng
- * @Date: 2022-09-30 16:06:03
- * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2022-09-30 16:14:26
- */
 // The very top of the site, element that usually includes
 // the site navigation and search for example.
 // Colors
 :root {
   --logo-size: 80px;
-  @media screen and (min-width: $width-max-mobile){
+
+  @media screen and (min-width: $width-max-mobile) {
     --logo-size: 100px;
   }
 }
@@ -35,7 +30,7 @@
   position: relative;
   z-index: 15;
 
-  .buttonSticky{
+  .buttonSticky {
     @include button(
       max-content,
       var(--color-black),
@@ -46,7 +41,8 @@
       1px solid var(--color-white),
       1px solid var(--color-white),
       700,
-      false);
+      false
+    );
 
     &.button-small {
       @include button-size-small();
@@ -56,6 +52,7 @@
       display: none;
     }
   }
+
   .buttonNonSticky {
     @include button(
       max-content,
@@ -78,11 +75,11 @@
     }
   }
 
-  .second-navigation-wrapper{
+  .second-navigation-wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 0.5em;
+    gap: .5em;
     order: 3;
   }
 }
@@ -90,13 +87,14 @@
 .site-branding {
   max-height: var(--logo-size);
   width: auto;
-  .js-trigger{
+  .js-trigger {
     top: 4px;
     z-index: 999;
     position: absolute;
     font-size: 15px;
     width: var(--logo-size);
     text-align: center;
+
     @media screen and (max-width: $width-max-mobile) {
       display: none;
     }
@@ -112,23 +110,25 @@
     display: flex;
   }
 }
-.site-title img{
-    width: var(--logo-size);
-    height: var(--logo-size);
+
+.site-title img {
+  width: var(--logo-size);
+  height: var(--logo-size);
 }
-@media screen and (min-width: $width-max-mobile){
-    .site-title img{
-        width: 100px;
-        height: 100px;
-    }
+
+@media screen and (min-width: $width-max-mobile) {
+  .site-title img {
+    width: 100px;
+    height: 100px;
+  }
 }
+
 // Nav container visibility fix
 .nav-container {
   z-index: 10;
 }
 
 // Add margin top because of absolute position
-
 @media only screen and (min-width: $width-max-mobile) {
   .site-main {
     margin-top: calc((var(--padding-site-header-vertical) * 2) + var(--logo-size) + var(--margin-large));

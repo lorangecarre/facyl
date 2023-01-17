@@ -2,16 +2,18 @@
 // that apply everywhere throughout the website. Add more
 // always repeating elements right below.
 // Background body
-body{
-  background: radial-gradient(122.03% 189.39% at 48.7% 14.88%, var(--color-white) 0%, var(--color-white) 17.4%, var(--color-background) 90.6%, #000000 100%)
+body {
+  background: radial-gradient(122.03% 189.39% at 48.7% 14.88%, var(--color-white) 0%, var(--color-white) 17.4%, var(--color-background) 90.6%, #000 100%);
 }
+
 @media only screen and (min-width: $width-max-mobile) {
-  main>*:not(.block-header-home){
+  main > *:not(.block-header-home) {
     padding: 0 var(--margin-large);
   }
 }
+
 @media screen and (max-width: $width-max-mobile) {
-  main>*:not(.block-header-home){
+  main > *:not(.block-header-home) {
     padding: 0 var(--margin-medium);
   }
 }
@@ -187,11 +189,11 @@ body{
   display: none !important;
 }
 
-.cat-list_article{
+.cat-list_article {
   list-style: none;
   display: inline;
   .cat-list_item {
-    @include button(max-content,var(--color-white),var(--color-black),var(--color-black),var(--color-white),30px,1px solid var(--color-black),1px solid var(--color-black),var(--font-weight-semibold),true);
+    @include button(max-content, var(--color-white), var(--color-black), var(--color-black), var(--color-white), 30px, 1px solid var(--color-black), 1px solid var(--color-black), var(--font-weight-semibold), true);
     @include button-size-small();
     &.active {
       background-color: var(--color-white);
@@ -204,31 +206,35 @@ body{
   @media screen and (max-width: $width-max-mobile) {
     text-align: center;
   }
+
   @media screen and (min-width: $width-max-mobile) {
     text-align: end;
   }
+
   margin: var(--margin-medium) 0;
-  .searchbar{
+  .searchbar {
     @include box-with-shadow(25px, 90px, var(--color-white));
     border-color: var(--color-white);
     line-height: 0;
     margin-right: 1em;
-    &:focus{
+
+    &:focus {
       border-color: var(--color-white);
     }
   }
 
-  .search-button{
+  .search-button {
     @include button(max-content,var(--color-white),var(--color-black),var(--color-black),var(--color-white),30px,1px solid var(--color-black),1px solid var(--color-black),var(--font-weight-semibold),true);
     display: inline;
-    svg{
+
+    svg {
       margin-left: 0;
-      width:15px;
+      width: 15px;
       height: 15px;
     }
   }
 }
 
-main>section:not(:last-child){
+main > section:not(:last-child) {
   margin-bottom: var(--margin-large);
 }

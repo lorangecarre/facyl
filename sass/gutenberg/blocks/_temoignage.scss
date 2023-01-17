@@ -1,85 +1,106 @@
-.testimonials{
+.testimonials {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.title-testimonials{
+
+.title-testimonials {
   text-align: center;
   margin-top: var(--margin-medium);
   margin-bottom: var(--margin-small);
 }
+
 .slider {
-	margin: 0 auto;
+  margin: 0 auto;
   display: flex;
-	overflow: hidden;
+  overflow: hidden;
   padding: 0;
   list-style: none;
-	.slide {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		transition: transform 0.5s;
+
+  .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform .5s;
     min-width: 100%;
     margin-bottom: var(--margin-medium);
     margin-top: var(--margin-medium);
+
+    & > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
     @media (min-width: 600px) and (max-width: 767px) {
       width: 100%;
     }
+
     @media (min-width: 768px) {
       min-width: 50%;
     }
-		& > img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-		}
-		.testimonial {
-			width: 90%;
-			min-height: 300px;
-			padding: 30px 40px;
-			position: relative;
-			background-color: transparent;
-			border-radius: 30px;
-			display: flex;
+
+    .testimonial {
+      width: 90%;
+      min-height: 300px;
+      padding: 30px 40px;
+      position: relative;
+      background-color: transparent;
+      border-radius: 30px;
+      display: flex;
       flex-direction: column;
-			justify-content: center;
+      justify-content: center;
+
       @media only screen and (min-width: $width-max-mobile) {
         @include box-with-shadow();
       }
+
       @media screen and (max-width: $width-max-mobile) {
         @include box-with-shadow(10px, 10px);
       }
 
-      &:hover img{
+      &:hover img {
         filter: none;
-        transition: filter ease 0.3s
+        transition: filter ease .3s;
       }
+
       img {
         width: 14rem;
         margin: 0 auto;
         filter: grayscale(1);
-        transition: filter ease 0.3s;
+        transition: filter ease .3s;
       }
-			.testimonial__text {
-				margin: 0;
-        text-align: center;
-			}
-      svg{
-        fill: var(--color-secondary);
 
+      .testimonial__text {
+        margin: 0;
+        text-align: center;
       }
-		}
-	}
+
+      svg {
+        fill: var(--color-secondary);
+      }
+    }
+  }
 }
+
 .btns {
-	width: 100%;
-	display: flex;
+  width: 100%;
+  display: flex;
   justify-content: space-around;
   gap: 25px;
-	bottom: 0;
+  bottom: 0;
   margin-bottom: var(--margin-medium);
-	.slider__btn {
-    @include button(50px,var(--color-white),var(--color-white),var(--color-black),var(--color-primary), 50%, 1px solid var(--color-black), 1px solid var(--color-primary));
+  .slider__btn {
+    @include button(
+      50px,
+      var(--color-white),
+      var(--color-white),
+      var(--color-black),
+      var(--color-primary),
+      50%,
+      1px solid var(--color-black),
+      1px solid var(--color-primary)
+    );
     width: 50px;
     height: 50px;
     padding: 0;
@@ -87,9 +108,8 @@
     align-items: center;
     justify-content: center;
 
-    svg{
+    svg {
       margin-left: 0;
     }
-	}
-
+  }
 }

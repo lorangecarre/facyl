@@ -1,6 +1,10 @@
 // Use with @include box-with-shadow();
-@mixin box-with-shadow($border_radius: 10px, $box_shadow_amount: 37px, $background-color: var(--color-white)) {
+@mixin box-with-shadow(
+  $border_radius: 10px,
+  $box_shadow_amount: 37px,
+  $background-color: var(--color-white)
+) {
   background-color: $background-color;
   border-radius: $border_radius;
-  box-shadow: 8px 8px $box_shadow_amount 0 #00000025;
+  box-shadow: 5px 5px $box_shadow_amount 0 hsla(0deg, 0%, 0%, .5);
 }

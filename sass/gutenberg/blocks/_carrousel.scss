@@ -1,65 +1,75 @@
-.carousel{
+.carousel {
   max-width: 100%;
 }
 
-.carousel__content{
+.carousel__content {
   overflow: auto;
   scroll-behavior: smooth;
   scrollbar-width: none;
 }
-#carousel::-webkit-scrollbar {
-  height: 0;
-}
-.carousel__button{
+
+.carousel__button {
   display: flex;
   justify-content: space-around;
   margin: var(--margin-small) 0 var(--margin-small) 0;
 }
+
 #prev,
 #next {
-  @include button(50px,var(--color-white),var(--color-white),var(--color-black),var(--color-primary), 50%, 1px solid var(--color-black), 1px solid var(--color-primary));
+  @include button(
+    50px,
+    var(--color-white),
+    var(--color-white),
+    var(--color-black),
+    var(--color-primary),
+    50%,
+    1px solid var(--color-black),
+    1px solid var(--color-primary)
+  );
   padding: 8px;
   width: 50px;
   height: 50px;
   display: none;
+
   @media (min-width: $container-ipad) {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 }
-#next svg{
+
+#next svg {
   transform: rotate(90deg);
   margin-left: 0;
 }
-#prev svg{
+
+#prev svg {
   transform: rotate(270deg);
   margin-left: 0;
 }
+
 .carousel__content--child {
   padding-left: 0;
   display: inline-flex;
   box-sizing: border-box;
   list-style: none;
-  li:not(:last-child){
+  li:not(:last-child) {
     margin-right: 16px;
   }
 }
 
-.carousel__content--img{
+.carousel__content--img {
   height: 100px;
   object-fit: contain;
-  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   transition: all 500ms ease-in-out;
 }
 
 .carousel__content--img:hover {
-  -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
-  }
+}
 
-.content__flex{
+.content__flex {
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -3,7 +3,7 @@
     display: grid;
     grid-column-gap: var(--margin-medium);
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2,max-content);
+    grid-template-rows: repeat(2, max-content);
   }
 
   .eco-conception-text {
