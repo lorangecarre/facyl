@@ -24,6 +24,7 @@ import './modules/carrousel';
 import './modules/temoignage';
 import './modules/accessibilite';
 import './modules/devis';
+import './modules/formulaire-facyl';
 
 // Define Javascript is active by changing the body class
 document.body.classList.remove('no-js');
