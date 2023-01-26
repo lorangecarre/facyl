@@ -178,7 +178,7 @@ function customizer_footer($wp_customize)
     $wp_customize->add_setting('show_address', array(
         'capability' => 'edit_theme_options',
       ));
-  
+
       $wp_customize->add_control(
           new WP_Customize_Control(
               $wp_customize,
@@ -195,7 +195,7 @@ function customizer_footer($wp_customize)
     $wp_customize->add_setting('show_tel', array(
         'capability' => 'edit_theme_options',
         ));
-  
+
       $wp_customize->add_control(
           new WP_Customize_Control(
               $wp_customize,
@@ -212,7 +212,7 @@ function customizer_footer($wp_customize)
       $wp_customize->add_setting('show_mail', array(
         'capability' => 'edit_theme_options',
         ));
-  
+
       $wp_customize->add_control(
           new WP_Customize_Control(
               $wp_customize,
@@ -231,3 +231,4 @@ function custom_wp_remove_global_css() {
   remove_action( 'wp_enqueue_scripts', 'wp_enqueue_global_styles' );
   remove_action( 'wp_body_open', 'wp_global_styles_render_svg_filters' );
 }
+
