@@ -2,6 +2,10 @@
   h2{
     text-align: left;
     font-size: var(--font-size-h1);
+    text-transform: uppercase;
+  }
+  .red{
+    color: var(--color-error);
   }
   .sr-only, h1{
     position: absolute;
@@ -16,6 +20,43 @@
   .wpcf7-form.init > div {
     margin-bottom: var(--margin-medium);
   }
+  .required::after{
+    content: " *";
+    color: var(--color-error);
+  }
+  .dnd-upload-counter{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  }
+  .codedropz-upload-handler{
+    border: 0;
+    margin-bottom: 0;
+  }
+  .dnd-upload-image{
+    display: none;
+  }
+  .dnd-upload-status .dnd-upload-details .remove-file span::after{
+    content: "X";
+    color: var(--color-white);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .codedropz-upload-inner .codedropz-btn-wrap a.cd-upload-btn{
+    color: var(--color-white);
+  }
+  .dnd-upload-status .dnd-upload-details .remove-file{
+    border: 1px solid var(--color-white);
+    border-radius: 25px;
+  }
 }
 
 .formulaire{
@@ -24,12 +65,19 @@
       display: grid;
       grid-template-columns: repeat(3,1fr);
     }
-    p{
-      grid-column-start: 1;
-      grid-column-end: 4;
+    border: 0;
+    padding: 0;
+    legend{
       font-weight: var(--font-weight-bold);
       font-size: var(--font-size-h2);
-      margin: 0;
+      margin-top: 0;
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+    p{
+      grid-column-end: 4;
+      grid-column-start: 1;
+      margin-top: 0;
     }
     label{
       font-weight: var(--font-weight-regular);
@@ -127,7 +175,10 @@
       gap: 2rem;
     }
     &_fond{
-      p{
+      border: 0;
+      padding: 0;
+
+      legend{
         font-weight: var(--font-weight-bold);
         font-size: var(--font-size-h2);
         margin-top: 0;
@@ -288,7 +339,7 @@
       &_temoignages, &_clients, &_realisations{
         @media only screen and (min-width: $width-max-mobile) {
           display: grid;
-          grid-template-columns: repeat(4,25%);
+          grid-template-columns: repeat(4,1fr);
           grid-column-gap: 2rem;
         }
         &:not(:last-child){
@@ -301,7 +352,7 @@
         label:last-child{
           display: flex;
           flex-direction: column;
-          span{
+          .wpcf7-form-control-wrap{
             @include button(
             fit-content,
             var(--color-white),
