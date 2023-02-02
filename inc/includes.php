@@ -41,4 +41,5 @@ add_filter( 'wpcf7_autop_or_not', '__return_false' );
 add_action( 'customize_register', 'customizer_footer' );
 // add_action( 'acf/field_group/admin_enqueue_scripts', 'my_acf_field_group_admin_enqueue_scripts' );
 add_action( 'init', 'custom_wp_remove_global_css' );
-
+remove_action( 'template_redirect', 'wpcf7_cleanup_upload_files', 20 );
+add_action( 'template_redirect', 'custom_wpcf7_cleanup_upload_files', 20, 0 );
