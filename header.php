@@ -44,4 +44,4 @@ namespace Air_Light;
       </header>
     </div><!-- .nav-container -->
 
-    <div id="#content" class="site-content">
+    <main id="#content" class="site-content">

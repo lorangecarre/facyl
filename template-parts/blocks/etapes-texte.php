@@ -8,12 +8,12 @@
 namespace Facyl;
 
 if ( have_rows( 'etapes' ) ) : ?>
-<div class="blocks-etapes block-etapes-texte">
+<ul class="blocks-etapes block-etapes-texte">
   <?php while ( have_rows( 'etapes' ) ) : the_row(); ?>
-    <div class="etape-texte">
+    <li class="etape-texte">
       <span class="text-span-etape"><?php echo get_row_index(); ?></span>
       <div class="contenu">
-        <h3><?php the_sub_field( 'titre' ); ?></h3>
+        <h2><?php the_sub_field( 'titre' ); ?></h2>
         <?php the_sub_field( 'description' ); ?>
 
         <?php if ( have_rows( 'bouton' ) ) : ?>
@@ -22,7 +22,7 @@ if ( have_rows( 'etapes' ) ) : ?>
           <?php endwhile; ?>
         <?php endif; ?>
       </div>
-    </div>
+    </li>
   <?php endwhile; ?>
-  </div>
+</ul>
 <?php endif; ?>

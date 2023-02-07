@@ -32,7 +32,7 @@ $menu_confidentiality_args = array(
 );
 ?>
 
-</div><!-- #content -->
+</main><!-- #content -->
 
 <footer id="colophon" class="site-footer">
   <div role="presentation" aria-hidden="true" class="wave wave__footer">

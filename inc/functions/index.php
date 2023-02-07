@@ -30,7 +30,7 @@ function filter_projects() {
 			$response .= get_template_part( 'template-parts/component/realisations' );
 		endwhile;
 	} else {
-		$response = 'empty';
+		$response = 'Aucun résultat';
 	}
 
 	echo $response;
@@ -53,7 +53,7 @@ function filter_projects_keyword() {
 			$response .= get_template_part( 'template-parts/component/realisations' );
 		endwhile;
 	} else {
-		$response = 'empty';
+		$response = 'Aucun résultat';
 	}
 
 	echo $response;

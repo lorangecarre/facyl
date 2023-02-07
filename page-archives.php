@@ -8,32 +8,42 @@
 get_header(); ?>
 
 <main class="site-main">
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      document.getElementById("searchArchives").addEventListener("submit", function(e) {
+        e.preventDefault() // Cancel the default action
+        sendContactForm();
+      });
+    });
+      </script>
   <section class="realisations">
-   <?php
-     if ( function_exists('yoast_breadcrumb') ) {
-       yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+  <?php
+    if ( function_exists('yoast_breadcrumb') ) {
+      yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
     }
   ?>
     <h1>  <?php the_title(); ?> </h1>
+    <h2><span class="sr-only">Vous pouvez trier nos réalisations en utilisant les filtres ou en faisant une recherche</span></h2>
     <?php
         $categories = get_categories();
     ?>
     <ul class="cat-list">
       <li class="cat-list_article">
-        <a class="cat-list_item cat-list_item_handicap active" href="#!" data-slug="">Aucun filtre</a>
+        <button class="cat-list_item cat-list_item_handicap active" href="#!" data-slug="">Aucun filtre</button>
       </li>
       <?php foreach ( $categories as $category ) : ?>
       <li class="cat-list_article">
-        <a class="cat-list_item cat-list_item_handicap" href="#!" data-slug="<?php echo $category->slug; ?>">
+        <button class="cat-list_item cat-list_item_handicap" href="#!" data-slug="<?php echo $category->slug; ?>">
           <?php echo $category->name; ?> (<?php echo $category->count ?>)
-        </a>
+        </button>
       </li>
     <?php endforeach; ?>
     </ul>
-    <div class="search-query">
-        <input type="text" name="search" id="searchbar" class="searchbar" placeholder="Rechercher...">
-        <a href="#" class="search-button"><?php include get_theme_file_path( THEME_SETTINGS['chevron_right'] ); ?></a>
-    </div>
+    <form action="" method="get" class="search-query" id="searchArchives">
+      <label for="searchbar" class="sr-only">Rechercher à l'aide de mots clés</label>
+      <input type="text" name="search" id="searchbar" class="searchbar" placeholder="Rechercher..." required>
+      <input type="submit" href="#" class="search-button" value=">">
+    </form>
     <?php
 		$projects = new WP_Query([
 			'post_type' => 'post',
