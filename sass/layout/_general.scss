@@ -7,13 +7,13 @@ body {
 }
 
 @media only screen and (min-width: $width-max-mobile) {
-  main > *:not(.block-header-home) {
+  .site-main > *:not(.block-header-home) {
     padding: 0 var(--margin-large);
   }
 }
 
 @media screen and (max-width: $width-max-mobile) {
-  main > *:not(.block-header-home) {
+  .site-main > *:not(.block-header-home) {
     padding: 0 var(--margin-medium);
   }
 }
@@ -235,6 +235,6 @@ body {
   }
 }
 
-main > section:not(:last-child) {
+.site-main > section:not(:last-child) {
   margin-bottom: var(--margin-large);
 }

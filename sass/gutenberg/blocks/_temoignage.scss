@@ -12,7 +12,9 @@
 
 .slider {
   margin: 0 auto;
-  display: flex;
+  @media screen and (min-width: $width-max-mobile) {
+    display: flex;
+  }
   overflow: hidden;
   padding: 0;
   list-style: none;

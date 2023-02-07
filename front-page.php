@@ -21,10 +21,10 @@ $thumbnail = wp_get_attachment_url( get_post_thumbnail_id() ) ?: THEME_SETTINGS[
 
 get_header(); ?>
 
-<main class="site-main front-page">
+<div class="site-main front-page">
   <?php
     the_content();
   ?>
-</main>
+</div>
 
 <?php get_footer();

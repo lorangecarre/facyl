@@ -44,7 +44,7 @@
     #plan__buttonOpen {
       transform: translateY(140%);
       background-color: var(--color-black);
-      width: 35px;
+      min-width: 35px;
       height: 35px;
       border-radius: 20px;
       display: flex;

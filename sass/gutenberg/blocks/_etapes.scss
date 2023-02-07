@@ -41,6 +41,7 @@
     @include box-with-shadow();
     margin-bottom: var(--margin-large);
     width: 100%;
+    list-style-type: none;
 
     @media (min-width: $container-ipad) {
       width: 60%;
@@ -100,10 +101,11 @@
       padding: var(--margin-large);
     }
 
-    h3 {
+    h3,h2 {
       text-align: center;
       margin-bottom: 0;
       text-transform: uppercase;
+      font-size: var(--font-size-h3);
     }
 
     .button-b {
