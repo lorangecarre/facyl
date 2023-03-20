@@ -205,9 +205,34 @@
         }
       }
     }
-    &_activite{
+    &_description{
+      display: flex;
+      flex-direction: column;
+      border: 0;
+      padding: 0;
       grid-column-start: 1;
       grid-column-end: 3;
+      legend{
+        font-size: var(--font-size-h2);
+        font-weight: var(--font-weight-bold);
+        margin-top: 0;
+      }
+      .wpcf7-list-item{
+        margin: 0 2rem 0 0;
+        label{
+          display: flex;
+          align-items: center;
+          input{
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    div[data-id='entete-desc']{
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+    &_activite{
       label{
         display: flex;
         flex-direction: column;
@@ -369,6 +394,27 @@
       }
       .wpcf7-form-control-wrap{
         margin-bottom: var(--margin-medium);
+      }
+    }
+    &_existant{
+      display: flex;
+      flex-direction: column;
+      border: 0;
+      padding: 0;
+      legend{
+        font-size: var(--font-size-h2);
+        font-weight: var(--font-weight-bold);
+        margin-top: 0;
+      }
+      .wpcf7-list-item{
+        margin: 0 2rem 0 0;
+        label{
+          display: flex;
+          align-items: center;
+          input{
+            margin-right: 5px;
+          }
+        }
       }
     }
     &_articles{
