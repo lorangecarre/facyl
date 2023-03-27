@@ -4,7 +4,7 @@ if (devis) {
   const valeurDevis = parseFloat(document.querySelector('.devis__estimation_value').dataset.valeur);
   const affichageDevis = document.querySelector('.devis__estimation_value');
   const valeurPage = document.getElementsByName('menu-page');
-  const valeurHerbergement = document.getElementsByName('menu-hebergement');
+  const valeurHebergement = document.getElementsByName('menu-hebergement');
   const valeurMaintenance = document.getElementsByName('menu-maintenance');
   const checkboxFonction = document.getElementsByName('checkbox-fonction[]');
   const checkboxPrestations = document.getElementsByName('checkbox-prestations[]');
@@ -91,10 +91,11 @@ if (devis) {
     valeurPageActuelle = page[valeurPage[0].options[valeurPage[0].selectedIndex].value];
   });
 
-  let valeurHerbergementActuel = 0;
-  valeurHerbergement[0].addEventListener('change', () => {
-    devisFinal.valeur = -valeurHerbergementActuel + hebergement[valeurHerbergement[0].options[valeurHerbergement[0].selectedIndex].value];
-    valeurHerbergementActuel = hebergement[valeurHerbergement[0].options[valeurHerbergement[0].selectedIndex].value];
+  let valeurHebergementActuel = hebergement[valeurHebergement[0].options[valeurHebergement[0].selectedIndex].value];
+  valeurHebergement[0].addEventListener('change', () => {
+    console.log(valeurHebergementActuel);
+    devisFinal.valeur = -valeurHebergementActuel + hebergement[valeurHebergement[0].options[valeurHebergement[0].selectedIndex].value];
+    valeurHebergementActuel = hebergement[valeurHebergement[0].options[valeurHebergement[0].selectedIndex].value];
   });
 
   let valeurMaintenanceActuel = 0;
