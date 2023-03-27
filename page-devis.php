@@ -18,7 +18,7 @@ get_header(); ?>
     <?php the_content(); ?>
     <div class="devis__estimation">
       <p>Estimation de votre site:</p>
-      <p class="devis__estimation_value" data-valeur="600.00"></p>
+      <p class="devis__estimation_value" data-valeur="750.00"></p>
     </div>
   </section>
 </main>
