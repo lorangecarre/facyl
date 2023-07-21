@@ -109,3 +109,9 @@ Types list by convention :
 ` @include button(max-content,var(--color-black),var(--color-black),var(--color-white),var(--color-white),30px,1px solid var(--color-black),1px solid var(--color-black),var(--font-weight-semibold),true);`
 
 ` @include box-with-shadow(border-radius,blur,background color de la box); `
+
+## Pour ajouter tout les blocs Gutenberg 
+
+- Aller dans le function.php
+- Retrouver la ligne avec le tableau 'Alloweb_blocks'
+- Le supprimer et le remblacer par :    'allowed_blocks' => 'all',
